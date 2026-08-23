@@ -13,3 +13,24 @@ The Monorepo solves the Rrepetitiveness encountred each time a new website is re
   <li>Forms, inputs and validations</li>
   <li>Db connections</li>
 </ul>
+
+#### Architecture
+  - Monorepo
+  - FSD (Feature Sliced Design)
+
+#### Stack
+<ul class="inside">
+  <li>React</li>
+  <li>Typescript</li>
+  <li>pnpm</li>
+  <li>TanStack</li>
+  <li>Zod</li>
+  <li>Jest</li>
+  <li>Playwright</li>
+  <li>Drizzle</li>
+</ul>
+
+#### Framework
+<ul class="inside">
+  <li>Next.js</li>
+</ul>
