@@ -1,5 +1,6 @@
 {
-  "products": {
-    "cart": "Ajouter au panier"
+  "welcome": {
+    "title": "Bienvenue au KBM Gym Agadir.",
+    "description": "Les inscriptions pour notre salle de sport de combat ouvrent le 1er octobre."
   }
 }

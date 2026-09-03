@@ -23,7 +23,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className=" ">
+      <body className="bg-[#F4EFE6] ">
         <QueryProvider>{children}</QueryProvider>
         <Toaster />
       </body>

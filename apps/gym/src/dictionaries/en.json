@@ -1,5 +1,6 @@
 {
-  "products": {
-    "cart": "Add to Cart"
+  "welcome": {
+    "title": "Welcome To KBM Gym Agadir.",
+    "description": "Our Gym registration doors open on the 1st of October."
   }
 }
