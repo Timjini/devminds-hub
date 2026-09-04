@@ -1,12 +1,14 @@
-import { languages } from "@/lib/languages";
 import { NextResponse } from "next/server";
+import { langagues } from "@/lib/languages";
+
 
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 async function getLocale(request: any) {
-  const headers = request.headers.get("accept-language") || "";
+  const headers = request.headers.get("accept-language") || '';
 
-  const currentLang: string = headers.split(/[;,\/ -]/)[0];
-  const lang = currentLang || languages[0];
+  const currentLang: string = headers.split(/[;,\/ -]/)[0]
+  const lang = currentLang || langagues[0]
+
 
   // Using cookie here
   // const cookieStore = await cookies();
@@ -27,26 +29,26 @@ async function getLocale(request: any) {
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 export async function proxy(request: any) {
   // Check if there is any supported locale in the pathname
-  const { pathname } = request.nextUrl;
-  const pathnameHasLocale = languages.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
-  );
+  const { pathname } = request.nextUrl
+  const pathnameHasLocale = langagues.some(
+    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+  )
 
-  if (pathnameHasLocale) return;
+  if (pathnameHasLocale) return
 
   // Redirect if there is no locale
-  const locale = await getLocale(request);
-  request.nextUrl.pathname = `/${locale}${pathname}`;
+  const locale = await getLocale(request)
+  request.nextUrl.pathname = `/${locale}${pathname}`
   // e.g. incoming request is /products
   // The new URL is now /en-US/products
-  return NextResponse.redirect(request.nextUrl);
+  return NextResponse.redirect(request.nextUrl)
 }
 
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    "/((?!_next).*)",
+    '/((?!_next).*)',
     // Optional: only run on root (/) URL
     // '/'
   ],
-};
+}
