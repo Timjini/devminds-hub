@@ -20,11 +20,22 @@
   --font-montserrat: "Montserrat", sans-serif;
   --font-display: "Gotham-Ultra", sans-serif;
   --font-knockout: "Knockout-Bold", sans-serif;
-  --color-brand-primary: #db2777;
+  --color-brand-primary: #c19b77;
   --colors-brand-primary-super-dark: #be185d;
-  --color-brand-primary-light: #ec4899;
-  --color-brand-super-light: #fbcfe8;
-  --color-brand-white : #e5e7eb;
-  --color-brand-primary-background: #F4EFE6;
-  --color-brand-primary-dark-background: #1C1917;
+  --color-brand-primary-light: #c19b76;
+  --color-brand-super-light: #decfc2;
+  --color-brand-white: #f4f4f3;
+  --color-brand-primary-background: #c19b77;
+  --color-brand-primary-dark-background: #1c1917;
 }
+
+/* 
+
+brown primary #c19b77 // #c19b76
+white #f4f4f3
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/

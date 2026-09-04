@@ -6,8 +6,18 @@
 @import "shadcn/tailwind.css";
 @import "./theme.css" layer(theme);
 
-
 @custom-variant dark (&:is(.dark *));
+
+/* 
+
+brown primary #c19b77 // #c19b76
+white #2596be
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/
 
 /* FONTS =========================================== */
 @font-face {
@@ -28,21 +38,33 @@
 
 /* THEME =========================================== */
 
-:root {
-    /*Light Mode Colors */
-    --background:#F4EFE6;
-    --text: #242424;
+/* 
 
-    /* Dark Mode Colors */
-    --background-dark: #242424;
-    --text-dark: #f5f5f5;
+brown primary #c19b77 // #c19b76
+white #f4f4f3
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/
+
+:root {
+  /*Light Mode Colors */
+  --background: #decfc2;
+  --text: #54595f;
+
+  /* Dark Mode Colors */
+  --background-dark: #54595f;
+  --text-dark: #f4f4f3;
 }
 
-html, body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Main Light Mode Theme */

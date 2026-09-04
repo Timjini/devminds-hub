@@ -10,7 +10,7 @@ const dictionaries = {
   fr: () =>
     import("../../dictionaries/fr.json").then((module) => module.default),
   pl: () =>
-    import("../../dictionaries/pl.json").then((module) => module.default),
+    import("../../dictionaries/ar.json").then((module) => module.default),
 };
 
 export type Locale = keyof typeof dictionaries;
