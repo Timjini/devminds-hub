@@ -2,7 +2,10 @@
 
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "tailwindcss/preflight.css" layer(base);
 @import "shadcn/tailwind.css";
+@import "./theme.css" layer(theme);
+
 
 @custom-variant dark (&:is(.dark *));
 
@@ -24,19 +27,6 @@
 }
 
 /* THEME =========================================== */
-@theme {
-  --font-roboto: "Roboto", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-display: "Gotham-Ultra", sans-serif;
-  --font-knockout: "Knockout-Bold", sans-serif;
-  --color-brand-primary: #db2777;
-  --colors-brand-primary-super-dark: #be185d;
-  --color-brand-primary-light: #ec4899;
-  --color-brand-super-light: #fbcfe8;
-  --color-brand-white : #e5e7eb;
-  --color-brand-primary-background: #F4EFE6;
-  --color-brand-primary-dark-background: #1C1917;
-}
 
 :root {
     /*Light Mode Colors */
