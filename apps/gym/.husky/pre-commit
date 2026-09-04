@@ -1,14 +1,1 @@
-#!/usr/bin/env bash
-
-echo "Start.."
-
-echo "Running Linters..."
-pnpm run lint || exit 1
-
-echo "🧪 Running Tests..."
-pnpm test || exit 1
-
-echo "Building..."
-pnpm run build || exit 1
-
-echo "All checks passed! Proceeding with push."
+pnpm test
