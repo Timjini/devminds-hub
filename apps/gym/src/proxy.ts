@@ -9,7 +9,6 @@ async function getLocale(request: any) {
   const currentLang: string = headers.split(/[;,\/ -]/)[0]
   const lang = currentLang || langagues[0]
 
-  console.log("lang from request", lang)
 
   // Using cookie here
   // const cookieStore = await cookies();
@@ -29,20 +28,16 @@ async function getLocale(request: any) {
 
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 export async function proxy(request: any) {
-  console.log(".....")
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
-  console.log("pathname", pathname)
   const pathnameHasLocale = langagues.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   )
-  console.log("pathnameHasLocale",pathnameHasLocale);
 
   if (pathnameHasLocale) return
 
   // Redirect if there is no locale
   const locale = await getLocale(request)
-  console.log("locale", locale)
   request.nextUrl.pathname = `/${locale}${pathname}`
   // e.g. incoming request is /products
   // The new URL is now /en-US/products

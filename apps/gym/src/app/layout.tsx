@@ -22,8 +22,8 @@ export default async function RootLayout({
   console.log("lang", lang)
 
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className="bg-[#F4EFE6] ">
+    <html lang="en" className={cn("font-sans", geist.variable, "dark")} >
+      <body className="main-theme adaptive">
         <QueryProvider>{children}</QueryProvider>
         <Toaster />
       </body>

@@ -34,4 +34,45 @@
   --color-brand-primary-light: #ec4899;
   --color-brand-super-light: #fbcfe8;
   --color-brand-white : #e5e7eb;
+  --color-brand-primary-background: #F4EFE6;
+  --color-brand-primary-dark-background: #1C1917;
 }
+
+:root {
+    /*Light Mode Colors */
+    --background:#F4EFE6;
+    --text: #242424;
+
+    /* Dark Mode Colors */
+    --background-dark: #242424;
+    --text-dark: #f5f5f5;
+}
+
+html, body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Main Light Mode Theme */
+.main-theme {
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Main Dark Mode Theme */
+@media (prefers-color-scheme: dark) {
+  .main-theme.adaptive {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+
+/*@media (prefers-color-scheme: light) {
+  .theme.adaptive {
+    background: #F4EFE6;
+    color: #242424;
+    outline: 5px dotted black;
+  }
+}*/
