@@ -35,7 +35,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
               }
             />
             <div
-              className="absolute right-10 top-10 size-18 bg-brand-primary-background text-brand-primary-dark-background rounded-full mx-auto flex flex-col 
+              className="absolute right-10 top-10 size-18 bg-brand-primary-background text-brand-primary-dark-background rounded-full mx-auto flex flex-col
             justify-center align-center items-center hover:bg-brand-primary hover:cursor-pointer hover:text-brand-primary-background"
             >
               <EllipsisVertical />
@@ -55,13 +55,13 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       />
 
       <section className="flex flex-row justify-center align-center items-center mx-auto p-12 w-full">
-        <div className="grid grid-cols-2 mx-auto bg-stone-100 min-w-6xl p-12 rounded-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto bg-stone-100 max-w-6xl p-12 rounded-lg">
           <div className="col-span-1">
             <h1 className="text-5xl text-stone-900">
               {dict.homePage.actionSection.title}
             </h1>
           </div>
-          <div className="col-span-1 col-end-4">
+          <div className="col-span-1 md:col-end-4">
             <div className="max-w-48">
               <NavigationButton
                 label={dict.homePage.actionSection.buttonText}

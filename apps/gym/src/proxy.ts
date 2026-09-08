@@ -21,6 +21,44 @@ async function getLocale(request: any) {
 }
 
 /* eslint-disable  @typescript-eslint/no-explicit-any */
+// export async function proxy(request: any) {
+//   if (request.nextUrl.pathname.startsWith("/api/")) {
+//     return NextResponse.next();
+//   }
+//   // Check if there is any supported locale in the pathname
+//   const { pathname } = request.nextUrl;
+//   console.log("What is the Path", pathname);
+//   const cookieStore = await cookies();
+//   const hasCookie = cookieStore.has("lang");
+
+//   const currentLanguage = cookieStore.get("lang")?.value;
+
+//   if (hasCookie && currentLanguage) {
+
+//     const pathnameHasCurrentLanguage =
+//       pathname.startsWith(`/${currentLanguage}/`) || pathname === `/${currentLanguage}`;
+
+//     console.log(pathname);
+//     if (pathnameHasCurrentLanguage) return;
+
+//     // request.nextUrl.pathname = `/${currentLanguage}${pathname}`;
+//     // return NextResponse.rewrite(request.nextUrl);
+//   }
+
+//   const pathnameHasLocale = languages.some(
+//     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
+//   );
+
+//   if (pathnameHasLocale) return;
+
+//   // Redirect if there is no locale
+//   const locale = await getLocale(request);
+//   request.nextUrl.pathname = `/${locale}${pathname}`;
+//   // e.g. incoming request is /products
+//   // The new URL is now /en-US/products
+//   return NextResponse.redirect(request.nextUrl);
+// }
+
 export async function proxy(request: any) {
   if (request.nextUrl.pathname.startsWith("/api/")) {
     return NextResponse.next();
@@ -28,16 +66,6 @@ export async function proxy(request: any) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
   console.log("What is the Path", pathname);
-  const cookieStore = await cookies();
-  const hasCookie = cookieStore.has("lang");
-
-  const currentLanguages = cookieStore.get("lang")?.value;
-
-  if (hasCookie && currentLanguages) {
-    console.log("cookieLocal", `/ar`);
-    request.nextUrl.pathname = `/${currentLanguages}${pathname}`;
-    return NextResponse.rewrite(request.nextUrl);
-  }
 
   const pathnameHasLocale = languages.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,

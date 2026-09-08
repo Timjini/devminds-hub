@@ -20,12 +20,20 @@ export default async function RootLayout({
 
   console.log("lang==========> layout", lang?.value);
 
-  console.log(language == "ar");
+  console.log("is it ?===>", language == "ar");
+  let direction;
+  if (language == "ar") {
+    direction = 'rtl'
+  } else {
+    direction = 'ltr'
+  }
+
+  console.log("direction",direction)
   return (
     <html
       lang={language || "en"}
-      dir={`${language == "ar" ? "rtl" : ""}`}
       className={cn("font-sans", geist.variable, "dark")}
+      dir={direction}
     >
       <body className="main-theme adaptive">
         <QueryProvider>{children}</QueryProvider>

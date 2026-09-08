@@ -1,31 +1,29 @@
 "use client";
 
 import { languagesObject } from "@/lib/languages";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useSearchParams,useRouter } from "next/navigation";
 
 const LanguageSelect = ({ lang }: { lang: string }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  // const router = useRouter();
+  const router = useRouter();
 
-  const [currentLanguage, setCurrentLanguage] = useState("");
   const setLanguage = async (selectedLanguage: string) => {
-    // set cookies with the chosen languages
-    const req = await fetch(`api/language`, {
+    const req = await fetch(`/api/language`, {
       method: "POST",
       body: JSON.stringify({ lang: selectedLanguage }),
     });
-
     const response = await req.json();
-    setCurrentLanguage(response.body);
+    const newLang = response.body;
+
+    const pathArray = pathname.split('/');
+    const rest = pathArray.slice(2).join('/');
+    const url = `/${newLang}/${rest}${searchParams ? `?${searchParams}` : ''}`;
+
+    router.push(url);
+    // router.refresh() if you need to re-run server components
   };
 
-  useEffect(() => {
-    const url = `${currentLanguage}${pathname}?${searchParams}`;
-    console.log("The URL", url);
-    // router.refresh();
-  }, [pathname, searchParams, currentLanguage]);
 
   return (
     <form className="max-w-sm mx-auto">
@@ -36,10 +34,9 @@ const LanguageSelect = ({ lang }: { lang: string }) => {
       >
         {Object.entries(languagesObject).map(([key, value]) => (
           <option
-            defaultValue={lang}
             key={value}
             value={value}
-            // selected={lang === value}
+            selected={lang === value}
             className=""
           >
             {key}
