@@ -1,7 +1,7 @@
 import { languages } from "@/lib/languages";
 
 export const i18n = {
-  defaultLocale: "en-GB",
+  defaultLocale: "fr",
   locales: languages,
 } as const;
 

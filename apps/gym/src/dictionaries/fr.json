@@ -2,5 +2,22 @@
   "welcome": {
     "title": "Bienvenue au KBM Gym Agadir.",
     "description": "Les inscriptions pour notre salle de sport de combat ouvrent le 1er octobre."
+  },
+  "homePage": {
+    "actionSection": {
+      "title": "Les inscriptions sont ouvertes.",
+      "buttonText": "Découvrir"
+    },
+    "mainSection": {
+      "title": "signification utilisée à titre provisoire pour calibrer une mise en page",
+      "description": "Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. ",
+      "marqueeText": "Atteignez votre plein potentiel"
+    },
+    "secondarySection": {
+      "title": "une suite de mots sans signification utilisée à titre provisoire",
+      "description": "signification utilisée à titre provisoire pour calibrer une mise en page looking at its layout. devrie, une suite de mots sans signification ut",
+      "buttonText": "Discover"
+    },
+    "hugeText": "Power"
   }
 }

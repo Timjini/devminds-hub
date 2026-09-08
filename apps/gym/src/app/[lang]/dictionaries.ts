@@ -9,7 +9,9 @@ const dictionaries = {
     import("../../dictionaries/en.json").then((module) => module.default),
   fr: () =>
     import("../../dictionaries/fr.json").then((module) => module.default),
-  pl: () =>
+  "ar-Ar": () =>
+    import("../../dictionaries/ar.json").then((module) => module.default),
+  ar: () =>
     import("../../dictionaries/ar.json").then((module) => module.default),
 };
 

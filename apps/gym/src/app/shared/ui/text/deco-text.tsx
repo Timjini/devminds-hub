@@ -10,10 +10,11 @@ const DecoText: React.FC<DecoTextProps> = ({ backgroundImg, text }) => {
   return (
     <div>
       <h1
-        className="py-4 font-display text-5xl lg:text-8xl uppercase tracking-wide bg-clip-text text-transparent object-fill object-bottom text-wrap max-w-sm lg:max-w-xl"
+        className="p-8 font-display text-center text-5xl lg:text-7xl uppercase
+        bg-clip-text text-transparent object-fill"
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-       {text}
+        {text}
       </h1>
     </div>
   );
