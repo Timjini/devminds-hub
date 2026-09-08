@@ -31,10 +31,12 @@ export async function proxy(request: any) {
   const cookieStore = await cookies();
   const hasCookie = cookieStore.has("lang");
 
-  console.log("Hi From Proxy lang here====>", hasCookie);
+  const currentLanguages = cookieStore.get("lang")?.value;
 
-  console.log("what lang ? ===>", cookieStore.get("lang")?.value);
-  if (hasCookie) {
+  if (hasCookie && currentLanguages) {
+    console.log("cookieLocal", `/ar`);
+    request.nextUrl.pathname = `/${currentLanguages}${pathname}`;
+    return NextResponse.rewrite(request.nextUrl);
   }
 
   const pathnameHasLocale = languages.some(

@@ -7,14 +7,12 @@ export async function POST(req: NextRequest) {
     const cookieStore = await cookies();
     const newCookie = cookieStore.set("lang", data["lang"]);
 
-    // const hasCookie = cookieStore.has('lang')
+    const currentLanguages = cookieStore.get("lang")?.value;
 
-    // if (hasCookie) {
-    //   console.log("current cookie", cookieStore.get('lang')?.value)
-    //   return cookieStore.get('lang')?.value;
-    // }
     return NextResponse.json({
-      data: { message: `Selected Language ${newCookie}`, status: 200 },
+      body: currentLanguages,
+      message: `Selected Language ${newCookie}`,
+      status: 200,
     });
   } catch (error) {
     console.error("Error Booking:", error);

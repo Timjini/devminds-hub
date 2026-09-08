@@ -1,16 +1,12 @@
 import { Toaster } from "@/components/ui/toast";
 import { cn } from "@/lib/utils";
-import { Bitcount_Prop_Single_Ink, Geist } from "next/font/google";
+import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import QueryProvider from "./query-provider";
 import Footer from "./shared/ui/footer";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-const bitcoinFont = Bitcount_Prop_Single_Ink({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export default async function RootLayout({
   children,
