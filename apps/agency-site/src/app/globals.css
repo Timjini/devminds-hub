@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat&display=swap");
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "tailwindcss/preflight.css" layer(base);
+@import "shadcn/tailwind.css";
+@import "./theme.css" layer(theme);
+
+@custom-variant dark (&:is(.dark *));
+
+/* 
+
+brown primary #c19b77 // #c19b76
+white #2596be
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/
+
+/* FONTS =========================================== */
+@font-face {
+  font-family: Gotham-Ultra;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Gotham-Ultra.ttf");
+}
+
+@font-face {
+  font-family: Knockout-Bold;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Knockout-Bold.ttf");
+}
+
+/* THEME =========================================== */
+
+/* 
+
+brown primary #c19b77 // #c19b76
+white #f4f4f3
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/
+
+:root {
+  /*Light Mode Colors */
+  --background: #decfc2;
+  --text: #54595f;
+
+  /* Dark Mode Colors */
+  --background-dark: #54595f;
+  --text-dark: #f4f4f3;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Main Light Mode Theme */
+.main-theme {
+  background: var(--background);
+  color: var(--text);
+}
+
+/* Main Dark Mode Theme */
+@media (prefers-color-scheme: dark) {
+  .main-theme.adaptive {
+    background: var(--background-dark);
+    color: var(--text-dark);
+  }
+}
+
+/*@media (prefers-color-scheme: light) {
+  .theme.adaptive {
+    background: #F4EFE6;
+    color: #242424;
+    outline: 5px dotted black;
+  }
+}*/

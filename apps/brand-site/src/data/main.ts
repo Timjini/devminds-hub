@@ -4,7 +4,7 @@ export const gymData = {
 
 
 export const navLinks = [
-    { name: "Storage Host", href: "/pages/owner" },
-    { name: "Storage User", href: "/pages/renter" },
-    { name: "About Us", href: "/pages/about" },
+    { name: "Services", href: "/pages/owner" },
+    { name: "Tours", href: "/pages/renter" },
+    { name: "About", href: "/pages/about" },
 ];

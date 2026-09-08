@@ -1,0 +1,41 @@
+/* FONTS =========================================== */
+@font-face {
+  font-family: Gotham-Ultra;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Gotham-Ultra.ttf");
+}
+
+@font-face {
+  font-family: Knockout-Bold;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../../public/assets/fonts/Knockout-Bold.ttf");
+}
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-display: "Gotham-Ultra", sans-serif;
+  --font-knockout: "Knockout-Bold", sans-serif;
+  --color-brand-primary: #c19b77;
+  --colors-brand-primary-super-dark: #be185d;
+  --color-brand-primary-light: #c19b76;
+  --color-brand-super-light: #decfc2;
+  --color-brand-white: #f4f4f3;
+  --color-brand-primary-background: #c19b77;
+  --color-brand-primary-dark-background: #1c1917;
+}
+
+/* 
+
+brown primary #c19b77 // #c19b76
+white #f4f4f3
+brownish white #2596be
+
+gray #54595f
+
+light brown #decfc2
+*/

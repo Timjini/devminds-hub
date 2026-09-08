@@ -14,7 +14,7 @@ const FlatLinkList: React.FC<ListProps> = ({ list }) => {
       {list.map((link, index) => (
         <li
           key={index}
-          className="relative px-5 py-2.5 text-xs font-black uppercase tracking-widest transition-colors duration-300 ease-in eas-out me-4 hover:scale-110 md:me-6 hover:pointer"
+          className="relative px-5 py-2.5 text-xs font-black uppercase tracking-widest transition-colors duration-300 hover:underline me-4 md:me-6 hover:pointer"
         >
           <Link href={link.href}>{link.name}</Link>
         </li>
