@@ -3,7 +3,6 @@ import ImageCard from "@/app/shared/ui/card/image-card";
 import Hero from "@/app/shared/ui/section/hero";
 import DecoText from "@/app/shared/ui/text/deco-text";
 import VideoComponent from "@/app/shared/ui/video/video-component";
-import { EllipsisVertical } from "lucide-react";
 import { notFound } from "next/navigation";
 import Marquee from "react-fast-marquee";
 import { getDictionary, hasLocale } from "../dictionaries";
@@ -19,13 +18,6 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       <Hero
         section={
           <>
-            <img
-              className="absolute top-10 left-10 rounded-full"
-              src="https://kickboxingmorocco.club/public/images/kbm.png"
-              width={120}
-              height={120}
-              alt="Logo"
-            />
             <VideoComponent
               videoId="boxingVideo"
               videoUrl="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing1.mp4"
@@ -34,12 +26,6 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
                 <div className="p-2 object-cover pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-t from-black/95 via-black/60 to-transparent" />
               }
             />
-            <div
-              className="absolute right-10 top-10 size-18 bg-brand-primary-background text-brand-primary-dark-background rounded-full mx-auto flex flex-col
-            justify-center align-center items-center hover:bg-brand-primary hover:cursor-pointer hover:text-brand-primary-background"
-            >
-              <EllipsisVertical />
-            </div>
           </>
         }
         title={

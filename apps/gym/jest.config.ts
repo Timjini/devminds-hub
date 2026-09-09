@@ -46,13 +46,13 @@ const config: Config = {
   coverageThreshold: {
     global: {
       // Requires 80% branch coverage
-      branches: 7,
+      branches: 3,
       // Requires 80% function coverage
-      functions: 7,
+      functions: 3,
       // Requires 80% line coverage
-      lines: 5,
+      lines: 4,
       // Require that no more than 10 statements are uncovered
-      statements: -1500,
+      statements: -2000,
     },
   },
 

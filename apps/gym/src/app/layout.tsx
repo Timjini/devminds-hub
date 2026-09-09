@@ -1,5 +1,7 @@
 import { Toaster } from "@/components/ui/toast";
+import { LanguageContext } from "@/contexts";
 import { cn } from "@/lib/utils";
+import Navbar from "@/widgets/navbar";
 import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
@@ -18,27 +20,29 @@ export default async function RootLayout({
 
   const language = lang?.value || "en";
 
-  console.log("lang==========> layout", lang?.value);
-
-  console.log("is it ?===>", language == "ar");
   let direction;
+
   if (language == "ar") {
-    direction = 'rtl'
+    direction = "rtl";
   } else {
-    direction = 'ltr'
+    direction = "ltr";
   }
 
-  console.log("direction",direction)
+  console.log("direction", direction);
   return (
     <html
       lang={language || "en"}
       className={cn("font-sans", geist.variable, "dark")}
       dir={direction}
+      data-theme="dark"
     >
       <body className="main-theme adaptive">
-        <QueryProvider>{children}</QueryProvider>
-        <Toaster />
-        <Footer lang={language} />
+        <LanguageContext value={language}>
+          <Navbar />
+          <QueryProvider>{children}</QueryProvider>
+          <Toaster />
+          <Footer lang={language} />
+        </LanguageContext>
       </body>
     </html>
   );

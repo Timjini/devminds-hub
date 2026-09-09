@@ -1,71 +1,33 @@
 import { languages } from "@/lib/languages";
-import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 /* eslint-disable  @typescript-eslint/no-explicit-any */
 async function getLocale(request: any) {
+  // check cookies first.
+  const cookieLang = request.cookies.get("lang")?.value;
+  console.log("current cookie language ====>", cookieLang);
+  if (cookieLang && languages.includes(cookieLang)) {
+    return cookieLang;
+  }
+
+  // fall back to default of the browser
   const headers = request.headers.get("accept-language") || "";
-
   const currentLang: string = headers.split(/[;,\/ -]/)[0];
-  const lang = currentLang || languages[0];
-  // if (hasCookie) {
-  //   console.log("current cookie", cookieStore.get('lang')?.value)
-  //   return cookieStore.get('lang')?.value;
-  // }
-  // const newCookie = cookieStore.set('lang', lang)
 
-  // console.log("newcookie", newCookie);
-  // console.log("final lang", lang)
+  if (currentLang && languages.includes(currentLang)) {
+    return currentLang;
+  }
 
-  return lang;
+  return languages[0];
 }
 
-/* eslint-disable  @typescript-eslint/no-explicit-any */
-// export async function proxy(request: any) {
-//   if (request.nextUrl.pathname.startsWith("/api/")) {
-//     return NextResponse.next();
-//   }
-//   // Check if there is any supported locale in the pathname
-//   const { pathname } = request.nextUrl;
-//   console.log("What is the Path", pathname);
-//   const cookieStore = await cookies();
-//   const hasCookie = cookieStore.has("lang");
-
-//   const currentLanguage = cookieStore.get("lang")?.value;
-
-//   if (hasCookie && currentLanguage) {
-
-//     const pathnameHasCurrentLanguage =
-//       pathname.startsWith(`/${currentLanguage}/`) || pathname === `/${currentLanguage}`;
-
-//     console.log(pathname);
-//     if (pathnameHasCurrentLanguage) return;
-
-//     // request.nextUrl.pathname = `/${currentLanguage}${pathname}`;
-//     // return NextResponse.rewrite(request.nextUrl);
-//   }
-
-//   const pathnameHasLocale = languages.some(
-//     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
-//   );
-
-//   if (pathnameHasLocale) return;
-
-//   // Redirect if there is no locale
-//   const locale = await getLocale(request);
-//   request.nextUrl.pathname = `/${locale}${pathname}`;
-//   // e.g. incoming request is /products
-//   // The new URL is now /en-US/products
-//   return NextResponse.redirect(request.nextUrl);
-// }
-
 export async function proxy(request: any) {
+  // avoid the 404 issue with api/en or api/ar ...
   if (request.nextUrl.pathname.startsWith("/api/")) {
     return NextResponse.next();
   }
-  // Check if there is any supported locale in the pathname
+
   const { pathname } = request.nextUrl;
-  console.log("What is the Path", pathname);
 
   const pathnameHasLocale = languages.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
@@ -73,11 +35,10 @@ export async function proxy(request: any) {
 
   if (pathnameHasLocale) return;
 
-  // Redirect if there is no locale
+  // Redirect if there is no locale in the URL
   const locale = await getLocale(request);
   request.nextUrl.pathname = `/${locale}${pathname}`;
-  // e.g. incoming request is /products
-  // The new URL is now /en-US/products
+
   return NextResponse.redirect(request.nextUrl);
 }
 
