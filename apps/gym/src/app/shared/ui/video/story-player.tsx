@@ -20,7 +20,7 @@ interface StoriesPlayerProps {
 
 export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
   stories,
-  containerClass = "relative h-screen w-full max-w-md mx-auto overflow-hidden bg-black rounded-3xl",
+  containerClass = "relative h-screen w-full max-w-md md:max-w-full mx-auto overflow-hidden bg-black rounded-3xl md:rounded-lg",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -138,7 +138,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
           />
 
           {/* Dark Gradient Overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/40 z-10" />
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/40 z-10" />
 
           {/* Optional Caption/Info */}
           {(currentStory.title || currentStory.subtitle) && (
@@ -157,7 +157,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
           )}
 
           {/* Red Glow Accent Border */}
-          <div className="pointer-events-none absolute inset-0 border border-red-600/30 rounded-3xl z-20" />
+          <div className="pointer-events-none absolute inset-0 border border-red-600/30 rounded-3xl md:rounded-none z-20" />
         </motion.div>
       </AnimatePresence>
     </div>

@@ -52,7 +52,7 @@ export function CategoryFilter<T extends string = string>({
             {isActive && (
               <motion.div
                 layoutId={layoutId}
-                className="absolute inset-0 bg-accent rounded-full shadow-md"
+                className="absolute inset-0 bg-accent rounded-full shadow-md bg-brand-primary"
                 transition={{ type: "spring", stiffness: 400, damping: 30 }}
               />
             )}

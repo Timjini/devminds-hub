@@ -79,5 +79,9 @@
       "bjj": "BJJ / Grappling"
     }
   },
-  "tagSentence": "Ready To Train"
+  "tagSentence": "Ready To Train",
+  "homePageGallery":{
+    "tag":"L'Atmosphère KBM Gym",
+    "title": "Suivez Nos Entrainer"
+  }
 }

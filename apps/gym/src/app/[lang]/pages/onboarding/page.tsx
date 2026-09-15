@@ -94,7 +94,6 @@ export default function OnboardingPage() {
   const {
     register,
     handleSubmit,
-    watch,
     control,
     trigger,
     formState: { errors, isSubmitting },
@@ -155,8 +154,8 @@ export default function OnboardingPage() {
 
   return (
     <div className="pt-24 min-h-screen   font-sans selection:bg-brand-primary selection:text-white relative overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[350px] bg-brand-primary/10 blur-[140px] pointer-events-none rounded-full" />
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:32px_32px] opacity-5 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250 h-87.5 bg-brand-primary/10 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute inset-0 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [bg-size-[32px_32px] opacity-5 pointer-events-none" />
       <ContractHeader
         img={gymData.logo}
         title="KBM GYM"
@@ -173,7 +172,7 @@ export default function OnboardingPage() {
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-wider  block mb-1">
-                Jusqu'au 30 Septembre 2026
+                Jusqu&apos;au 30 Septembre 2026
               </span>
               <div className="text-3xl font-black font-aldrich ">
                 2 000{" "}
@@ -187,7 +186,7 @@ export default function OnboardingPage() {
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-stone-900/50 border border-stone-800 flex flex-col justify-between opacity-40 grayscale select-none pointer-events-none relative overflow-hidden">
+          <div className="p-5 rounded-2xl bg-stone-900/50 brand-border flex flex-col justify-between opacity-40 grayscale select-none pointer-events-none relative overflow-hidden">
             {/* Disabled Badge */}
             <div className="absolute top-3 right-3">
               <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-stone-200 border border-stone-700/50">
@@ -227,7 +226,7 @@ export default function OnboardingPage() {
                 Contrat Validé avec Succès !
               </h3>
               <p className=" text-sm max-w-lg mx-auto">
-                Merci. L'inscription de votre enfant au club **KBM GYM AGADIR**
+                Merci. L&apos;inscription de votre enfant au club **KBM GYM AGADIR**
                 est enregistrée pour la saison 2026/2027. Notre équipe vous
                 contactera sous peu.
               </p>
@@ -240,7 +239,7 @@ export default function OnboardingPage() {
                 href="/"
                 className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand-primary text-brand-text font-aldrich font-bold uppercase tracking-wider hover:bg-brand-primary-light transition-all shadow-lg"
               >
-                Retour à l'accueil
+                Retour à l&apos;accueil
               </Link>
             </div>
           </motion.div>
@@ -316,7 +315,7 @@ export default function OnboardingPage() {
                             {...register("parentFullName")}
                             type="text"
                             placeholder="ex: Mohamed Alami"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.parentFullName && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -334,7 +333,7 @@ export default function OnboardingPage() {
                             {...register("parentCin")}
                             type="text"
                             placeholder="ex: JM123456"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm uppercase"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm uppercase"
                           />
                           {errors.parentCin && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -352,7 +351,7 @@ export default function OnboardingPage() {
                             {...register("parentPhone")}
                             type="tel"
                             placeholder="0600000000"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.parentPhone && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -370,7 +369,7 @@ export default function OnboardingPage() {
                             {...register("parentAddress")}
                             type="text"
                             placeholder="ex: Quartier Tilila, Agadir"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.parentAddress && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -386,19 +385,19 @@ export default function OnboardingPage() {
                     <div className="space-y-4 pt-4">
                       <h3 className="font-aldrich text-lg font-bold uppercase text-brand-primary-light border-b border-stone-800 pb-2 flex items-center gap-2">
                         <Users className="w-5 h-5 text-brand-primary-light" />
-                        3. Informations de l'Enfant
+                        3. Informations de l&apos;Enfant
                       </h3>
 
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                        <div className="sm:col-span-1 sm:col-span-1">
+                        <div className="sm:col-span-1">
                           <label className="block text-xs font-mono uppercase tracking-wider  mb-1">
-                            Nom et prénom de l'enfant *
+                            Nom et prénom de l&apos;enfant *
                           </label>
                           <input
                             {...register("childFullName")}
                             type="text"
                             placeholder="ex: Youssef Alami"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.childFullName && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -415,7 +414,7 @@ export default function OnboardingPage() {
                           <input
                             {...register("childBirthDate")}
                             type="date"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.childBirthDate && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -433,7 +432,7 @@ export default function OnboardingPage() {
                             {...register("childAge", { valueAsNumber: true })}
                             type="number"
                             placeholder="ex: 10"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.childAge && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -446,7 +445,6 @@ export default function OnboardingPage() {
                     </div>
                   </motion.div>
                 )}
-
                 {step === 2 && (
                   <motion.div
                     key="step2"
@@ -457,7 +455,7 @@ export default function OnboardingPage() {
                   >
                     <h3 className="font-aldrich text-lg font-bold uppercase text-brand-primary-light border-b border-stone-800 pb-2 flex items-center gap-2">
                       <HeartPulse className="w-5 h-5 text-brand-primary-light" />
-                      ARTICLE 5 : État de Santé de l'Enfant
+                      ARTICLE 5 : État de Santé de l&apos;Enfant
                     </h3>
 
                     <p className=" text-xs leading-relaxed font-light">
@@ -493,7 +491,7 @@ export default function OnboardingPage() {
                       KBM GYM AGADIR peut prendre des photos/vidéos durant les
                       cours et événements pour le suivi des parents et la
                       promotion sportive. Veuillez indiquer votre niveau
-                      d'autorisation :
+                      d&apos;autorisation :
                     </p>
 
                     <div className="space-y-3 pt-2">
@@ -585,7 +583,7 @@ export default function OnboardingPage() {
                       ARTICLE 14 : Déclaration et Signature
                     </h3>
 
-                    <div className="max-h-48 overflow-y-auto p-4 rounded-2xl  border border-stone-800 text-xs text-stone-400 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
+                    <div className="max-h-48 overflow-y-auto p-4 rounded-2xl  brand-border text-xs text-stone-400 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
                       <p className="text-stone-200 font-bold">
                         En signant le présent contrat, le parent/tuteur
                         reconnaît avoir :
@@ -596,7 +594,7 @@ export default function OnboardingPage() {
                           (Articles 1 à 13).
                         </li>
                         <li>
-                          Pris connaissance que l'adhésion est exclusivement
+                          Pris connaissance que l&apos;adhésion est exclusivement
                           annuelle pour la saison 2026/2027.
                         </li>
                         <li>
@@ -611,15 +609,15 @@ export default function OnboardingPage() {
                     </div>
 
                     <div className="space-y-4 pt-2">
-                      <label className="flex items-start gap-3 p-4 rounded-2xl border border-stone-800 cursor-pointer hover:border-stone-700 transition-colors">
+                      <label className="flex items-start gap-3 p-4 rounded-2xl brand-border cursor-pointer hover:border-stone-700 transition-colors">
                         <input
                           {...register("agreeToTerms")}
                           type="checkbox"
                           className="w-5 h-5 rounded border-stone-700 brand-primary-light text-brand-primary focus:ring-brand-primary accent-brand-primary mt-0.5"
                         />
                         <span className="text-xs  leading-normal">
-                          Je confirme avoir lu, compris et accepté l'ensemble
-                          des termes et conditions du présent contrat d'adhésion
+                          Je confirme avoir lu, compris et accepté l&apos;ensemble
+                          des termes et conditions du présent contrat d&apos;adhésion
                           annuelle. *
                         </span>
                       </label>
@@ -638,7 +636,7 @@ export default function OnboardingPage() {
                           <input
                             {...register("signatureDate")}
                             type="date"
-                            className="w-full px-4 py-3 rounded-xl  border border-stone-800  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                            className="w-full px-4 py-3 rounded-xl  brand-border  placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
                           />
                           {errors.signatureDate && (
                             <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -652,7 +650,7 @@ export default function OnboardingPage() {
                           <label className="block text-xs font-mono uppercase tracking-wider text-stone-500 mb-1">
                             Pour KBM GYM AGADIR
                           </label>
-                          <div className="px-4 py-3 rounded-xl /50 border border-stone-800/80 text-stone-400 text-xs font-mono">
+                          <div className="px-4 py-3 rounded-xl /50 brand-border/80 text-stone-400 text-xs font-mono">
                             Coach Issam (Signature & Cachet)
                           </div>
                         </div>
@@ -668,7 +666,7 @@ export default function OnboardingPage() {
                   <button
                     type="button"
                     onClick={prevStep}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl brand-primary-light  hover: border border-stone-800 hover:border-stone-700 font-aldrich text-xs font-bold uppercase tracking-wider transition-all"
+                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl brand-primary-light  hover: brand-border hover:border-stone-700 font-aldrich text-xs font-bold uppercase tracking-wider transition-all"
                   >
                     <ChevronLeft className="w-4 h-4" /> Précédent
                   </button>
@@ -680,7 +678,7 @@ export default function OnboardingPage() {
                   <button
                     type="button"
                     onClick={nextStep}
-                    className="text-white inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-brand-primary text-brand-text font-aldrich font-bold uppercase tracking-wider hover:bg-brand-primary-light transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)]"
+                    className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-brand-primary text-brand-text font-aldrich font-bold uppercase tracking-wider hover:bg-brand-primary-light transition-all shadow-[0_0_20px_rgba(220,38,38,0.3)]"
                   >
                     Suivant <ChevronRight className="w-4 h-4" />
                   </button>
