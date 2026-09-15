@@ -1,31 +1,108 @@
-import NavigationButton from "@/app/shared/ui/button/navigation-button";
-import ImageCard from "@/app/shared/ui/card/image-card";
 import Hero from "@/app/shared/ui/section/hero";
 import DecoText from "@/app/shared/ui/text/deco-text";
-import VideoComponent from "@/app/shared/ui/video/video-component";
-import { notFound } from "next/navigation";
-import Marquee from "react-fast-marquee";
-import { getDictionary, hasLocale } from "./dictionaries";
+import { ClassSchedule } from "@/entities/calendar/class-schedule";
+import { getDictionary } from "@/lib/dictionary";
+import * as Icons from "lucide-react";
+import ActionSection from "../shared/ui/section/action-section";
+import FloatingCommunitySection from "../shared/ui/section/floating-community-section";
+import { GallerySection } from "../shared/ui/section/gallery-section";
+import MainInfoSection from "../shared/ui/section/main-info-section";
+import { SecondarySection } from "../shared/ui/section/secondary-section";
+import { CombatLineSeparator } from "../shared/ui/separator/combatLine-separator";
+import { DiagonalSeparator } from "../shared/ui/separator/diagonal-separator";
+import { StoriesSection } from "../shared/ui/video/stories-section";
+
+interface GalleryItem {
+  id: string;
+  image: string;
+  title: string;
+  category: string;
+  likes?: string;
+  link: string;
+  tagSentence: string;
+  icon: keyof typeof Icons;
+}
 
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
-
-  if (!hasLocale(lang)) notFound();
-
   const dict = await getDictionary(lang);
+
+  const GalleryData: GalleryItem[] = [
+    {
+      id: "1",
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      title: "Sparring Heavyweights",
+      category: "Kickboxing",
+      likes: "342",
+      link: "https://instagram.com",
+      tagSentence: "Amzing Work",
+      icon: "Flame",
+    },
+    {
+      id: "2",
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      title: "Pro Fight Prep",
+      category: "MMA",
+      likes: "512",
+      link: "https://instagram.com",
+      tagSentence: "Amzing Work",
+      icon: "Flame",
+    },
+    {
+      id: "3",
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      title: "Heavy Bag Conditioning",
+      category: "Boxing",
+      likes: "289",
+      link: "https://instagram.com",
+      tagSentence: "Amzing Work",
+      icon: "Flame",
+    },
+    {
+      id: "4",
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      title: "Youth Champions",
+      category: "Junior",
+      likes: "420",
+      link: "https://instagram.com",
+      tagSentence: "Amzing Work",
+      icon: "Flame",
+    },
+  ];
+
+  const galleryImages = [
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+    "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+  ];
+
+  const cardsData = [
+    {
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      alt: "Kickboxing Training",
+    },
+    {
+      image:
+        "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
+      alt: "Sparring Session",
+    },
+  ];
   return (
     <main>
       <Hero
         section={
           <>
-            <VideoComponent
-              videoId="boxingVideo"
-              videoUrl="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing1.mp4"
-              customClass="block h-screen w-screen rounded-3xl object-cover p-0 lg:p-2"
-              decoration={
-                <div className="p-2 object-cover pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-t from-black/95 via-black/60 to-transparent" />
-              }
-            />
+            <StoriesSection />
           </>
         }
         title={
@@ -40,85 +117,41 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
         }
       />
 
-      <section className="flex flex-row justify-center align-center items-center mx-auto p-12 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto bg-stone-100 max-w-6xl p-12 rounded-lg">
-          <div className="col-span-1">
-            <h1 className="text-5xl text-stone-900">
-              {dict.homePage.actionSection.title}
-            </h1>
-          </div>
-          <div className="col-span-1 md:col-end-4">
-            <div className="max-w-48">
-              <NavigationButton
-                label={dict.homePage.actionSection.buttonText}
-                href="/"
-                btnType="primary"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <ActionSection dict={dict} />
 
-      <section className="">
-        <div className="py-24 max-w-6xl min-h-screen gap-10 flex mx-auto flex-col items-center justify-center">
-          <h1 className="text-6xl  font-display uppercase text-center">
-            {dict.homePage.mainSection.title}
-          </h1>
+      <MainInfoSection
+        title={dict.homePage.mainSection.title}
+        description={dict.homePage.mainSection.description}
+        buttonText={dict.homePage.secondarySection.buttonText}
+      />
 
-          <p className=" text-center lead-0 max-w-3xl">
-            {dict.homePage.mainSection.description}
-          </p>
+      <DiagonalSeparator />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
-            <ImageCard img="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg" />
-            <ImageCard img="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg" />
-            <ImageCard img="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg" />
-          </div>
-          <NavigationButton
-            label={dict.homePage.secondarySection.buttonText}
-            href="/pages/onboarding"
-            btnType="primary"
-          />
-        </div>
-      </section>
+      <ClassSchedule />
 
-      <div className="">
-        <Marquee className="bg-brand-primary">
-          <h2 className="text-center font-display h-24 flex flex-row justify-center align-center items-center text-4xl uppercase font-black">
-            {dict.homePage.mainSection.marqueeText} -{" "}
-            {dict.homePage.mainSection.marqueeText} -{" "}
-            {dict.homePage.mainSection.marqueeText} -{" "}
-            {dict.homePage.mainSection.marqueeText} -{" "}
-          </h2>
-        </Marquee>
-      </div>
+      <CombatLineSeparator sentence={dict.tagSentence} />
 
-      <section className=" flex flex-col items-center justify-center mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 max-w-5xl my-24 mx-auto gap-12 px-4">
-          <div className="col-span-1">
-            <div>
-              <h2 className=" text-4xl font-display">
-                {dict.homePage.secondarySection.title}
-              </h2>
-              <p className=" text-lg">
-                {dict.homePage.secondarySection.description}
-              </p>
-            </div>
-          </div>
-          <div className="col-span-2 flex flex-row gap-4">
-            <ImageCard img="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg" />
-            <ImageCard img="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg" />
-          </div>
-        </div>
-      </section>
+      <SecondarySection
+        subtitle={dict.homePage.secondarySection.subtitle}
+        title={dict.homePage.secondarySection.title}
+        description={dict.homePage.secondarySection.description}
+        cards={cardsData}
+      />
 
-      <section className="bg-brand-primary">
-        <div>
-          <span className="truncate text-brand-primary-background text-[500px] font-display uppercase">
-            {dict.homePage.hugeText}
-          </span>
-        </div>
-      </section>
+      <FloatingCommunitySection
+        text={dict.homePage.hugeText}
+        images={galleryImages}
+      />
+
+      <GallerySection
+        GalleryData={GalleryData}
+        tag="L'Atmosphère KBM Gym"
+        title="Suivez Nos Combattants"
+        url="https://localhost"
+        urlTitle="@KBMGymAgadir"
+        galleryTitle="@KBMGymAgadir"
+        galleryIcon="Flame"
+      />
     </main>
   );
 }

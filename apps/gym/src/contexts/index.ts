@@ -1,4 +1,2 @@
-"use client";
-import { createContext } from "react";
-
-export const LanguageContext = createContext("");
+export * from "./dictionary-context";
+export * from "./language-context";

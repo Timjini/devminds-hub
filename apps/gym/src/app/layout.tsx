@@ -1,48 +1,50 @@
 import { Toaster } from "@/components/ui/toast";
-import { LanguageContext } from "@/contexts";
+import { DictionaryProvider, LanguageProvider } from "@/contexts";
+import { getDictionary } from "@/lib/dictionary";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/widgets/footer";
 import Navbar from "@/widgets/navbar";
 import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import QueryProvider from "./query-provider";
-import Footer from "./shared/ui/footer";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
-export default async function RootLayout({
-  children,
-}: {
+interface LayoutProps {
   children: React.ReactNode;
-}) {
+  params: Promise<{
+    lang?: string;
+  }>;
+}
+
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const resolvedParams = await params;
   const cookieStore = await cookies();
-  const lang = cookieStore.get("lang");
+  const langCookie = cookieStore.get("lang")?.value;
 
-  const language = lang?.value || "en";
+  const language = resolvedParams?.lang || langCookie || "en";
 
-  let direction;
+  const dict = await getDictionary(language);
 
-  if (language == "ar") {
-    direction = "rtl";
-  } else {
-    direction = "ltr";
-  }
+  const dir = language === "ar" ? "rtl" : "ltr";
 
-  console.log("direction", direction);
   return (
     <html
       lang={language || "en"}
       className={cn("font-sans", geist.variable, "dark")}
-      dir={direction}
+      dir={dir}
       data-theme="dark"
     >
       <body className="main-theme adaptive">
-        <LanguageContext value={language}>
-          <Navbar />
-          <QueryProvider>{children}</QueryProvider>
-          <Toaster />
-          <Footer lang={language} />
-        </LanguageContext>
+        <LanguageProvider value={language}>
+          <DictionaryProvider dictionary={dict}>
+            <Navbar />
+            <QueryProvider>{children}</QueryProvider>
+            <Toaster />
+            <Footer />
+          </DictionaryProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

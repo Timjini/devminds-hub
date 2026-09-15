@@ -3,14 +3,11 @@ import ImageCard from "@/app/shared/ui/card/image-card";
 import Hero from "@/app/shared/ui/section/hero";
 import DecoText from "@/app/shared/ui/text/deco-text";
 import VideoComponent from "@/app/shared/ui/video/video-component";
-import { notFound } from "next/navigation";
+import { getDictionary } from "@/lib/dictionary";
 import Marquee from "react-fast-marquee";
-import { getDictionary, hasLocale } from "../dictionaries";
 
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
-
-  if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
   return (

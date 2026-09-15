@@ -39,6 +39,15 @@ body {
   color: var(--text);
 }
 
+.reverse-background {
+  background: var(--text);
+  color: var(--background);
+}
+
+.brand-border {
+  border: 1px solid var(--text);
+}
+
 /* Main Dark Mode Theme */
 @media (prefers-color-scheme: dark) {
   .main-theme.adaptive {
@@ -53,6 +62,15 @@ body {
   .navigationMenuBackground {
     background: var(--background);
     color: var(--text);
+  }
+
+  .reverse-background {
+    background: var(--background);
+    color: var(--text);
+  }
+
+  .brand-border {
+    border: 1px solid var(--text-dark);
   }
 }
 

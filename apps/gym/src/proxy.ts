@@ -5,7 +5,6 @@ import { NextResponse } from "next/server";
 async function getLocale(request: any) {
   // check cookies first.
   const cookieLang = request.cookies.get("lang")?.value;
-  console.log("current cookie language ====>", cookieLang);
   if (cookieLang && languages.includes(cookieLang)) {
     return cookieLang;
   }

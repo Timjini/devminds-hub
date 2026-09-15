@@ -1,4 +1,40 @@
 {
+  "navigation": {
+    "registration": "Registration",
+    "about": "About us",
+    "calendar": "Calendar"
+  },
+  "footer": {
+    "brandName": "KBM Gym",
+    "location": "Agadir, Morocco",
+    "description": "First Kickboxing & Martial Arts gym of its kind in Agadir. Dedicated to building champions.",
+    "phone": "+212 600 000 000",
+    "email": "contact@kbmgym.com",
+    "navigationTitle": "Navigation",
+    "preferencesTitle": "Preferences",
+    "languageLabel": "Language",
+    "communityTitle": "Join The Community",
+    "copyright": "KBM Gym Agadir. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "quickLinks": {
+      "registration": "Registration",
+      "about": "About Us",
+      "calendar": "Calendar"
+    },
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "twitter": "X / Twitter"
+    },
+    "handles": {
+      "instagram": "@kbm_gym_agadir",
+      "facebook": "KBM Gym Agadir",
+      "youtube": "KBM Boxing TV",
+      "twitter": "@kbmgym"
+    }
+  },
   "welcome": {
     "title": "Welcome To KBM Gym Agadir.",
     "description": "Our Gym registration doors open on the 1st of October."
@@ -16,9 +52,32 @@
     "secondarySection": {
       "title": "The standard chunk of Lorem Ipsum used since 1966",
       "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-      "buttonText": "Discover"
+      "buttonText": "Discover",
+      "subtitle": "Entraînement & Discipline"
     },
     "hugeText": "Power"
   },
-  "onboardingPage": {}
+  "onboardingPage": {},
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "calendar": {
+    "badge": "KBM Gym Weekly Program",
+    "title": "Class Calendar",
+    "description": "Explore our weekly combat schedule. Select a day to view training times and coaches.",
+    "categories": {
+      "all": "All Combat",
+      "kickboxing": "Kickboxing",
+      "boxing": "Boxing",
+      "mma": "MMA",
+      "bjj": "BJJ / Grappling"
+    }
+  },
+  "tagSentence": "Ready To Train"
 }
