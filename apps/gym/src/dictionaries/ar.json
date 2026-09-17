@@ -79,5 +79,79 @@
       "bjj": "جيوتجيتسو"
     }
   },
-  "tagSentence": "مستعد للتدريب"
+  "tagSentence": "مستعد للتدريب",
+  "onboardingForm": {
+    "guardianAthlete": {
+      "parentTitle": "2. معلومات الولي / الوصي القانوني",
+      "parentFullNameLabel": "الاسم الكامل للولي *",
+      "parentFullNamePlaceholder": "مثال: محمد العلمي",
+      "parentCinLabel": "رقم بطاقة التعريف الوطنية *",
+      "parentCinPlaceholder": "مثال: JM123456",
+      "parentPhoneLabel": "الهاتف *",
+      "parentPhonePlaceholder": "0600000000",
+      "parentAddressLabel": "عنوان السكن *",
+      "parentAddressPlaceholder": "مثال: حي تليلا، أكادير",
+      "childTitle": "3. معلومات الطفل",
+      "childFullNameLabel": "الاسم الكامل للطفل *",
+      "childFullNamePlaceholder": "مثال: يوسف العلمي",
+      "childBirthDateLabel": "تاريخ الازدياد *",
+      "childAgeLabel": "العمر (بالسنوات) *",
+      "childAgePlaceholder": "مثال: 10"
+    },
+    "healthStatus": {
+      "title": "المادة 5: الحالة الصحية للطفل",
+      "description": "يقر الولي/الوصي القانوني بأن الطفل مؤهل لممارسة الأنشطة الرياضية ويتعهد بإبلاغ إدارة KBM GYM AGADIR بأي معلومات طبية هامة قد تؤثر على سلامة الطفل."
+    },
+    "medicalSection": {
+      "medicalRemarksLabel": "ملاحظات طبية خاصة؟ *",
+      "noRemarks": "لا توجد ملاحظات",
+      "yesRemarks": "نعم (يرجى التوضيح)",
+      "detailsLabel": "تفاصيل عن الحالة الطبية *",
+      "detailsPlaceholder": "مثال: ربو المجهود، مشكل في المفاصل...",
+      "medicationsLabel": "أدوية أو علاجات يرجى الإشارة إليها",
+      "medicationsPlaceholder": "مثال: بخاخ الفنتولين",
+      "allergiesLabel": "حساسية",
+      "allergiesPlaceholder": "مثال: حساسية الغبار"
+    },
+    "mediaConsent": {
+      "title": "المادة 11: الصور ومقاطع الفيديو",
+      "description": "يمكن لـ KBM GYM AGADIR التقاط صور/مقاطع فيديو أثناء الحصص والفعاليات لمتابعة أولياء الأمور وللترويج الرياضي. يرجى تحديد مستوى موافقتكم:",
+      "options": {
+        "full": {
+          "label": "موافقة كاملة (مجموعة الواتساب + شبكات التواصل والموقع الإلكتروني)",
+          "desc": "أوافق على التقاط واستخدام الصور/الفيديوهات لمجموعة الواتساب والترويج الرياضي العام لنادي KBM GYM."
+        },
+        "whatsapp_only": {
+          "label": "مجموعة الواتساب فقط",
+          "desc": "أوافق فقط على المشاركة في مجموعة أولياء الأمور الخاصة. لا يُسمح بالنشر العام."
+        },
+        "none": {
+          "label": "رفض تام",
+          "desc": "لا أسمح بالتقاط أو مشاركة صور ومقاطع فيديو طفلي."
+        }
+      }
+    },
+    "declaration": {
+      "title": "المادة 14: التصريح والتوقيع",
+      "summaryHeader": "بتوقيع هذا العقد، يقر ولي الأمر/الوصي بما يلي:",
+      "summaryItems": [
+        "قراءة وفهم جميع بنود العقد (المواد من 1 إلى 13).",
+        "العلم بأن الاشتراك سنوي حصرياً للموسم 2026/2027.",
+        "القبول بالنظام الداخلي، الانضباط واحترام الأوقات (عدم قبول التأخير أكثر من 15 دقيقة).",
+        "تقديم معلومات دقيقة تخص الطفل وحالته الصحية."
+      ],
+      "agreeToTermsLabel": "أؤكد أنني قرأت وفهمت ووافقت على جميع شروط وأحكام عقد الاشتراك السنوي هذا. *",
+      "signatureDateLabel": "حرر بأكادير، بتاريخ: *",
+      "gymSignatureLabel": "عن نادي KBM GYM AGADIR",
+      "gymSignatory": "الكوتش عصام (التوقيع والخاتم)"
+    },
+    "navigation": {
+      "previous": "السابق",
+      "next": "التالي",
+      "submit": "توقيع وتأكيد العقد",
+      "submitting": "جاري التأكيد..."
+    },
+    "successTitle": "تم تأكيد التسجيل!",
+    "successMessage": "تمت المصادقة على عقد انضمامك وتسجيله بنجاح. شكراً لثقتكم في KBM GYM AGADIR."
+  }
 }

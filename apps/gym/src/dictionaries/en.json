@@ -79,5 +79,80 @@
       "bjj": "BJJ / Grappling"
     }
   },
-  "tagSentence": "Ready To Train"
+  "tagSentence": "Ready To Train",
+
+  "onboardingForm": {
+    "guardianAthlete": {
+      "parentTitle": "2. Parent / Legal Guardian Information",
+      "parentFullNameLabel": "Parent Full Name *",
+      "parentFullNamePlaceholder": "e.g. Mohamed Alami",
+      "parentCinLabel": "National ID (CIN) *",
+      "parentCinPlaceholder": "e.g. JM123456",
+      "parentPhoneLabel": "Phone Number *",
+      "parentPhonePlaceholder": "0600000000",
+      "parentAddressLabel": "Residential Address *",
+      "parentAddressPlaceholder": "e.g. Tilila Neighborhood, Agadir",
+      "childTitle": "3. Child Information",
+      "childFullNameLabel": "Child Full Name *",
+      "childFullNamePlaceholder": "e.g. Youssef Alami",
+      "childBirthDateLabel": "Date of Birth *",
+      "childAgeLabel": "Age (Years) *",
+      "childAgePlaceholder": "e.g. 10"
+    },
+    "healthStatus": {
+      "title": "ARTICLE 5: Child Health Status",
+      "description": "The parent/guardian declares that the child is fit to participate in sports activities and commits to informing the management of KBM GYM AGADIR of any important medical information that could affect the child's safety."
+    },
+    "medicalSection": {
+      "medicalRemarksLabel": "Special medical remarks? *",
+      "noRemarks": "No remarks",
+      "yesRemarks": "Yes (Please specify)",
+      "detailsLabel": "Details on the medical condition *",
+      "detailsPlaceholder": "e.g. Exercise-induced asthma, joint issues...",
+      "medicationsLabel": "Medications or treatment to report",
+      "medicationsPlaceholder": "e.g. Ventolin inhaler",
+      "allergiesLabel": "Allergies",
+      "allergiesPlaceholder": "e.g. Dust allergy"
+    },
+    "mediaConsent": {
+      "title": "ARTICLE 11: Photos and Videos",
+      "description": "KBM GYM AGADIR may take photos/videos during classes and events for parent updates and sports promotion. Please indicate your consent level:",
+      "options": {
+        "full": {
+          "label": "Full Consent (WhatsApp Group + Social Media & Website)",
+          "desc": "I authorize taking and using photos/videos for the WhatsApp group and general sports promotion of KBM GYM."
+        },
+        "whatsapp_only": {
+          "label": "WhatsApp Group Only",
+          "desc": "I only authorize sharing in the private parents' group. No public posts."
+        },
+        "none": {
+          "label": "Total Refusal",
+          "desc": "I do not authorize taking or sharing photos and videos of my child."
+        }
+      }
+    },
+    "declaration": {
+      "title": "ARTICLE 14: Declaration and Signature",
+      "summaryHeader": "By signing this contract, the parent/guardian acknowledges having:",
+      "summaryItems": [
+        "Read and understood all terms of the contract (Articles 1 to 13).",
+        "Acknowledged that membership is strictly annual for the 2026/2027 season.",
+        "Accepted the internal regulations, discipline, and schedule adherence (delays > 15 min not allowed).",
+        "Provided accurate information regarding the child and their health condition."
+      ],
+      "agreeToTermsLabel": "I confirm that I have read, understood, and accepted all terms and conditions of this annual membership contract. *",
+      "signatureDateLabel": "Done at Agadir, on: *",
+      "gymSignatureLabel": "For KBM GYM AGADIR",
+      "gymSignatory": "Coach Issam (Signature & Stamp)"
+    },
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next",
+      "submit": "Sign & Confirm Contract",
+      "submitting": "Submitting..."
+    },
+    "successTitle": "Registration Confirmed!",
+    "successMessage": "Your membership agreement has been validated and recorded. Thank you for trusting KBM GYM AGADIR."
+  }
 }
