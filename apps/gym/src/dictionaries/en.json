@@ -55,7 +55,11 @@
       "buttonText": "Discover",
       "subtitle": "Entraînement & Discipline"
     },
-    "hugeText": "Power"
+    "hugeText": "Power",
+    "homeGallery":{
+      "title": "The KBM Gym Atmosphere",
+          "tag": "Follow Our Fighters"
+    }
   },
   "onboardingPage": {},
   "days": [
@@ -80,8 +84,9 @@
     }
   },
   "tagSentence": "Ready To Train",
-
   "onboardingForm": {
+    "header":"KBM GYM",
+    "tag": "Sportive Season 2026/2027",
     "guardianAthlete": {
       "parentTitle": "2. Parent / Legal Guardian Information",
       "parentFullNameLabel": "Parent Full Name *",
@@ -154,5 +159,14 @@
     },
     "successTitle": "Registration Confirmed!",
     "successMessage": "Your membership agreement has been validated and recorded. Thank you for trusting KBM GYM AGADIR."
-  }
+  },
+  "subscription": {
+        "specialOffer": "Special Offer",
+        "specialOfferDeadline": "Until {date}",
+        "specialOfferDescription": "Early bird registrations for the 2026/2027 season.",
+        "unavailable": "Unavailable",
+        "standardOfferStartDate": "From {date}",
+        "standardOfferDescription": "Standard rate without discount.",
+        "perYear": "/ Year"
+      }
 }

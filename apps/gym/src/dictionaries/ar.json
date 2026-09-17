@@ -55,7 +55,11 @@
       "buttonText": "اكتشف المزيد",
       "subtitle": "Entraînement & Discipline"
     },
-    "hugeText": "قوة"
+    "hugeText": "قوة",
+    "homeGallery":{
+      "title": "أجواء KBM Gym",
+      "tag": "تابعوا مقاتلينا"
+    }
   },
   "onboardingPage": {},
   "days": [
@@ -81,6 +85,8 @@
   },
   "tagSentence": "مستعد للتدريب",
   "onboardingForm": {
+    "header":"KBM GYM",
+    "tag": "الموسم الرياضي 2026 / 2027",
     "guardianAthlete": {
       "parentTitle": "2. معلومات الولي / الوصي القانوني",
       "parentFullNameLabel": "الاسم الكامل للولي *",
@@ -153,5 +159,14 @@
     },
     "successTitle": "تم تأكيد التسجيل!",
     "successMessage": "تمت المصادقة على عقد انضمامك وتسجيله بنجاح. شكراً لثقتكم في KBM GYM AGADIR."
-  }
+  },
+  "subscription": {
+        "specialOffer": "عرض خاص",
+        "specialOfferDeadline": "إلى غاية {date}",
+        "specialOfferDescription": "التسجيل المبكر لموسم 2026/2027.",
+        "unavailable": "غير متاح",
+        "standardOfferStartDate": "ابتداءً من {date}",
+        "standardOfferDescription": "السعر العادي بدون تخفيض.",
+        "perYear": "/ السنة"
+      }
 }

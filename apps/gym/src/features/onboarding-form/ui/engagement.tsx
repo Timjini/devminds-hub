@@ -27,7 +27,7 @@ export function Engagement() {
         {t.title}
       </h3>
 
-      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl border border-stone-800 text-xs text-stone-400 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
+      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl brand-border text-xs text-stone-400 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
         <p className="text-stone-200 font-bold">{t.summaryHeader}</p>
         <ul className="list-disc pl-4 space-y-1 text-[11px]">
           {t.summaryItems.map((item: string, index: number) => (
@@ -37,7 +37,7 @@ export function Engagement() {
       </div>
 
       <div className="space-y-4 pt-2">
-        <label className="flex items-start gap-3 p-4 rounded-2xl border border-stone-800 cursor-pointer hover:border-stone-700 transition-colors">
+        <label className="flex items-start gap-3 p-4 rounded-2xl brand-border cursor-pointer hover:border-stone-700 transition-colors">
           <input
             {...register("agreeToTerms")}
             type="checkbox"
@@ -60,7 +60,7 @@ export function Engagement() {
             <input
               {...register("signatureDate")}
               type="date"
-              className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.signatureDate && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -74,7 +74,7 @@ export function Engagement() {
             <label className="block text-xs font-mono uppercase tracking-wider text-stone-500 mb-1">
               {t.gymSignatureLabel}
             </label>
-            <div className="px-4 py-3 rounded-xl border border-stone-800/80 text-stone-400 text-xs font-mono">
+            <div className="px-4 py-3 rounded-xl brand-border/80 text-stone-400 text-xs font-mono">
               {t.gymSignatory}
             </div>
           </div>

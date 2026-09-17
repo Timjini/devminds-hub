@@ -103,7 +103,7 @@ export function MedicalSection() {
               {...register("medicalDetails")}
               rows={2}
               placeholder={t.detailsPlaceholder}
-              className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.medicalDetails && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -122,7 +122,7 @@ export function MedicalSection() {
                 {...register("medications")}
                 type="text"
                 placeholder={t.medicationsPlaceholder}
-                className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>
             <div>
@@ -133,7 +133,7 @@ export function MedicalSection() {
                 {...register("allergies")}
                 type="text"
                 placeholder={t.allergiesPlaceholder}
-                className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>
           </div>
