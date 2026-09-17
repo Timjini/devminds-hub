@@ -29,7 +29,7 @@ export default function OnboardingPage() {
             </div>
             <div>
               <span className="text-xs font-mono uppercase tracking-wider  block mb-1">
-                Jusqu'au 30 Septembre 2026
+                Jusqu&apos;au 30 Septembre 2026
               </span>
               <div className="text-3xl font-black font-aldrich ">
                 2 000{" "}
@@ -43,7 +43,7 @@ export default function OnboardingPage() {
             </p>
           </div>
 
-          <div className="p-5 rounded-2xl bg-stone-900/50 border border-stone-800 flex flex-col justify-between opacity-40 grayscale select-none pointer-events-none relative overflow-hidden">
+          <div className="p-5 rounded-2xl bg-stone-900/50 brand-border flex flex-col justify-between opacity-40 grayscale select-none pointer-events-none relative overflow-hidden">
             {/* Disabled Badge */}
             <div className="absolute top-3 right-3">
               <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-stone-800 text-stone-200 border border-stone-700/50">

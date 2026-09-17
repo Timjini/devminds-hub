@@ -157,7 +157,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
           )}
 
           {/* Red Glow Accent Border */}
-          <div className="pointer-events-none absolute inset-0 border border-red-600/30 rounded-3xl z-20" />
+          <div className="pointer-events-none absolute inset-0 border border-red-600/30 rounded-3xl md:rounded-none z-20" />
         </motion.div>
       </AnimatePresence>
     </div>
