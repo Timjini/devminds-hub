@@ -1,36 +1,23 @@
-# Devminds-hub
-Multiple micro frontend apps, marketing websites and company/project porfolios share many similarties, components and using same libraries in many cases.
+## Intro
 
-## Motivation
-The Monorepo solves the Rrepetitiveness encountred each time a new website is required. to avoid starting from blank, scratch or researching old components from other repos. 
+The repo contains multiple projects to quickly kick-start a web app or a brand website.
+No need to test or write components, as the shared ui contains multiple choices to choose from.
+Just adapt theme.css to your brand colors and choose the components you need. Translation is easy
+using JSON dictionaries.
 
-## Content
-#### Reusable Packages
-<ul class="inside">
-  <li>Components in React TS</li>
-  <li>A library of UI, buttons, cards, sections, CTAs, all previously tested and highly reusable.</li>
-  <li>Common hooks, data fetching, api client and generic types</li>
-  <li>Forms, inputs and validations</li>
-  <li>Db connections</li>
-</ul>
+### Current Features
 
-#### Architecture
-  - Monorepo
-  - FSD (Feature Sliced Design)
+- Monorepo Architecture: Built with TypeScript for type safety across apps and packages.
+- Shared UI Library: Tested component library supporting multiple design skins and styling via Tailwind CSS.
+- Easy DB connection using Drizzle.
+- Common forms protected with Turnstile (Cloudflare).
 
-#### Stack
-<ul class="inside">
-  <li>React</li>
-  <li>Typescript</li>
-  <li>pnpm</li>
-  <li>TanStack</li>
-  <li>Zod</li>
-  <li>Jest</li>
-  <li>Playwright</li>
-  <li>Drizzle</li>
-</ul>
+#### Web Applications:
 
-#### Framework
-<ul class="inside">
-  <li>Next.js</li>
-</ul>
+- Marketing Website: Public-facing acquisition site.
+- Brand Website: Digital brand presence and media.
+- The Gym: App with interactive forms managed via React Hook Form.
+
+- Localization: Multi-language translation support.
+- Database & API: Drizzle ORM connected to a MySQL database with API integrations.
+- Tooling & Quality: Configured with Jest for testing and ESLint for code quality.
