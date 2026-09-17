@@ -145,8 +145,8 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
 
       <GallerySection
         GalleryData={GalleryData}
-        tag="L'Atmosphère KBM Gym"
-        title="Suivez Nos Combattants"
+        tag={dict.homePage.homeGallery.tag}
+        title={dict.homePage.homeGallery.title}
         url="https://localhost"
         urlTitle="@KBMGymAgadir"
         galleryTitle="@KBMGymAgadir"

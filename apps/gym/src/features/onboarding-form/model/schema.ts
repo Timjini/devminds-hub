@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-const onboardingSchema = z.object({
+export const onboardingSchema = z.object({
   // Parent / Guardian Details
   parentFullName: z.string().min(3, {
     message: "Le nom du parent doit comporter au moins 3 caractères",

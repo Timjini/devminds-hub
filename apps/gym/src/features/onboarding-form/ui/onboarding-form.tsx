@@ -93,7 +93,7 @@ export const OnboardingForm = () => {
             <button
               type="button"
               onClick={prevStep}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-stone-800 text-stone-300 hover:border-stone-700 font-aldrich text-xs font-bold uppercase tracking-wider transition-all"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl brand-border text-stone-300 hover:border-stone-700 font-aldrich text-xs font-bold uppercase tracking-wider transition-all"
             >
               <ChevronLeft className="w-4 h-4" />
               {t?.navigation?.previous}
