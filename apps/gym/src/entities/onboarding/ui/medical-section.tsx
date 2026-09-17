@@ -1,36 +1,29 @@
 "use client";
 
+import { useDictionary } from "@/contexts";
 import { motion } from "framer-motion";
 import { AlertCircle } from "lucide-react";
-import {
-    Control,
-    FieldErrors,
-    FieldValues,
-    Path,
-    UseFormRegister,
-    useWatch,
-} from "react-hook-form";
+import { useFormContext, useWatch } from "react-hook-form";
 
-interface MedicalSectionProps<TFieldValues extends FieldValues> {
-  control: Control<TFieldValues>;
-  register: UseFormRegister<TFieldValues>;
-  errors: FieldErrors<TFieldValues>;
-}
+export function MedicalSection() {
+  const dict = useDictionary();
+  const t = dict.onboardingForm.medicalSection;
 
-export function MedicalSection<TFieldValues extends FieldValues>({
-  control,
-  register,
-  errors,
-}: MedicalSectionProps<TFieldValues>) {
+  const {
+    register,
+    control,
+    formState: { errors },
+  } = useFormContext();
+
   const watchMedical = useWatch({
     control,
-    name: "hasMedicalCondition" as Path<TFieldValues>,
+    name: "hasMedicalCondition",
   });
 
   return (
     <div className="space-y-4 pt-2">
       <label className="block text-xs font-mono uppercase tracking-wider">
-        Remarques médicales particulières ? *
+        {t.medicalRemarksLabel}
       </label>
 
       <div className="grid grid-cols-2 gap-4">
@@ -43,7 +36,7 @@ export function MedicalSection<TFieldValues extends FieldValues>({
           }`}
         >
           <input
-            {...register("hasMedicalCondition" as Path<TFieldValues>)}
+            {...register("hasMedicalCondition")}
             type="radio"
             value="no"
             className="sr-only"
@@ -60,7 +53,7 @@ export function MedicalSection<TFieldValues extends FieldValues>({
             )}
           </div>
           <span className="text-xs font-mono font-bold uppercase">
-            Aucune remarque
+            {t.noRemarks}
           </span>
         </label>
 
@@ -73,7 +66,7 @@ export function MedicalSection<TFieldValues extends FieldValues>({
           }`}
         >
           <input
-            {...register("hasMedicalCondition" as Path<TFieldValues>)}
+            {...register("hasMedicalCondition")}
             type="radio"
             value="yes"
             className="sr-only"
@@ -90,7 +83,7 @@ export function MedicalSection<TFieldValues extends FieldValues>({
             )}
           </div>
           <span className="text-xs font-mono font-bold uppercase">
-            Oui (À préciser)
+            {t.yesRemarks}
           </span>
         </label>
       </div>
@@ -104,17 +97,17 @@ export function MedicalSection<TFieldValues extends FieldValues>({
         >
           <div>
             <label className="block text-xs font-mono uppercase tracking-wider mb-1">
-              Précisions sur la condition médicale *
+              {t.detailsLabel}
             </label>
             <textarea
-              {...register("medicalDetails" as Path<TFieldValues>)}
+              {...register("medicalDetails")}
               rows={2}
-              placeholder="ex: Asthme d'effort, problème d'articulation..."
+              placeholder={t.detailsPlaceholder}
               className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.medicalDetails && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
-                <AlertCircle className="w-3 h-3" />{" "}
+                <AlertCircle className="w-3 h-3" />
                 {errors.medicalDetails.message as string}
               </p>
             )}
@@ -123,23 +116,23 @@ export function MedicalSection<TFieldValues extends FieldValues>({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-xs font-mono uppercase tracking-wider mb-1">
-                Médicaments ou traitement à signaler
+                {t.medicationsLabel}
               </label>
               <input
-                {...register("medications" as Path<TFieldValues>)}
+                {...register("medications")}
                 type="text"
-                placeholder="ex: Inhalateur de Ventoline"
+                placeholder={t.medicationsPlaceholder}
                 className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>
             <div>
               <label className="block text-xs font-mono uppercase tracking-wider mb-1">
-                Allergies
+                {t.allergiesLabel}
               </label>
               <input
-                {...register("allergies" as Path<TFieldValues>)}
+                {...register("allergies")}
                 type="text"
-                placeholder="ex: Allergie à la poussière"
+                placeholder={t.allergiesPlaceholder}
                 className="w-full px-4 py-3 rounded-xl border border-stone-800 placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>

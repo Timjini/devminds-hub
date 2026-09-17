@@ -5,6 +5,7 @@
 
 import { AnimatePresence, motion, PanInfo } from "framer-motion";
 import React, { useRef, useState } from "react";
+import { DarkGradientOverlay } from "../pattern/dark-gradient-overlay";
 
 export interface StoryItem {
   id: string;
@@ -20,7 +21,7 @@ interface StoriesPlayerProps {
 
 export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
   stories,
-  containerClass = "relative h-screen w-full max-w-md md:max-w-full mx-auto overflow-hidden bg-black rounded-3xl md:rounded-lg",
+  containerClass = "relative h-screen w-full overflow-hidden rounded-xl border border-brand-primary",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -137,8 +138,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
             className="h-full w-full object-cover"
           />
 
-          {/* Dark Gradient Overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-black/40 z-10" />
+          <DarkGradientOverlay />
 
           {/* Optional Caption/Info */}
           {(currentStory.title || currentStory.subtitle) && (

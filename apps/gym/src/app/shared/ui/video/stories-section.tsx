@@ -19,7 +19,7 @@ const COMBAT_STORIES: StoryItem[] = [
 
 export const StoriesSection = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-neutral-950 p-4">
+    <div className="flex items-center justify-center min-h-screen md:p-4 p-0">
       <StoriesPlayer stories={COMBAT_STORIES} />
     </div>
   );
