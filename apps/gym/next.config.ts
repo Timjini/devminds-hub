@@ -25,8 +25,13 @@ const nextConfig: NextConfig = {
         port: "",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com/**",
+      },
     ],
   },
+  transpilePackages: ["@repo/ui"],
 };
 
 export default nextConfig;

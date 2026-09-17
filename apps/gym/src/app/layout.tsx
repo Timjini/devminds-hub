@@ -1,40 +1,50 @@
 import { Toaster } from "@/components/ui/toast";
+import { DictionaryProvider, LanguageProvider } from "@/contexts";
+import { getDictionary } from "@/lib/dictionary";
 import { cn } from "@/lib/utils";
-import { Bitcount_Prop_Single_Ink, Geist } from "next/font/google";
+import { Footer } from "@/widgets/footer";
+import Navbar from "@/widgets/navbar";
+import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import QueryProvider from "./query-provider";
-import Footer from "./shared/ui/footer";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
-const bitcoinFont = Bitcount_Prop_Single_Ink({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
-export default async function RootLayout({
-  children,
-}: {
+interface LayoutProps {
   children: React.ReactNode;
-}) {
+  params: Promise<{
+    lang?: string;
+  }>;
+}
+
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const resolvedParams = await params;
   const cookieStore = await cookies();
-  const lang = cookieStore.get("lang");
+  const langCookie = cookieStore.get("lang")?.value;
 
-  const language = lang?.value || "en";
+  const language = resolvedParams?.lang || langCookie || "en";
 
-  console.log("lang==========> layout", lang?.value);
+  const dict = await getDictionary(language);
 
-  console.log(language == "ar");
+  const dir = language === "ar" ? "rtl" : "ltr";
+
   return (
     <html
       lang={language || "en"}
-      dir={`${language == "ar" ? "rtl" : ""}`}
       className={cn("font-sans", geist.variable, "dark")}
+      dir={dir}
+      data-theme="dark"
     >
       <body className="main-theme adaptive">
-        <QueryProvider>{children}</QueryProvider>
-        <Toaster />
-        <Footer lang={language} />
+        <LanguageProvider value={language}>
+          <DictionaryProvider dictionary={dict}>
+            <Navbar />
+            <QueryProvider>{children}</QueryProvider>
+            <Toaster />
+            <Footer />
+          </DictionaryProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

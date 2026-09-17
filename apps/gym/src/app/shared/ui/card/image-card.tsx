@@ -4,13 +4,11 @@ import Image from "next/image";
 
 const ImageCard = ({ img }: { img: string }) => {
   return (
-    <motion.div
-    whileHover={{opacity: 0.81, cursor: 'pointer'}}
-    >
+    <motion.div whileHover={{ opacity: 0.81, cursor: "pointer" }}>
       <Image
         loading="eager"
         src={img}
-        className="h-84 w-96 object-cover rounded-xl shadow-xl"
+        className="h-84 w-full object-cover rounded-xl shadow-xl"
         height={900}
         width={500}
         alt=""

@@ -3,15 +3,11 @@ import ImageCard from "@/app/shared/ui/card/image-card";
 import Hero from "@/app/shared/ui/section/hero";
 import DecoText from "@/app/shared/ui/text/deco-text";
 import VideoComponent from "@/app/shared/ui/video/video-component";
-import { EllipsisVertical } from "lucide-react";
-import { notFound } from "next/navigation";
+import { getDictionary } from "@/lib/dictionary";
 import Marquee from "react-fast-marquee";
-import { getDictionary, hasLocale } from "../dictionaries";
 
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
-
-  if (!hasLocale(lang)) notFound();
 
   const dict = await getDictionary(lang);
   return (
@@ -19,13 +15,6 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       <Hero
         section={
           <>
-            <img
-              className="absolute top-10 left-10 rounded-full"
-              src="https://kickboxingmorocco.club/public/images/kbm.png"
-              width={120}
-              height={120}
-              alt="Logo"
-            />
             <VideoComponent
               videoId="boxingVideo"
               videoUrl="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing1.mp4"
@@ -34,12 +23,6 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
                 <div className="p-2 object-cover pointer-events-none absolute inset-0 rounded-2xl bg-linear-to-t from-black/95 via-black/60 to-transparent" />
               }
             />
-            <div
-              className="absolute right-10 top-10 size-18 bg-brand-primary-background text-brand-primary-dark-background rounded-full mx-auto flex flex-col 
-            justify-center align-center items-center hover:bg-brand-primary hover:cursor-pointer hover:text-brand-primary-background"
-            >
-              <EllipsisVertical />
-            </div>
           </>
         }
         title={
@@ -55,13 +38,13 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       />
 
       <section className="flex flex-row justify-center align-center items-center mx-auto p-12 w-full">
-        <div className="grid grid-cols-2 mx-auto bg-stone-100 min-w-6xl p-12 rounded-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-auto bg-stone-100 max-w-6xl p-12 rounded-lg">
           <div className="col-span-1">
             <h1 className="text-5xl text-stone-900">
               {dict.homePage.actionSection.title}
             </h1>
           </div>
-          <div className="col-span-1 col-end-4">
+          <div className="col-span-1 md:col-end-4">
             <div className="max-w-48">
               <NavigationButton
                 label={dict.homePage.actionSection.buttonText}
