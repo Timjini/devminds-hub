@@ -174,7 +174,7 @@ const Footer: React.FC<FooterProps> = ({
               {dict?.footer?.privacy ?? "Privacy Policy"}
             </Link>
             <Link
-              href="/pages/terms-and-conditions"
+              href="/pages/terms-of-service"
               className="hover:text-amber-300 transition-colors"
             >
               {dict?.footer?.terms ?? "Terms of Service"}
