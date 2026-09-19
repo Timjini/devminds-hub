@@ -110,7 +110,7 @@ export default function Hero() {
             className="inline-block"
           >
             <Link
-              href="/"
+              href="/pages/contact"
               className="inline-flex items-center justify-center bg-brand-primary hover:bg-brand-primary-dark text-brand-white rounded-full px-10 py-4 text-lg font-semibold shadow-lg hover:shadow-2xl transition-colors duration-300"
             >
               {dict.about.contact_button}

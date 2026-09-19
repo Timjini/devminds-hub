@@ -267,7 +267,6 @@ const ContactForm = () => {
           )}
         </div>
 
-        {/* Container for explicit Cloudflare Turnstile */}
         <div ref={turnstileContainerRef} className="my-2" />
 
         {/* Submit Button */}
@@ -276,7 +275,7 @@ const ContactForm = () => {
           disabled={isPending}
           whileHover={{ scale: 1.01 }}
           whileTap={{ scale: 0.98 }}
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-amber-600 to-amber-700 px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:from-amber-700 hover:to-amber-800 hover:shadow-xl active:scale-95 disabled:opacity-50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 cursor-pointer"
+          className="inline-flex items-center justify-center gap-2 rounded-full bg-linear-to-r from-amber-600 to-amber-700 px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:from-amber-700 hover:to-amber-800 hover:shadow-xl active:scale-95 disabled:opacity-50 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 cursor-pointer"
         >
           {isPending ? (
             <>

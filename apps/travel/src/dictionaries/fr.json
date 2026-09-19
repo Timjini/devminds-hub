@@ -1,14 +1,14 @@
 {
   "welcome": {
-    "title": "Découvrez des circuits authentiques au Maroc",
-    "description": "Maroko Ekspert propose des circuits professionnels, des excursions et des activités authentiques. Maintenant en polonais !"
+    "title": "Découvrez des Circuits Authentiques au Maroc",
+    "description": "Maroko Ekspert vous propose des circuits professionnels, des excursions et des activités authentiques. Désormais disponible en polonais !"
   },
   "common": {
-    "explore": "Explorer la destination",
-    "learnMore": "En savoir plus"
+    "explore": "Explorer la Destination",
+    "learnMore": "En Savoir Plus"
   },
   "solutions": {
-    "title": "Nos solutions",
+    "title": "Nos Solutions",
     "badge": "Nos Offres",
     "subtitle": "Découvrez comment nous sublimons votre voyage grâce à un guidage expert, une culture authentique et une technologie fluide.",
     "items": {
@@ -22,26 +22,26 @@
       },
       "transportation": {
         "title": "Enrichissez Votre Expérience de Visite",
-        "description": "Reste connecté grâce à une communication en direct et au suivi en temps réel de vos activités via notre application mobile."
+        "description": "Restez connecté grâce à une communication en direct et au suivi en temps réel de vos activités via notre application mobile."
       }
     }
-  },
-  "footer": {
-    "aboutText": "Création de voyages authentiques au Maroc. Des villes impériales et médinas paisibles aux expériences inoubliables dans les dunes du Sahara.",
-    "quickLinks": "Liens rapides",
-    "contactTitle": "Contactez-nous",
-    "privacy": "Politique de confidentialité",
-    "terms": "Conditions d'utilisation"
   },
   "nav": {
     "services": "services",
     "tours": "circuits",
     "about": "à propos"
   },
+  "footer": {
+    "aboutText": "Créateurs de voyages authentiques au Maroc. Des villes impériales et médinas paisibles aux expériences inoubliables dans les dunes du Sahara.",
+    "quickLinks": "Liens Rapides",
+    "contactTitle": "Contactez-nous",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation"
+  },
   "about": {
-    "badge": "À Propos",
+    "badge": "À Propos de Nous",
     "title": "Qui Sommes-Nous",
-    "description": "Maroko Ekspert est dirigé par El Ouafi, un professionnel chevronné fort de plus de 15 ans d'expérience dans le secteur du voyage et du tourisme entre le Maroc et la Pologne. Grâce à sa parfaite connaissance des deux cultures, El Ouafi se spécialise dans la création d'expériences de voyage authentiques et mémorables. Son expertise garantit que chaque circuit est soigneusement conçu pour mettre en valeur le meilleur du patrimoine, de la gastronomie et de l'hospitalité marocaine.",
+    "description": "Maroko Ekspert est dirigé par El Ouafi, un professionnel chevronné fort de plus de 15 ans d'expérience dans le tourisme entre le Maroc et la Pologne. Grâce à sa connaissance approfondie des deux cultures, El Ouafi est spécialisé dans la création d'expériences de voyage authentiques et mémorables. Son expertise garantit que chaque circuit est minutieusement conçu pour mettre en valeur le meilleur du patrimoine, de la gastronomie et de l'hospitalité marocains.",
     "information": "Informations",
     "address": {
       "label": "Adresse",
@@ -52,68 +52,67 @@
       "value": "biuro@maroko-ekspert.pl"
     },
     "phone": {
-      "label": "Téléphone",
-      "values": ["+48 725 648 880", "+212 669 035 305"]
+      "label": "Téléphone"
     },
-    "contact_button": "Contactez-nous"
+    "contact_button": "Prendre Contact"
   },
   "cities": {
-    "badge": "Meilleures Destinations",
-    "title": "Explorez les Destinations Iconiques du Maroc",
+    "badge": "Destinations Phares",
+    "title": "Explorez les Destinations Emblématiques du Maroc",
     "subtitle": "Des anciennes médinas impériales aux villes côtières paisibles et aux dunes dorées du Sahara.",
     "marrakech": {
       "title": "Marrakech",
       "subtitle": "La Perle Impériale",
       "tagline": "Médinas Animées & Palais Historiques",
-      "desc": "Découvrez la magie sensorielle de la place Jemaa el-Fnaa, des riads de luxe, des souks animés et d'un jardin tropical verdoyant au cœur des remparts d'ocre."
+      "desc": "Découvrez la magie sensorielle de Jemaa el-Fnaa, des riads de luxe, des souks animés et de magnifiques jardins tropicaux abrités derrière des remparts de terre ocre."
     },
     "chefchaouen": {
       "title": "Chefchaouen",
       "subtitle": "La Perle Bleue",
-      "tagline": "Havre de Paix dans le Rif",
-      "desc": "Flânez dans des ruelles poétiques teintées d'indigo, nichées paisiblement au cœur des spectaculaires montagnes du Rif."
+      "tagline": "Havre de Paix du Rif",
+      "desc": "Flânez dans les ruelles pittoresques teintées d'indigo, nichées au cœur des spectaculaires montagnes du Rif."
     },
     "fes": {
       "title": "Fès",
       "subtitle": "Capitale Spirituelle",
       "tagline": "Patrimoine Médiéval Vivant",
-      "desc": "Voyagez dans le temps à travers Fès el-Bali, le plus grand sanctuaire urbain piétonnier au monde et le cœur culturel du Maroc."
+      "desc": "Remontez le temps dans Fès el-Bali, la plus grande médina piétonne au monde et cœur culturel du Maroc."
     },
     "agadir": {
       "title": "Agadir",
       "subtitle": "Soleil & Littoral",
       "tagline": "Plages Dorées & Stations Modernes",
-      "desc": "Profitez d'un ensoleillement toute l'année le long d'une baie en croissant, de promenades animées et de spots de surf réputés sur la côte atlantique."
+      "desc": "Profitez du soleil toute l'année le long d'une baie majestueuse, de promenades animées et de spots de surf réputés sur l'Atlantique."
     },
     "rabat": {
       "title": "Rabat",
       "subtitle": "La Capitale",
-      "tagline": "Élégance Cotière & Palais Royaux",
-      "desc": "Découvrez un riche patrimoine royal, la pittoresque Kasbah des Oudayas et une architecture avant-gardiste moderne."
+      "tagline": "Élégance Côtière & Palais Royaux",
+      "desc": "Découvrez un riche patrimoine royal, la pittoresque Kasbah des Oudaïas et une architecture moderne avant-gardiste."
     },
     "ouarzazate": {
       "title": "Ouarzazate & Aït Ben Haddou",
-      "subtitle": "Porte du Sahara",
+      "subtitle": "La Porte du Sahara",
       "tagline": "Kasbahs en Terre & Studios de Cinéma",
-      "desc": "Explorez d'emblématiques forteresses en terre classées à l'UNESCO, de spectaculaires vallées désertiques et des lieux de tournage cinématographiques mythiques."
+      "desc": "Explorez des fortresses en terre classées par l'UNESCO, des vallées désertiques spectaculaires et des lieux de tournage de films légendaires."
     },
     "tangier": {
       "title": "Tanger",
-      "subtitle": "Porte de l'Afrique",
-      "tagline": "Là où la Méditerranée Rencontre l'Atlantique",
-      "desc": "Laissez-vous séduire par son charme bohème légendaire, ses cafés à flanc de falaise, les panoramas de sa médina et ses vues imprenables sur la mer."
+      "subtitle": "La Porte de l'Afrique",
+      "tagline": "Où la Méditerranée Rencontre l'Atlantique",
+      "desc": "Vivez le charme bohème légendaire, les cafés à flanc de falaise, les panoramas historiques et les vues imprenables sur la mer."
     }
   },
   "contact": {
+    "formTitle": "Envoyez-nous un message",
     "badge": "Contactez-nous",
-    "title": "Planifions Votre Aventure Marocaine",
-    "subtitle": "Vous avez des questions ou souhaitez créer un itinéraire sur mesure ? Contactez notre équipe d'experts dès aujourd'hui.",
-    "infoTitle": "Informations de Contact",
+    "title": "Planifions Votre Aventure au Maroc",
+    "subtitle": "Des questions ou prêt à concevoir votre itinéraire sur mesure ? Prenez contact dès aujourd'hui avec notre équipe d'experts.",
+    "infoTitle": "Coordonnées",
     "hoursLabel": "Heures d'Ouverture",
-    "hoursValue": "Lun - Sam : 9h00 - 18h00",
+    "hoursValue": "Lun - Sam : 09h00 - 18h00",
     "promise1": "Réponse rapide sous 24 heures",
-    "promise2": "Itinéraires de voyage sur mesure",
-    "formTitle": "Envoyez-nous un Message",
+    "promise2": "Itinéraires de voyage personnalisés",
     "form": {
       "nameLabel": "Votre Nom",
       "namePlaceholder": "Jean Dupont",
@@ -122,20 +121,100 @@
       "phoneLabel": "Numéro de Téléphone",
       "phonePlaceholder": "+33 1 23 45 67 89",
       "subjectLabel": "Sujet",
-      "subjectPlaceholder": "Demande de circuit dans le désert",
+      "subjectPlaceholder": "Demande de Circuit dans le Désert",
       "messageLabel": "Votre Message",
       "messagePlaceholder": "Parlez-nous de vos projets de voyage ou posez vos questions...",
-      "submitBtn": "Envoyer le Message"
-    },
-    "toasts": {
-      "success": "Votre message a été envoyé avec succès ! Nous vous contacterons sous peu.",
-      "captchaFailed": "La vérification reCAPTCHA a échoué. Veuillez réessayer.",
-      "genericError": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard.",
-      "validationError": "Veuillez vérifier les champs indiqués et réessayer."
-    },
-    "submit": {
-      "send": "Envoyer le Message",
-      "sending": "Envoi en cours..."
+      "submit": {
+        "send": "Envoyer le Message",
+        "sending": "Envoi en cours..."
+      },
+      "toasts": {
+        "success": "Votre message a été envoyé avec succès ! Nous vous contacterons sous peu.",
+        "captchaFailed": "La vérification reCAPTCHA a échoué. Veuillez réessayer.",
+        "genericError": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+        "validationError": "Veuillez vérifier les champs indiqués et réessayer."
+      }
+    }
+  },
+  "privacy": {
+    "badge": "Sécurité et Légalité",
+    "title": "Politique de Confidentialité",
+    "lastUpdated": "Dernière mise à jour : septembre 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "Chez Maroko Ekspert, nous respectons votre vie privée et nous nous engageons à protéger vos données personnelles. Cette politique vous informe sur la manière dont nous traitons vos informations lorsque vous visitez notre site ou réservez nos circuits."
+      },
+      "dataCollection": {
+        "title": "2. Données collectées",
+        "content": "Nous pouvons collecter, utiliser, stocker et transférer différentes catégories de données personnelles, notamment :",
+        "items": [
+          "Données d'identité (nom et prénom)",
+          "Données de contact (adresse e-mail, numéro de téléphone)",
+          "Données de réservation (préférences de voyage, détails de l'itinéraire)",
+          "Données techniques (adresse IP, type de navigateur, cookies)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. Utilisation de vos données",
+        "content": "Nous utilisons vos données uniquement dans le respect de la loi. Principalement pour organiser vos itinéraires, répondre à vos demandes, confirmer vos réservations et améliorer nos services."
+      },
+      "thirdParties": {
+        "title": "4. Partage à des tiers",
+        "content": "Nous ne vendons pas vos données. Nous pouvons partager les informations nécessaires avec des partenaires locaux de confiance au Maroc (hôtels, transporteurs) uniquement pour exécuter vos réservations."
+      },
+      "cookies": {
+        "title": "5. Sécurité & Vérification",
+        "content": "Nous appliquons des mesures de sécurité rigoureuses. Nos formulaires sont protégés par Cloudflare Turnstile afin de prévenir le spam et les abus automatisés sans suivre vos habitudes de navigation."
+      },
+      "rights": {
+        "title": "6. Vos droits légaux",
+        "content": "Conformément aux lois sur la protection des données, vous disposez d'un droit d'accès, de rectification ou de suppression de vos données. Vous pouvez également vous opposer à leur traitement à tout moment."
+      },
+      "contact": {
+        "title": "7. Contactez-nous",
+        "content": "Pour toute question concernant cette politique ou pour exercer vos droits, contactez-nous à biuro@maroko-ekspert.pl."
+      }
+    }
+  },
+  "terms": {
+    "badge": "Accord Légal",
+    "title": "Conditions Générales d'Utilisation",
+    "lastUpdated": "Dernière mise à jour : septembre 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Acceptation des Conditions",
+        "content": "En accédant ou en utilisant les services de Maroko Ekspert, vous acceptez d'être lié par ces Conditions Générales d'Utilisation. Si vous n'acceptez pas l'ensemble de ces conditions, veuillez ne pas utiliser nos services."
+      },
+      "services": {
+        "title": "2. Services de Voyage & Réservations",
+        "content": "Maroko Ekspert est spécialisé dans l'organisation de circuits guidés et d'itinéraires sur mesure au Maroc. Une réservation est considérée comme confirmée après réception d'une confirmation écrite et de l'acompte requis."
+      },
+      "payments": {
+        "title": "3. Paiements & Annulations",
+        "content": "Les modalités de paiement et les conditions d'annulation sont détaillées dans votre devis. En cas d'annulation dans les délais convenus, un remboursement sera effectué, déduction faite des frais opérationnels non remboursables (hôtels, autorisations)."
+      },
+      "responsibilities": {
+        "title": "4. Responsabilités des Voyageurs",
+        "content": "Les voyageurs sont tenus de posséder un passeport valide, les visas nécessaires et une assurance voyage appropriée. Maroko Ekspert ne peut être tenu responsable des retards liés à des documents manquants.",
+        "items": [
+          "Documents de voyage valides (passeports, visas)",
+          "Assurance voyage et santé personnelle",
+          "Respect des lois et coutumes locales marocaines"
+        ]
+      },
+      "alterations": {
+        "title": "5. Modifications d'Itinéraire & Force Majeure",
+        "content": "Maroko Ekspert se réserve le droit de modifier un itinéraire en cas d'événements imprévus, de conditions météorologiques défavorables ou de raisons de sécurité. Nous ne sommes pas responsables des retards dus à la force majeure."
+      },
+      "intellectualProperty": {
+        "title": "6. Propriété Intellectuelle",
+        "content": "Tout le contenu présent sur ce site (textes, logos, images et itinéraires) est la propriété intellectuelle de Maroko Ekspert et est protégé par les lois sur le droit d'auteur."
+      },
+      "contact": {
+        "title": "7. Questions & Support",
+        "content": "Pour toute question concernant nos Conditions Générales, veuillez nous contacter à biuro@maroko-ekspert.pl."
+      }
     }
   }
 }
