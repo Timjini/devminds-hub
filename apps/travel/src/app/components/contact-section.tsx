@@ -293,7 +293,7 @@ const ContactSection: React.FC<ContactSectionProps> = () => {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.01 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full bg-linear-to-r from-amber-600 via-orange-600 to-amber-700 text-white font-semibold py-4 rounded-xl shadow-lg hover:shadow-amber-600/30 hover:brightness-105 transition-all flex items-center justify-center gap-2"
+                  className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-amber-600 to-amber-700 px-8 py-3 text-sm font-semibold text-white shadow-md hover:from-amber-700 hover:to-amber-800 hover:shadow-xl active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                 >
                   <Send className="w-4 h-4" />
                   <span>

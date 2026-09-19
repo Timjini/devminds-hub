@@ -7,7 +7,25 @@
     "explore": "Explore Destination",
     "learnMore": "Learn More"
   },
-  "solution": { "title": "Our Solutions" },
+  "solutions": {
+    "title": "Our Solutions",
+    "badge": "Our Offerings",
+    "subtitle": "Discover how we elevate your journey through expert guiding, authentic culture, and seamless technology.",
+    "items": {
+      "customTours": {
+        "title": "Polish-speaking Tour Guides",
+        "description": "Led by El Ouafi, a professional in the field, ensuring a knowledgeable and engaging experience."
+      },
+      "corporateEvents": {
+        "title": "Unique and Authentic Tours",
+        "description": "Immerse yourself in real Moroccan culture and cuisine with our carefully curated tours, experience our culture."
+      },
+      "transportation": {
+        "title": "Enhance your tours experience.",
+        "description": "Stay connected with live communication and activity progress tracking through our mobile app."
+      }
+    }
+  },
   "nav": {
     "services": "services",
     "tours": "tours",

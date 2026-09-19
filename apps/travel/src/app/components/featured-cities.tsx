@@ -3,6 +3,7 @@
 import { useDictionary } from "@/contexts";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useMemo } from "react";
 
 export interface CityItem {
@@ -55,6 +56,7 @@ export default function FeaturedCitiesBento({
 }: FeaturedCitiesBentoProps) {
   const contextDict = useDictionary();
   const dict = dictProp ?? contextDict;
+  const router = useRouter();
 
   // Memoize city configurations to avoid unnecessary recalculations
   const defaultCities = useMemo<CityItem[]>(
@@ -290,7 +292,8 @@ export default function FeaturedCitiesBento({
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    onClick={() => onCityClick?.(city.id)}
+                    // onClick={() => onCityClick?.(city.id)}
+                    onClick={() => router.push("/pages/contact")}
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/20 px-5 py-2.5 text-xs font-semibold text-white shadow-sm backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-gray-900 md:text-sm"
                   >
                     {dict?.common?.explore ?? "Explore Destination"}

@@ -7,8 +7,24 @@
     "explore": "Odkryj miejsce",
     "learnMore": "Dowiedz się więcej"
   },
-  "solution": {
-    "title": "Nasze rozwiązania"
+  "solutions": {
+    "title": "Nasze rozwiązania",
+    "badge": "Nasza Oferta",
+    "subtitle": "Odkryj, jak podnosimy jakość Twojej podróży dzięki profesjonalnemu przewodnictwu, autentycznej kulturze i nowoczesnym technologiom.",
+    "items": {
+      "customTours": {
+        "title": "Polskojęzyczni Przewodnicy",
+        "description": "Prowadzone przez El Ouafiego, doświadczonego specjalistę w branży, gwarantującego pełne wiedzy i pasji doświadczenia."
+      },
+      "corporateEvents": {
+        "title": "Wyjątkowe i Autentyczne Wycieczki",
+        "description": "Zanurz się w prawdziwej marokańskiej kulturze i kuchni dzięki naszym starannie przygotowanym programom wycieczek."
+      },
+      "transportation": {
+        "title": "Wzbogać Swoje Wrażenia z Podróży",
+        "description": "Pozostań w kontakcie dzięki komunikacji na żywo i śledzeniu postępów aktywności za pośrednictwem naszej aplikacji mobilnej."
+      }
+    }
   },
   "footer": {
     "aboutText": "Tworzenie autentycznych marokańskich podróży. Od miast cesarskich i spokojnych medyn po zapierające dech w piersiach wyprawy na piaski Sahary.",
