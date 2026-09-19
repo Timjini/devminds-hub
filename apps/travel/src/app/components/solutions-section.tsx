@@ -2,6 +2,7 @@
 
 import { useDictionary } from "@/contexts";
 import { motion, Variants } from "framer-motion";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface SolutionItem {
@@ -63,8 +64,15 @@ export default function SolutionsSection({
   const dict = useDictionary();
   const router = useRouter();
 
+  const redirectToContact = () => {
+    router.push("/pages/contact");
+  };
+
   return (
-    <section className="relative min-h-screen bg-linear-to-b from-amber-50 via-orange-100/50 to-amber-100/80 py-24 flex items-center justify-center overflow-hidden">
+    <section
+      id="services"
+      className="relative min-h-screen bg-linear-to-b from-amber-50 via-orange-100/50 to-amber-100/80 py-24 flex items-center justify-center overflow-hidden"
+    >
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-amber-300/20 blur-3xl pointer-events-none" />
 
       <motion.div
@@ -102,7 +110,9 @@ export default function SolutionsSection({
 
               {/* Image Container */}
               <div className="relative w-full h-60 overflow-hidden bg-amber-200/30">
-                <img
+                <Image
+                  height={500}
+                  width={500}
                   src={solution.image}
                   alt={solution.title}
                   className="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-110"
@@ -128,7 +138,7 @@ export default function SolutionsSection({
                   <button
                     type="button"
                     // onClick={() => onRedirect?.(solution.url)}
-                    onClick={() => router.push("/pages/contact")}
+                    onClick={redirectToContact}
                     className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-amber-600 to-amber-700 px-8 py-3 text-sm font-semibold text-white shadow-md hover:from-amber-700 hover:to-amber-800 hover:shadow-xl active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                   >
                     {dict?.common?.learnMore}

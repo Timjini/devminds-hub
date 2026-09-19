@@ -4,6 +4,8 @@ import { HOME } from "@/constant/appGlobal";
 import { useDictionary } from "@/contexts";
 import { motion, Variants } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -32,16 +34,17 @@ const itemVariants: Variants = {
 
 const About = () => {
   const dict = useDictionary();
+  const router = useRouter();
 
   const toggleModal = () => {
-    console.log("clicked");
+    router.push("/pages/contact");
   };
   const phoneList: string[] = ["+48 725 648 880", "+212 669 035 305"];
 
   return (
     <section
       id="about"
-      className="relative min-h-screen py-24 flex items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50/50 via-orange-100/30 to-amber-100/60"
+      className="relative min-h-screen py-24 flex items-center justify-center overflow-hidden bg-linear-to-b from-amber-50/50 via-orange-100/30 to-amber-100/60"
     >
       {/* 1. Ambient Background Glow Blobs */}
       <motion.div
@@ -180,13 +183,13 @@ const About = () => {
                     </h4>
                     <div className="space-y-1">
                       {phoneList.map((phone, index) => (
-                        <a
+                        <Link
                           key={index}
                           href={`tel:${phone.replace(/[^0-9+]/g, "")}`}
                           className="block text-gray-700 font-medium hover:text-amber-700 transition-colors text-sm md:text-base"
                         >
                           {phone}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>

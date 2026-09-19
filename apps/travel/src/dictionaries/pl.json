@@ -1,47 +1,47 @@
 {
   "welcome": {
-    "title": "Odkryj autentyczne wycieczki po Maroku",
-    "description": "Maroko Ekspert oferuje profesjonalne wycieczki, lokalne wyprawy i autentyczne atrakcje. Teraz po polsku!"
+    "title": "Odkryj Autentyczne Wycieczki po Maroku",
+    "description": "Maroko Ekspert oferuje profesjonalne wycieczki, kultowe atrakcje i lokalne doświadczenia. Teraz po polsku!"
   },
   "common": {
-    "explore": "Odkryj miejsce",
+    "explore": "Odkryj Miejsce",
     "learnMore": "Dowiedz się więcej"
   },
   "solutions": {
-    "title": "Nasze rozwiązania",
-    "badge": "Nasza Oferta",
-    "subtitle": "Odkryj, jak podnosimy jakość Twojej podróży dzięki profesjonalnemu przewodnictwu, autentycznej kulturze i nowoczesnym technologiom.",
+    "title": "Nasza Oferta",
+    "badge": "Czym się zajmujemy",
+    "subtitle": "Zobacz, jak podnosimy jakość Twojej podróży dzięki licencjonowanym przewodnikom, autentycznej kulturze i nowoczesnej technologii.",
     "items": {
       "customTours": {
         "title": "Polskojęzyczni Przewodnicy",
-        "description": "Prowadzone przez El Ouafiego, doświadczonego specjalistę w branży, gwarantującego pełne wiedzy i pasji doświadczenia."
+        "description": "Prowadzone przez El Ouafiego, wykwalifikowanego eksperta, gwarantującego bogatą i angażującą wiedzę."
       },
       "corporateEvents": {
         "title": "Wyjątkowe i Autentyczne Wycieczki",
-        "description": "Zanurz się w prawdziwej marokańskiej kulturze i kuchni dzięki naszym starannie przygotowanym programom wycieczek."
+        "description": "Zanurz się w prawdziwej marokańskiej kulturze i kuchni dzięki naszym starannie przygotowanym programom."
       },
       "transportation": {
-        "title": "Wzbogać Swoje Wrażenia z Podróży",
-        "description": "Pozostań w kontakcie dzięki komunikacji na żywo i śledzeniu postępów aktywności za pośrednictwem naszej aplikacji mobilnej."
+        "title": "Wygoda i Wsparcie w Podróży",
+        "description": "Bądź w stałym kontakcie i śledź przebieg wycieczki w czasie rzeczywistym dzięki naszej aplikacji mobilnej."
       }
     }
-  },
-  "footer": {
-    "aboutText": "Tworzenie autentycznych marokańskich podróży. Od miast cesarskich i spokojnych medyn po zapierające dech w piersiach wyprawy na piaski Sahary.",
-    "quickLinks": "Szybkie linki",
-    "contactTitle": "Kontakt",
-    "privacy": "Polityka prywatności",
-    "terms": "Regulamin świadczenia usług"
   },
   "nav": {
     "services": "usługi",
     "tours": "wycieczki",
     "about": "o nas"
   },
+  "footer": {
+    "aboutText": "Tworzymy autentyczne marokańskie podróże. Od cesarskich miast i spokojnych medyn po niezapomniane wyprawy na wydmy Sahary.",
+    "quickLinks": "Szybkie Linki",
+    "contactTitle": "Skontaktuj się z nami",
+    "privacy": "Polityka Prywatności",
+    "terms": "Regulamin Świadczenia Usług"
+  },
   "about": {
     "badge": "O Nas",
     "title": "Kim Jesteśmy",
-    "description": "Założycielem firmy Maroko Ekspert jest El Ouafi – doświadczony specjalista z ponad 15-letnim stażem w branży turystycznej między Marokiem a Polską. Doskonale rozumiejąc obie kultury, El Ouafi specjalizuje się w tworzeniu autentycznych i niezapomnianych przeżyć podróżniczych. Jego wiedza i doświadczenie gwarantują, że każda wycieczka jest starannie dopracowana, by zaprezentować to, co najlepsze w marokańskim dziedzictwie, kuchni i gościnności.",
+    "description": "Maroko Ekspert jest prowadzony przez El Ouafiego, doświadczonego specjalistę z ponad 15-letnim stażem w branży turystycznej między Marokiem a Polską. Dzięki głębokiemu zrozumieniu obu kultur, El Ouafi specjalizuje się w tworzeniu autentycznych i niezapomnianych podróży. Jego wiedza i doświadczenie gwarantują, że każda wycieczka jest starannie zaplanowana, aby pokazać to, co najlepsze w marokańskim dziedzictwie, kuchni i gościnności.",
     "information": "Informacje",
     "address": {
       "label": "Adres",
@@ -52,70 +52,69 @@
       "value": "biuro@maroko-ekspert.pl"
     },
     "phone": {
-      "label": "Telefon",
-      "values": ["+48 725 648 880", "+212 669 035 305"]
+      "label": "Telefon"
     },
-    "contact_button": "Skontaktuj się z nami"
+    "contact_button": "Napisz do nas"
   },
   "cities": {
-    "badge": "Najpopularniejsze Kierunki",
+    "badge": "Najpopularniejsze Miejsca",
     "title": "Odkryj Kultowe Miejsca w Maroku",
-    "subtitle": "Od starożytnych cesarskich medyn po spokojne nadmorskie miasteczka i złociste wydmy Sahary.",
+    "subtitle": "Od zabytkowych cesarskich medyn po urokliwe nadmorskie miasteczka i złote wydmy Sahary.",
     "marrakech": {
       "title": "Marrakesz",
       "subtitle": "Perła Południa",
       "tagline": "Tętniące Życiem Medyny i Historyczne Pałace",
-      "desc": "Odkryj magię zmysłów na placu Jemaa el-Fnaa, luksusowe riady, barwne suki i bujne tropikalne ogrody ukryte za czerwonymi murami z gliny."
+      "desc": "Odkryj magię placu Jemaa el-Fnaa, luksusowe riady, barwne suki i egzotyczne ogrody ukryte za czerwoną murem."
     },
     "chefchaouen": {
       "title": "Szefszawan",
       "subtitle": "Błękitne Miasto",
       "tagline": "Oaza w Górach Rif",
-      "desc": "Spaceruj po bajkowych, błękitnych uliczkach malowniczo ukrytych w majestatycznym paśmie górskim Rif."
+      "desc": "Spaceruj po malowniczych, błękitnych uliczkach ukrytych w malowniczych pasmach górskich Rifu."
     },
     "fes": {
       "title": "Fes",
-      "subtitle": "Stolica Duchowa",
-      "tagline": "Żywe Dziedzictwo Średniowiecza",
-      "desc": "Przenieś się w czasie, wędrując po Fes el-Bali – największej na świecie strefie wolnej od ruchu kołowego i kulturowym sercu Maroka."
+      "subtitle": "Duchowa Stolica",
+      "tagline": "Żywe Średniowieczne Dziedzictwo",
+      "desc": "Przenieś się w czasie w Fes el-Bali, największej na świecie historycznej medynie wolnej od ruchu samochodowego."
     },
     "agadir": {
       "title": "Agadir",
       "subtitle": "Słońce i Ocean",
       "tagline": "Złociste Plaże i Nowoczesne Kurorty",
-      "desc": "Ciesz się całorocznym słońcem wzdłuż piaszczystej zatoki, tętniących życiem promenad i światowej klasy spotów surfingowych na wybrzeżu Atlantyku."
+      "desc": "Ciesz się całorocznym słońcem wzdłuż piaszczystej zatoki, tętniącą życiem promenadą i świetnymi warunkami do surfingu."
     },
     "rabat": {
       "title": "Rabat",
-      "subtitle": "Stolica Królestwa",
+      "subtitle": "Stolica Maroka",
       "tagline": "Nadmorska Elegancja i Królewskie Pałace",
-      "desc": "Odkryj wyrafinowane królewskie dziedzictwo, malowniczą Kazbę Udayas oraz nowoczesną, awangardową architekturę."
+      "desc": "Poznaj bogate królewskie dziedzictwo, malowniczą Kazbę Udayas oraz nowoczesną architekturę."
     },
     "ouarzazate": {
-      "title": "Warzazat i Ait Ben Haddou",
+      "title": "Uarzazat i Ajt Ben Haddu",
       "subtitle": "Brama do Sahary",
       "tagline": "Gliniane Kazby i Studia Filmowe",
-      "desc": "Odkryj kultowe gliniane fortece z listy UNESCO, malownicze pustynne doliny oraz legendarne plany filmowe."
+      "desc": "Odkryj słynne gliniane fortece wpisane na listę UNESCO, pustynne doliny i plan filmowy znanych produkcji."
     },
     "tangier": {
       "title": "Tanger",
-      "subtitle": "Brama do Afryki",
-      "tagline": "Gdzie Morze Śródziemne Spotyka się z Atlantykiem",
-      "desc": "Poczuj legendarny bohemiczny klimat, odwiedź kawiarnie na klifach i podziwiaj widoki na medynę oraz bezkresne morskie krajobrazy."
+      "subtitle": "Wrota do Afryki",
+      "tagline": "Gdzie Śródziemnomorze Spotyka Atlantyk",
+      "desc": "Poczuj artystyczny klimat miasta, odwiedź kawiarnie na klifach i podziwiaj widoki na Cieśninę Gibraltarską."
     }
   },
   "contact": {
+    "formTitle": "Napisz do nas",
     "badge": "Kontakt",
     "title": "Zaplanujmy Twoją Marokańską Przygodę",
-    "subtitle": "Masz pytania lub chcesz stworzyć spersonalizowany plan podróży? Skontaktuj się z naszym zespołem ekspertów już dziś.",
-    "infoTitle": "Informacje Kontaktowe",
+    "subtitle": "Masz pytania lub chcesz przygotować spersonalizowany plan podróży? Skontaktuj się z naszym zespołem już dziś.",
+    "infoTitle": "Dane Kontaktowe",
     "hoursLabel": "Godziny Otwarcia",
     "hoursValue": "Pon - Sob: 9:00 - 18:00",
     "promise1": "Szybka odpowiedź w ciągu 24 godzin",
-    "promise2": "Szyte na miarę plany podróży",
-    "formTitle": "Wyślij Wiadomość",
+    "promise2": "Programy wycieczek szyte na miarę",
     "form": {
-      "nameLabel": "Twoje Imię i Nazwisko",
+      "nameLabel": "Imię i Nazwisko",
       "namePlaceholder": "Jan Kowalski",
       "emailLabel": "Adres E-mail",
       "emailPlaceholder": "jan@example.com",
@@ -124,17 +123,97 @@
       "subjectLabel": "Temat",
       "subjectPlaceholder": "Zapytanie o wycieczkę na pustynię",
       "messageLabel": "Twoja Wiadomość",
-      "messagePlaceholder": "Napisz nam o swoich planach podróżniczych lub pytaniach...",
-      "submitBtn": "Wyślij Wiadomość",
+      "messagePlaceholder": "Opisz swoje plany podróżnicze lub zadaj pytanie...",
+      "submit": {
+        "send": "Wyślij Wiadomość",
+        "sending": "Wysyłanie..."
+      },
       "toasts": {
         "success": "Twoja wiadomość została wysłana pomyślnie! Skontaktujemy się z Tobą wkrótce.",
         "captchaFailed": "Weryfikacja reCAPTCHA nie powiodła się. Spróbuj ponownie.",
         "genericError": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.",
         "validationError": "Proszę sprawdzić zaznaczone pola i spróbować ponownie."
+      }
+    }
+  },
+  "privacy": {
+    "badge": "Prawo i Bezpieczeństwo",
+    "title": "Polityka Prywatności",
+    "lastUpdated": "Ostatnia aktualizacja: wrzesień 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Wprowadzenie",
+        "content": "W Maroko Ekspert szanujemy Twoją prywatność i dbamy o ochronę Twoich danych osobowych. Niniejsza polityka prywatności informuje, w jaki sposób przetwarzamy dane osobowe podczas korzystania z naszej witryny oraz naszej oferty wycieczek."
       },
-      "submit": {
-        "send": "Wyślij Wiadomość",
-        "sending": "Wysyłanie..."
+      "dataCollection": {
+        "title": "2. Jakie dane zbieramy",
+        "content": "Możemy gromadzić, przechowywać i przekazywać następujące kategorie danych osobowych:",
+        "items": [
+          "Dane tożsamości (imię i nazwisko)",
+          "Dane kontaktowe (adres e-mail, numer telefonu)",
+          "Dane dotyczące rezerwacji (preferencje podróżnicze, szczegóły programu)",
+          "Dane techniczne (adres IP, typ przeglądarki, pliki cookie)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. Jak wykorzystujemy dane",
+        "content": "Używamy Twoich danych osobowych wyłącznie w granicach prawa. Najczęściej przetwarzamy dane w celu organizacji wycieczek, odpowiadania na zapytania, potwierdzania rezerwacji oraz ulepszania naszych usług."
+      },
+      "thirdParties": {
+        "title": "4. Udostępnianie danych",
+        "content": "Nie sprzedajemy Twoich danych osobowych. Możemy przekazywać niezbędne dane zaufanym partnerom w Maroku (np. hotele, lokalny transport) wyłącznie w celu realizacji Twojej rezerwacji."
+      },
+      "cookies": {
+        "title": "5. Bezpieczeństwo i Weryfikacja",
+        "content": "Stosujemy odpowiednie środki bezpieczeństwa, aby chronić Twoje dane. Formularze na stronie są chronione przez Cloudflare Turnstile w celu zapobiegania spamowi bez śledzenia Twoich nawyków przeglądania."
+      },
+      "rights": {
+        "title": "6. Twoje Prawa",
+        "content": "Zgodnie z przepisami o ochronie danych masz prawo do wglądu, poprawiania lub żądania usunięcia swoich danych osobowych. Możesz również w dowolnym momencie sprzeciwić się przetwarzaniu danych."
+      },
+      "contact": {
+        "title": "7. Kontakt",
+        "content": "Jeśli masz pytania dotyczące niniejszej Polityki Prywatności lub chcesz skorzystać ze swoich praw, skontaktuj się z nami pod adresem biuro@maroko-ekspert.pl."
+      }
+    }
+  },
+  "terms": {
+    "badge": "Umowa Prawna",
+    "title": "Warunki Świadczenia Usług",
+    "lastUpdated": "Ostatnia aktualizacja: wrzesień 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Akceptacja Warunków",
+        "content": "Korzystając z usług świadczonych przez Maroko Ekspert, zgadzasz się na przestrzeganie niniejszych Warunków Świadczenia Usług. Jeśli nie zgadzasz się z którykolwiek z postanowień, prosimy o zaprzestanie korzystania z naszej witryny i usług."
+      },
+      "services": {
+        "title": "2. Rezerwacje i Usługi Turystyczne",
+        "content": "Maroko Ekspert specjalizuje się w organizacji wycieczek z przewodnikiem oraz indywidualnych programów turystycznych w Maroku. Rezerwacja uznawana jest za potwierdzoną po otrzymaniu pisemnego potwierdzenia oraz wymaganej zaliczki."
+      },
+      "payments": {
+        "title": "3. Płatności i Anulacje",
+        "content": "Harmonogram płatności oraz zasady rezygnacji są określane w indywidualnej ofercie. W przypadku anulowania rezerwacji w uzgodnionym terminie, przysługuje zwrot środków pomniejszony o niezwrotne koszty operacyjne (np. zaliczki hotelowe lub zezwolenia)."
+      },
+      "responsibilities": {
+        "title": "4. Obowiązki Uczestnika",
+        "content": "Uczestnik wycieczki jest odpowiedzialny za posiadanie ważnego paszportu, wizy oraz odpowiedniego ubezpieczenia turystycznego. Maroko Ekspert nie ponosi odpowiedzialności za opóźnienia wynikające z braku wymaganych dokumentów.",
+        "items": [
+          "Ważne dokumenty podróżne (paszport, wizy)",
+          "Indywidualne ubezpieczenie turystyczne i zdrowotne",
+          "Przestrzeganie lokalnego prawa i obyczajów w Maroku"
+        ]
+      },
+      "alterations": {
+        "title": "5. Zmiany Programu i Siła Wyższa",
+        "content": "Zastrzegamy sobie prawo do modyfikacji programu wycieczki w przypadku nieprzewidzianych okoliczności, trudnych warunków pogodowych lub kwestii bezpieczeństwa. Nie ponosimy odpowiedzialności za opóźnienia spowodowane siłą wyższą."
+      },
+      "intellectualProperty": {
+        "title": "6. Własność Intelektualna",
+        "content": "Wszelkie treści zamieszczone na tej stronie, w tym teksty, logo, zdjęcia oraz programy wycieczek, stanowią własność intelektualną Maroko Ekspert i są chronione prawem autorskim."
+      },
+      "contact": {
+        "title": "7. Kontakt i Pytania",
+        "content": "Jeśli masz jakiekolwiek pytania dotyczące Warunków Świadczenia Usług, skontaktuj się z nami bezpośrednio pod adresem biuro@maroko-ekspert.pl."
       }
     }
   }

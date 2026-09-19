@@ -104,6 +104,7 @@
     }
   },
   "contact": {
+    "formTitle": "Send Us a Message",
     "badge": "Get In Touch",
     "title": "Let's Plan Your Moroccan Adventure",
     "subtitle": "Have questions or ready to craft your custom itinerary? Reach out to our team of experts today.",
@@ -112,7 +113,6 @@
     "hoursValue": "Mon - Sat: 9:00 AM - 6:00 PM",
     "promise1": "Fast response within 24 hours",
     "promise2": "Tailor-made travel itineraries",
-    "formTitle": "Send Us a Message",
     "form": {
       "nameLabel": "Your Name",
       "namePlaceholder": "John Doe",
@@ -124,16 +124,96 @@
       "subjectPlaceholder": "Desert Tour Inquiry",
       "messageLabel": "Your Message",
       "messagePlaceholder": "Tell us about your travel plans or questions...",
-      "submitBtn": "Send Message",
+      "submit": {
+        "send": "Send Message",
+        "sending": "Sending..."
+      },
       "toasts": {
         "success": "Your message has been sent successfully! We will get back to you soon.",
         "captchaFailed": "reCAPTCHA verification failed. Please try again.",
         "genericError": "Something went wrong while sending your message. Please try again later.",
         "validationError": "Please check the highlighted fields and try again."
+      }
+    }
+  },
+  "privacy": {
+    "badge": "Legal & Security",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: September 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Introduction",
+        "content": "At Maroko Ekspert, we respect your privacy and are committed to protecting your personal data. This privacy policy informs you about how we handle your personal information when you visit our website, use our services, or inquire about our tours."
       },
-      "submit": {
-        "send": "Send Message",
-        "sending": "Sending..."
+      "dataCollection": {
+        "title": "2. Data We Collect",
+        "content": "We may collect, use, store, and transfer different kinds of personal data about you, including:",
+        "items": [
+          "Identity Data (full name)",
+          "Contact Data (email address, phone number)",
+          "Inquiry & Booking Data (travel preferences, itinerary details)",
+          "Technical Data (IP address, browser type, cookies)"
+        ]
+      },
+      "dataUsage": {
+        "title": "3. How We Use Your Data",
+        "content": "We use your personal data only when the law allows us to. Most commonly, we process your information to organize travel itineraries, respond to inquiries, send booking confirmations, and improve our services."
+      },
+      "thirdParties": {
+        "title": "4. Third-Party Sharing",
+        "content": "We do not sell your personal data. We may share necessary details with trusted local partners in Morocco (such as hotels or local transport providers) solely to fulfill your requested tour bookings."
+      },
+      "cookies": {
+        "title": "5. Security & Verification",
+        "content": "We implement robust security measures to protect your personal information. Forms on our website are protected by Cloudflare Turnstile to prevent spam and automated abuse without tracking your personal browsing habits."
+      },
+      "rights": {
+        "title": "6. Your Legal Rights",
+        "content": "Under data protection laws, you have the right to request access, correction, or erasure of your personal data. You may also request to restrict or object to the processing of your data at any time."
+      },
+      "contact": {
+        "title": "7. Contact Us",
+        "content": "If you have any questions regarding this Privacy Policy or wish to exercise your legal rights, please reach out to us at biuro@maroko-ekspert.pl."
+      }
+    }
+  },
+  "terms": {
+    "badge": "Legal Agreement",
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: September 2026",
+    "sections": {
+      "intro": {
+        "title": "1. Agreement to Terms",
+        "content": "By accessing or using the services provided by Maroko Ekspert, you agree to be bound by these Terms of Service. If you do not agree to all of these terms, please do not use our website or services."
+      },
+      "services": {
+        "title": "2. Tour Services & Bookings",
+        "content": "Maroko Ekspert specializes in organizing guided tours, excursions, and custom travel itineraries across Morocco. A booking is considered confirmed once written confirmation and any required deposit have been received."
+      },
+      "payments": {
+        "title": "3. Payments & Cancellations",
+        "content": "Payment schedules and cancellation policies will be outlined in your personal itinerary quote. Cancellations made within the agreed notification window are eligible for refunds minus non-refundable operational costs (e.g., hotel reservations or advance permits)."
+      },
+      "responsibilities": {
+        "title": "4. Traveler Responsibilities",
+        "content": "Travelers are responsible for ensuring they hold valid passports, visas, and appropriate travel insurance prior to departure. Maroko Ekspert is not liable for delays or expenses caused by missing travel documentation.",
+        "items": [
+          "Valid travel documents (passports, visas)",
+          "Personal travel and health insurance",
+          "Compliance with local Moroccan laws and customs"
+        ]
+      },
+      "alterations": {
+        "title": "5. Itinerary Alterations & Force Majeure",
+        "content": "While we strive to adhere strictly to planned schedules, Maroko Ekspert reserves the right to alter itineraries in response to unforeseen events, weather conditions, or safety concerns. We are not liable for delays caused by circumstances beyond our control (force majeure)."
+      },
+      "intellectualProperty": {
+        "title": "6. Intellectual Property",
+        "content": "All content on this website, including text, logos, imagery, and tour itineraries, is the intellectual property of Maroko Ekspert and protected under applicable copyright laws."
+      },
+      "contact": {
+        "title": "7. Questions & Support",
+        "content": "If you have any questions regarding these Terms of Service, please contact us directly at biuro@maroko-ekspert.pl."
       }
     }
   }

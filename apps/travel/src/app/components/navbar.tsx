@@ -1,6 +1,7 @@
 "use client";
 import { LOGO } from "@/constant/appGlobal";
 import { useDictionary, useLanguage } from "@/contexts";
+import Link from "next/link";
 import { useState } from "react";
 import LanguageSelect from "./language-select";
 
@@ -26,13 +27,13 @@ const Navbar = () => {
   return (
     <nav className="absolute z-40 w-full p-6 text-gray-900">
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4">
-        <a href="/" className="z-10">
+        <Link href="/" className="z-10">
           <img
             src={LOGO}
             className="h-12 w-auto rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 md:h-16"
             alt="Maroko Ekspert Logo"
           />
-        </a>
+        </Link>
 
         {/* 2. Center: Desktop Nav Links (Truly Centered) */}
         <div className="absolute inset-x-0 hidden items-center justify-center gap-8 md:flex">

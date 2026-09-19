@@ -4,7 +4,6 @@ import { useDictionary } from "@/contexts";
 import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useMemo } from "react";
 
 export interface CityItem {
   id: string;
@@ -17,11 +16,6 @@ export interface CityItem {
   gridSpan?: string;
   badgeBg?: string;
   accentGradient?: string;
-}
-
-export interface FeaturedCitiesBentoProps {
-  dict?: Record<string, any>;
-  onCityClick?: (cityId: string) => void;
 }
 
 // Framer Motion Variants with explicit typing to prevent TS errors
@@ -50,129 +44,122 @@ const cardVariants: Variants = {
   },
 };
 
-export default function FeaturedCitiesBento({
-  dict: dictProp,
-  onCityClick,
-}: FeaturedCitiesBentoProps) {
-  const contextDict = useDictionary();
-  const dict = dictProp ?? contextDict;
+export default function FeaturedCitiesBento() {
+  const dict = useDictionary();
   const router = useRouter();
 
-  // Memoize city configurations to avoid unnecessary recalculations
-  const defaultCities = useMemo<CityItem[]>(
-    () => [
-      {
-        id: "marrakech",
-        title: dict?.cities?.marrakech?.title ?? "Marrakech",
-        subtitle: dict?.cities?.marrakech?.subtitle ?? "The Imperial Pearl",
-        tagline:
-          dict?.cities?.marrakech?.tagline ??
-          "Lively Medinas & Historic Palaces",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.marrakech?.desc ??
-          "Uncover sensory magic in Jemaa el-Fnaa, luxury riads, vibrant souks, and lush tropical gardens tucked within red earthen walls.",
-        gridSpan: "md:col-span-2 md:row-span-2 min-h-[420px] md:min-h-[520px]",
-        badgeBg: "bg-amber-100/90 text-amber-900 border-amber-200/80",
-        accentGradient: "from-amber-500 via-orange-500 to-amber-600",
-      },
-      {
-        id: "chefchaouen",
-        title: dict?.cities?.chefchaouen?.title ?? "Chefchaouen",
-        subtitle: dict?.cities?.chefchaouen?.subtitle ?? "The Blue Pearl",
-        tagline: dict?.cities?.chefchaouen?.tagline ?? "Rif Mountain Haven",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.chefchaouen?.desc ??
-          "Wander through dreamy indigo-washed alleyways tucked quietly into the dramatic Rif mountains.",
-        gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
-        badgeBg: "bg-sky-100/90 text-sky-950 border-sky-200/80",
-        accentGradient: "from-sky-500 via-blue-600 to-indigo-600",
-      },
-      {
-        id: "fes",
-        title: dict?.cities?.fes?.title ?? "Fes",
-        subtitle: dict?.cities?.fes?.subtitle ?? "Spiritual Capital",
-        tagline: dict?.cities?.fes?.tagline ?? "Living Medieval Heritage",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.fes?.desc ??
-          "Journey back in time through Fes el-Bali, the world's largest car-free urban sanctuary and cultural heart of Morocco.",
-        gridSpan: "md:col-span-1 md:row-span-2 min-h-[380px] md:min-h-full",
-        badgeBg: "bg-emerald-100/90 text-emerald-950 border-emerald-200/80",
-        accentGradient: "from-emerald-600 via-teal-600 to-emerald-700",
-      },
-
-      {
-        id: "agadir",
-        title: dict?.cities?.agadir?.title ?? "Agadir",
-        subtitle: dict?.cities?.agadir?.subtitle ?? "Sunshine & Coast",
-        tagline:
-          dict?.cities?.agadir?.tagline ?? "Golden Beaches & Modern Resorts",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.agadir?.desc ??
-          "Bask in year-round sunshine along crescent bay beaches, vibrant promenades, and world-class surfing along the Atlantic coast.",
-        gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
-        badgeBg: "bg-yellow-100/90 text-yellow-950 border-yellow-200/80",
-        accentGradient: "from-amber-400 via-yellow-500 to-orange-500",
-      },
-      {
-        id: "rabat",
-        title: dict?.cities?.rabat?.title ?? "Rabat",
-        subtitle: dict?.cities?.rabat?.subtitle ?? "The Capital City",
-        tagline:
-          dict?.cities?.rabat?.tagline ?? "Coastal Elegance & Royal Palaces",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.rabat?.desc ??
-          "Discover refined royal heritage, the picturesque Kasbah of the Udayas, and modern avant-garde architecture.",
-        gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
-        badgeBg: "bg-indigo-100/90 text-indigo-950 border-indigo-200/80",
-        accentGradient: "from-blue-600 via-indigo-600 to-purple-600",
-      },
-      {
-        id: "ouarzazate",
-        title: dict?.cities?.ouarzazate?.title ?? "Ouarzazate & Ait Ben Haddou",
-        subtitle: dict?.cities?.ouarzazate?.subtitle ?? "Doorway to the Sahara",
-        tagline:
-          dict?.cities?.ouarzazate?.tagline ?? "Clay Kasbahs & Film Studios",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.ouarzazate?.desc ??
-          "Explore iconic UNESCO earthen fortresses, dramatic desert valleys, and legendary cinematic film locations.",
-        gridSpan: "md:col-span-2 md:row-span-1 min-h-[320px]",
-        badgeBg: "bg-stone-100/90 text-stone-900 border-stone-200/80",
-        accentGradient: "from-orange-600 via-stone-600 to-amber-700",
-      },
-      {
-        id: "tangier",
-        title: dict?.cities?.tangier?.title ?? "Tangier",
-        subtitle: dict?.cities?.tangier?.subtitle ?? "Gateway to Africa",
-        tagline:
-          dict?.cities?.tangier?.tagline ??
-          "Where the Mediterranean Meets the Atlantic",
-        image:
-          "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
-        description:
-          dict?.cities?.tangier?.desc ??
-          "Experience legendary bohemian allure, cliffside cafes, historical medina vistas, and sweeping sea views.",
-        gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
-        badgeBg: "bg-teal-100/90 text-teal-950 border-teal-200/80",
-        accentGradient: "from-teal-500 via-emerald-600 to-cyan-600",
-      },
-    ],
-    [dict],
-  );
+  const defaultCities: CityItem[] = [
+    {
+      id: "marrakech",
+      title: dict?.cities?.marrakech?.title ?? "Marrakech",
+      subtitle: dict?.cities?.marrakech?.subtitle ?? "The Imperial Pearl",
+      tagline:
+        dict?.cities?.marrakech?.tagline ?? "Lively Medinas & Historic Palaces",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/marrakech/marrakech-by-night-tour-1.jpeg",
+      description:
+        dict?.cities?.marrakech?.desc ??
+        "Uncover sensory magic in Jemaa el-Fnaa, luxury riads, vibrant souks, and lush tropical gardens tucked within red earthen walls.",
+      gridSpan: "md:col-span-2 md:row-span-2 min-h-[420px] md:min-h-[520px]",
+      badgeBg: "bg-amber-100/90 text-amber-900 border-amber-200/80",
+      accentGradient: "from-amber-500 via-orange-500 to-amber-600",
+    },
+    {
+      id: "chefchaouen",
+      title: dict?.cities?.chefchaouen?.title ?? "Chefchaouen",
+      subtitle: dict?.cities?.chefchaouen?.subtitle ?? "The Blue Pearl",
+      tagline: dict?.cities?.chefchaouen?.tagline ?? "Rif Mountain Haven",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
+      description:
+        dict?.cities?.chefchaouen?.desc ??
+        "Wander through dreamy indigo-washed alleyways tucked quietly into the dramatic Rif mountains.",
+      gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
+      badgeBg: "bg-sky-100/90 text-sky-950 border-sky-200/80",
+      accentGradient: "from-sky-500 via-blue-600 to-indigo-600",
+    },
+    {
+      id: "fes",
+      title: dict?.cities?.fes?.title ?? "Fes",
+      subtitle: dict?.cities?.fes?.subtitle ?? "Spiritual Capital",
+      tagline: dict?.cities?.fes?.tagline ?? "Living Medieval Heritage",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/authentic-food.png",
+      description:
+        dict?.cities?.fes?.desc ??
+        "Journey back in time through Fes el-Bali, the world's largest car-free urban sanctuary and cultural heart of Morocco.",
+      gridSpan: "md:col-span-1 md:row-span-2 min-h-[380px] md:min-h-full",
+      badgeBg: "bg-emerald-100/90 text-emerald-950 border-emerald-200/80",
+      accentGradient: "from-emerald-600 via-teal-600 to-emerald-700",
+    },
+    {
+      id: "agadir",
+      title: dict?.cities?.agadir?.title ?? "Agadir",
+      subtitle: dict?.cities?.agadir?.subtitle ?? "Sunshine & Coast",
+      tagline:
+        dict?.cities?.agadir?.tagline ?? "Golden Beaches & Modern Resorts",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/agadir.jpg",
+      description:
+        dict?.cities?.agadir?.desc ??
+        "Bask in year-round sunshine along crescent bay beaches, vibrant promenades, and world-class surfing along the Atlantic coast.",
+      gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
+      badgeBg: "bg-yellow-100/90 text-yellow-950 border-yellow-200/80",
+      accentGradient: "from-amber-400 via-yellow-500 to-orange-500",
+    },
+    {
+      id: "rabat",
+      title: dict?.cities?.rabat?.title ?? "Rabat",
+      subtitle: dict?.cities?.rabat?.subtitle ?? "The Capital City",
+      tagline:
+        dict?.cities?.rabat?.tagline ?? "Coastal Elegance & Royal Palaces",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/adventures/jet-ski-1.jpg",
+      description:
+        dict?.cities?.rabat?.desc ??
+        "Discover refined royal heritage, the picturesque Kasbah of the Udayas, and modern avant-garde architecture.",
+      gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
+      badgeBg: "bg-indigo-100/90 text-indigo-950 border-indigo-200/80",
+      accentGradient: "from-blue-600 via-indigo-600 to-purple-600",
+    },
+    {
+      id: "ouarzazate",
+      title: dict?.cities?.ouarzazate?.title ?? "Ouarzazate & Ait Ben Haddou",
+      subtitle: dict?.cities?.ouarzazate?.subtitle ?? "Doorway to the Sahara",
+      tagline:
+        dict?.cities?.ouarzazate?.tagline ?? "Clay Kasbahs & Film Studios",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/adventures/4wd-massa-1.jpeg",
+      description:
+        dict?.cities?.ouarzazate?.desc ??
+        "Explore iconic UNESCO earthen fortresses, dramatic desert valleys, and legendary cinematic film locations.",
+      gridSpan: "md:col-span-2 md:row-span-1 min-h-[320px]",
+      badgeBg: "bg-stone-100/90 text-stone-900 border-stone-200/80",
+      accentGradient: "from-orange-600 via-stone-600 to-amber-700",
+    },
+    {
+      id: "tangier",
+      title: dict?.cities?.tangier?.title ?? "Tangier",
+      subtitle: dict?.cities?.tangier?.subtitle ?? "Gateway to Africa",
+      tagline:
+        dict?.cities?.tangier?.tagline ??
+        "Where the Mediterranean Meets the Atlantic",
+      image:
+        "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/guided-tours.jpg",
+      description:
+        dict?.cities?.tangier?.desc ??
+        "Experience legendary bohemian allure, cliffside cafes, historical medina vistas, and sweeping sea views.",
+      gridSpan: "md:col-span-1 md:row-span-1 min-h-[320px]",
+      badgeBg: "bg-teal-100/90 text-teal-950 border-teal-200/80",
+      accentGradient: "from-teal-500 via-emerald-600 to-cyan-600",
+    },
+  ];
 
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50/60 via-orange-100/30 to-amber-100/70 px-6 py-24 md:px-12">
+    <section
+      id="tours"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gradient-to-b from-amber-50/60 via-orange-100/30 to-amber-100/70 px-6 py-24 md:px-12"
+    >
       {/* Background Animated Ambient Glows */}
       <motion.div
         animate={{
@@ -292,7 +279,6 @@ export default function FeaturedCitiesBento({
                   <motion.button
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.97 }}
-                    // onClick={() => onCityClick?.(city.id)}
                     onClick={() => router.push("/pages/contact")}
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-white/40 bg-white/20 px-5 py-2.5 text-xs font-semibold text-white shadow-sm backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-gray-900 md:text-sm"
                   >

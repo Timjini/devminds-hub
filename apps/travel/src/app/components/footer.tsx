@@ -4,6 +4,7 @@ import { LOGO } from "@/constant/appGlobal";
 import { useDictionary } from "@/contexts";
 import { motion } from "framer-motion";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const TripAdvisorIcon = ({ className }: { className?: string }) => (
@@ -48,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({
       <div className="relative z-10 container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-amber-500/20">
           <div className="lg:col-span-5 space-y-6">
-            <a href="/" className="inline-block group">
+            <Link href="/" className="inline-block group">
               <div className="flex items-center gap-3">
                 <img
                   src={LOGO}
@@ -56,7 +57,7 @@ const Footer: React.FC<FooterProps> = ({
                   className="h-14 w-auto rounded-full shadow-lg border border-amber-400/30 transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-            </a>
+            </Link>
 
             <p className="text-amber-200/80 leading-relaxed text-sm md:text-base max-w-md">
               {dict?.footer?.aboutText}
@@ -166,15 +167,18 @@ const Footer: React.FC<FooterProps> = ({
             © {new Date().getFullYear()} Maroko Ekspert. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="/privacy"
+            <Link
+              href="/pages/privacy-policy"
               className="hover:text-amber-300 transition-colors"
             >
               {dict?.footer?.privacy ?? "Privacy Policy"}
-            </a>
-            <a href="/terms" className="hover:text-amber-300 transition-colors">
+            </Link>
+            <Link
+              href="/pages/terms-and-conditions"
+              className="hover:text-amber-300 transition-colors"
+            >
               {dict?.footer?.terms ?? "Terms of Service"}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
