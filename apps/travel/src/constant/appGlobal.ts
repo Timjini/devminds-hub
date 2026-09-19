@@ -7,3 +7,5 @@ if (!process.env.NEXT_PUBLIC_API_BUCKET) {
 export const ROOT: string = `${process.env.NEXT_PUBLIC_API_BUCKET}`;
 export const HOME: string = `${ROOT}/home`;
 export const LOGO = `${HOME}/maroko-ekspert-background.png`;
+
+export const CONTACT = "/api/contact";

@@ -125,7 +125,17 @@
       "subjectPlaceholder": "Zapytanie o wycieczkę na pustynię",
       "messageLabel": "Twoja Wiadomość",
       "messagePlaceholder": "Napisz nam o swoich planach podróżniczych lub pytaniach...",
-      "submitBtn": "Wyślij Wiadomość"
+      "submitBtn": "Wyślij Wiadomość",
+      "toasts": {
+        "success": "Twoja wiadomość została wysłana pomyślnie! Skontaktujemy się z Tobą wkrótce.",
+        "captchaFailed": "Weryfikacja reCAPTCHA nie powiodła się. Spróbuj ponownie.",
+        "genericError": "Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie później.",
+        "validationError": "Proszę sprawdzić zaznaczone pola i spróbować ponownie."
+      },
+      "submit": {
+        "send": "Wyślij Wiadomość",
+        "sending": "Wysyłanie..."
+      }
     }
   }
 }
