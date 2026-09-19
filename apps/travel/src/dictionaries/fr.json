@@ -7,8 +7,24 @@
     "explore": "Explorer la destination",
     "learnMore": "En savoir plus"
   },
-  "solution": {
-    "title": "Nos solutions"
+  "solutions": {
+    "title": "Nos solutions",
+    "badge": "Nos Offres",
+    "subtitle": "Découvrez comment nous sublimons votre voyage grâce à un guidage expert, une culture authentique et une technologie fluide.",
+    "items": {
+      "customTours": {
+        "title": "Guides Touristiques Polonophones",
+        "description": "Accompagnés par El Ouafi, un professionnel du secteur, vous garantissant une expérience enrichissante et passionnante."
+      },
+      "corporateEvents": {
+        "title": "Circuits Uniques et Authentiques",
+        "description": "Plongez au cœur de la véritable culture et gastronomie marocaines grâce à nos circuits soigneusement élaborés."
+      },
+      "transportation": {
+        "title": "Enrichissez Votre Expérience de Visite",
+        "description": "Reste connecté grâce à une communication en direct et au suivi en temps réel de vos activités via notre application mobile."
+      }
+    }
   },
   "footer": {
     "aboutText": "Création de voyages authentiques au Maroc. Des villes impériales et médinas paisibles aux expériences inoubliables dans les dunes du Sahara.",

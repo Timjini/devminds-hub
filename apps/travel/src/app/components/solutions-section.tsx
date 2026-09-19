@@ -2,6 +2,7 @@
 
 import { useDictionary } from "@/contexts";
 import { motion, Variants } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 interface SolutionItem {
   id?: string | number;
@@ -60,6 +61,7 @@ export default function SolutionsSection({
   onRedirect,
 }: SolutionsSectionProps) {
   const dict = useDictionary();
+  const router = useRouter();
 
   return (
     <section className="relative min-h-screen bg-linear-to-b from-amber-50 via-orange-100/50 to-amber-100/80 py-24 flex items-center justify-center overflow-hidden">
@@ -75,7 +77,7 @@ export default function SolutionsSection({
         {/* Section Header */}
         <motion.div variants={headerVariants} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold uppercase tracking-wide text-gray-900 drop-shadow-sm">
-            {dict?.solution?.title}
+            {dict?.solutions?.title}
           </h2>
           <motion.div
             className="w-24 h-1 bg-amber-600 mx-auto mt-4 rounded-full"
@@ -125,7 +127,8 @@ export default function SolutionsSection({
                 <div className="pt-8">
                   <button
                     type="button"
-                    onClick={() => onRedirect?.(solution.url)}
+                    // onClick={() => onRedirect?.(solution.url)}
+                    onClick={() => router.push("/pages/contact")}
                     className="inline-flex items-center justify-center rounded-full bg-linear-to-r from-amber-600 to-amber-700 px-8 py-3 text-sm font-semibold text-white shadow-md hover:from-amber-700 hover:to-amber-800 hover:shadow-xl active:scale-95 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2"
                   >
                     {dict?.common?.learnMore}
