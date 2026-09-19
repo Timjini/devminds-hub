@@ -1,6 +1,112 @@
 {
   "welcome": {
-    "title": "Welcome To KBM Gym Agadir.",
-    "description": "Our Gym registration doors open on the 1st of October."
+    "title": "Discover Authentic Moroccan Tours",
+    "description": "Maroko Ekspert offers professional tours, excursions, and authentic activities.Now in Polish!"
+  },
+  "common": {
+    "explore": "Explore Destination",
+    "learnMore": "Learn More"
+  },
+  "solution": { "title": "Our Solutions" },
+  "nav": {
+    "services": "services",
+    "tours": "tours",
+    "about": "about"
+  },
+  "footer": {
+    "aboutText": "Crafting authentic Moroccan journeys. From imperial cities and serene medinas to breathtaking Sahara dune experiences.",
+    "quickLinks": "Quick Links",
+    "contactTitle": "Contact Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Who We Are",
+    "description": "Maroko Ekspert is led by El Ouafi, a seasoned professional with over 15 years of experience in travel and tourism between Morocco and Poland. With a deep understanding of both cultures, El Ouafi specializes in creating authentic and memorable travel experiences. His expertise ensures that each tour is carefully crafted to showcase the best of Moroccan heritage, cuisine, and hospitality.",
+    "information": "Information",
+    "address": {
+      "label": "Address",
+      "value": "N°15, 4éme Etage, Imm. Inflass, Bd Abderrahim Bouabid,<br />Agadir 80000, Morocco"
+    },
+    "email": {
+      "label": "Email",
+      "value": "biuro@maroko-ekspert.pl"
+    },
+    "phone": {
+      "label": "Phone"
+    },
+    "contact_button": "Get in Touch"
+  },
+  "cities": {
+    "badge": "Top Destinations",
+    "title": "Explore Iconic Moroccan Destinations",
+    "subtitle": "From ancient imperial medinas to serene coastal towns and golden Sahara dunes.",
+    "marrakech": {
+      "title": "Marrakech",
+      "subtitle": "The Imperial Pearl",
+      "tagline": "Lively Medinas & Historic Palaces",
+      "desc": "Uncover sensory magic in Jemaa el-Fnaa, luxury riads, vibrant souks, and lush tropical gardens tucked within red earthen walls."
+    },
+    "chefchaouen": {
+      "title": "Chefchaouen",
+      "subtitle": "The Blue Pearl",
+      "tagline": "Rif Mountain Haven",
+      "desc": "Wander through dreamy indigo-washed alleyways tucked quietly into the dramatic Rif mountains."
+    },
+    "fes": {
+      "title": "Fes",
+      "subtitle": "Spiritual Capital",
+      "tagline": "Living Medieval Heritage",
+      "desc": "Journey back in time through Fes el-Bali, the world's largest car-free urban sanctuary and cultural heart of Morocco."
+    },
+    "agadir": {
+      "title": "Agadir",
+      "subtitle": "Sunshine & Coast",
+      "tagline": "Golden Beaches & Modern Resorts",
+      "desc": "Bask in year-round sunshine along crescent bay beaches, vibrant promenades, and world-class surfing along the Atlantic coast."
+    },
+    "rabat": {
+      "title": "Rabat",
+      "subtitle": "The Capital City",
+      "tagline": "Coastal Elegance & Royal Palaces",
+      "desc": "Discover refined royal heritage, the picturesque Kasbah of the Udayas, and modern avant-garde architecture."
+    },
+    "ouarzazate": {
+      "title": "Ouarzazate & Ait Ben Haddou",
+      "subtitle": "Doorway to the Sahara",
+      "tagline": "Clay Kasbahs & Film Studios",
+      "desc": "Explore iconic UNESCO earthen fortresses, dramatic desert valleys, and legendary cinematic film locations."
+    },
+    "tangier": {
+      "title": "Tangier",
+      "subtitle": "Gateway to Africa",
+      "tagline": "Where the Mediterranean Meets the Atlantic",
+      "desc": "Experience legendary bohemian allure, cliffside cafes, historical medina vistas, and sweeping sea views."
+    }
+  },
+  "contact": {
+    "badge": "Get In Touch",
+    "title": "Let's Plan Your Moroccan Adventure",
+    "subtitle": "Have questions or ready to craft your custom itinerary? Reach out to our team of experts today.",
+    "infoTitle": "Contact Information",
+    "hoursLabel": "Working Hours",
+    "hoursValue": "Mon - Sat: 9:00 AM - 6:00 PM",
+    "promise1": "Fast response within 24 hours",
+    "promise2": "Tailor-made travel itineraries",
+    "formTitle": "Send Us a Message",
+    "form": {
+      "nameLabel": "Your Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "+1 234 567 890",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Desert Tour Inquiry",
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "Tell us about your travel plans or questions...",
+      "submitBtn": "Send Message"
+    }
   }
 }
