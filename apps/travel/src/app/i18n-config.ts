@@ -1,4 +1,4 @@
-import { languages } from "@/lib/languages";
+import { languages } from "./lib/languages";
 
 export const i18n = {
   defaultLocale: "en-GB",

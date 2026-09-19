@@ -1,29 +1,50 @@
 import { Toaster } from "@/components/ui/toast";
+import { DictionaryProvider, LanguageProvider } from "@/contexts";
 import { cn } from "@/lib/utils";
 import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
 import "./globals.css";
+import { getDictionary } from "./lib/dictionary";
 import QueryProvider from "./query-provider";
-import Navbar from "./shared/ui/navigation/navbar";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
-export default async function RootLayout({
-  children,
-}: {
+interface LayoutProps {
   children: React.ReactNode;
-}) {
-  const cookieStore = await cookies();
-  const lang = cookieStore.get("lang");
+  params: Promise<{
+    lang?: string;
+  }>;
+}
 
-  console.log("lang", lang);
+export default async function RootLayout({ children, params }: LayoutProps) {
+  const resolvedParams = await params;
+  const cookieStore = await cookies();
+  const langCookie = cookieStore.get("lang")?.value;
+
+  const language = resolvedParams?.lang || langCookie || "en";
+
+  const dict = await getDictionary(language);
+
+  const dir = language === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang="en" className={cn("font-sans", geist.variable, "dark")}>
+    <html
+      lang={language || "en"}
+      className={cn("font-sans", geist.variable, "dark")}
+      dir={dir}
+      data-theme="dark"
+    >
       <body className="main-theme adaptive">
-        <Navbar />
-        <QueryProvider>{children}</QueryProvider>
-        <Toaster />
+        <LanguageProvider value={language}>
+          <DictionaryProvider dictionary={dict}>
+            <Navbar />
+            <QueryProvider>{children}</QueryProvider>
+            <Toaster />
+            <Footer />
+          </DictionaryProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

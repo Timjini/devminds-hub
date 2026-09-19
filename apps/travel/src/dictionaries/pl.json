@@ -1,6 +1,115 @@
 {
   "welcome": {
-    "title": "polish",
-    "description": "Polish stuff"
+    "title": "Odkryj autentyczne wycieczki po Maroku",
+    "description": "Maroko Ekspert oferuje profesjonalne wycieczki, lokalne wyprawy i autentyczne atrakcje. Teraz po polsku!"
+  },
+  "common": {
+    "explore": "Odkryj miejsce",
+    "learnMore": "Dowiedz się więcej"
+  },
+  "solution": {
+    "title": "Nasze rozwiązania"
+  },
+  "footer": {
+    "aboutText": "Tworzenie autentycznych marokańskich podróży. Od miast cesarskich i spokojnych medyn po zapierające dech w piersiach wyprawy na piaski Sahary.",
+    "quickLinks": "Szybkie linki",
+    "contactTitle": "Kontakt",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin świadczenia usług"
+  },
+  "nav": {
+    "services": "usługi",
+    "tours": "wycieczki",
+    "about": "o nas"
+  },
+  "about": {
+    "badge": "O Nas",
+    "title": "Kim Jesteśmy",
+    "description": "Założycielem firmy Maroko Ekspert jest El Ouafi – doświadczony specjalista z ponad 15-letnim stażem w branży turystycznej między Marokiem a Polską. Doskonale rozumiejąc obie kultury, El Ouafi specjalizuje się w tworzeniu autentycznych i niezapomnianych przeżyć podróżniczych. Jego wiedza i doświadczenie gwarantują, że każda wycieczka jest starannie dopracowana, by zaprezentować to, co najlepsze w marokańskim dziedzictwie, kuchni i gościnności.",
+    "information": "Informacje",
+    "address": {
+      "label": "Adres",
+      "value": "N°15, 4éme Etage, Imm. Inflass, Bd Abderrahim Bouabid,<br />Agadir 80000, Maroko"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "biuro@maroko-ekspert.pl"
+    },
+    "phone": {
+      "label": "Telefon",
+      "values": ["+48 725 648 880", "+212 669 035 305"]
+    },
+    "contact_button": "Skontaktuj się z nami"
+  },
+  "cities": {
+    "badge": "Najpopularniejsze Kierunki",
+    "title": "Odkryj Kultowe Miejsca w Maroku",
+    "subtitle": "Od starożytnych cesarskich medyn po spokojne nadmorskie miasteczka i złociste wydmy Sahary.",
+    "marrakech": {
+      "title": "Marrakesz",
+      "subtitle": "Perła Południa",
+      "tagline": "Tętniące Życiem Medyny i Historyczne Pałace",
+      "desc": "Odkryj magię zmysłów na placu Jemaa el-Fnaa, luksusowe riady, barwne suki i bujne tropikalne ogrody ukryte za czerwonymi murami z gliny."
+    },
+    "chefchaouen": {
+      "title": "Szefszawan",
+      "subtitle": "Błękitne Miasto",
+      "tagline": "Oaza w Górach Rif",
+      "desc": "Spaceruj po bajkowych, błękitnych uliczkach malowniczo ukrytych w majestatycznym paśmie górskim Rif."
+    },
+    "fes": {
+      "title": "Fes",
+      "subtitle": "Stolica Duchowa",
+      "tagline": "Żywe Dziedzictwo Średniowiecza",
+      "desc": "Przenieś się w czasie, wędrując po Fes el-Bali – największej na świecie strefie wolnej od ruchu kołowego i kulturowym sercu Maroka."
+    },
+    "agadir": {
+      "title": "Agadir",
+      "subtitle": "Słońce i Ocean",
+      "tagline": "Złociste Plaże i Nowoczesne Kurorty",
+      "desc": "Ciesz się całorocznym słońcem wzdłuż piaszczystej zatoki, tętniących życiem promenad i światowej klasy spotów surfingowych na wybrzeżu Atlantyku."
+    },
+    "rabat": {
+      "title": "Rabat",
+      "subtitle": "Stolica Królestwa",
+      "tagline": "Nadmorska Elegancja i Królewskie Pałace",
+      "desc": "Odkryj wyrafinowane królewskie dziedzictwo, malowniczą Kazbę Udayas oraz nowoczesną, awangardową architekturę."
+    },
+    "ouarzazate": {
+      "title": "Warzazat i Ait Ben Haddou",
+      "subtitle": "Brama do Sahary",
+      "tagline": "Gliniane Kazby i Studia Filmowe",
+      "desc": "Odkryj kultowe gliniane fortece z listy UNESCO, malownicze pustynne doliny oraz legendarne plany filmowe."
+    },
+    "tangier": {
+      "title": "Tanger",
+      "subtitle": "Brama do Afryki",
+      "tagline": "Gdzie Morze Śródziemne Spotyka się z Atlantykiem",
+      "desc": "Poczuj legendarny bohemiczny klimat, odwiedź kawiarnie na klifach i podziwiaj widoki na medynę oraz bezkresne morskie krajobrazy."
+    }
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "title": "Zaplanujmy Twoją Marokańską Przygodę",
+    "subtitle": "Masz pytania lub chcesz stworzyć spersonalizowany plan podróży? Skontaktuj się z naszym zespołem ekspertów już dziś.",
+    "infoTitle": "Informacje Kontaktowe",
+    "hoursLabel": "Godziny Otwarcia",
+    "hoursValue": "Pon - Sob: 9:00 - 18:00",
+    "promise1": "Szybka odpowiedź w ciągu 24 godzin",
+    "promise2": "Szyte na miarę plany podróży",
+    "formTitle": "Wyślij Wiadomość",
+    "form": {
+      "nameLabel": "Twoje Imię i Nazwisko",
+      "namePlaceholder": "Jan Kowalski",
+      "emailLabel": "Adres E-mail",
+      "emailPlaceholder": "jan@example.com",
+      "phoneLabel": "Numer Telefonu",
+      "phonePlaceholder": "+48 123 456 789",
+      "subjectLabel": "Temat",
+      "subjectPlaceholder": "Zapytanie o wycieczkę na pustynię",
+      "messageLabel": "Twoja Wiadomość",
+      "messagePlaceholder": "Napisz nam o swoich planach podróżniczych lub pytaniach...",
+      "submitBtn": "Wyślij Wiadomość"
+    }
   }
 }

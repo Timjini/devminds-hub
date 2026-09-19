@@ -1,6 +1,115 @@
 {
   "welcome": {
-    "title": "Bienvenue au KBM Gym Agadir.",
-    "description": "Les inscriptions pour notre salle de sport de combat ouvrent le 1er octobre."
+    "title": "Découvrez des circuits authentiques au Maroc",
+    "description": "Maroko Ekspert propose des circuits professionnels, des excursions et des activités authentiques. Maintenant en polonais !"
+  },
+  "common": {
+    "explore": "Explorer la destination",
+    "learnMore": "En savoir plus"
+  },
+  "solution": {
+    "title": "Nos solutions"
+  },
+  "footer": {
+    "aboutText": "Création de voyages authentiques au Maroc. Des villes impériales et médinas paisibles aux expériences inoubliables dans les dunes du Sahara.",
+    "quickLinks": "Liens rapides",
+    "contactTitle": "Contactez-nous",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
+  },
+  "nav": {
+    "services": "services",
+    "tours": "circuits",
+    "about": "à propos"
+  },
+  "about": {
+    "badge": "À Propos",
+    "title": "Qui Sommes-Nous",
+    "description": "Maroko Ekspert est dirigé par El Ouafi, un professionnel chevronné fort de plus de 15 ans d'expérience dans le secteur du voyage et du tourisme entre le Maroc et la Pologne. Grâce à sa parfaite connaissance des deux cultures, El Ouafi se spécialise dans la création d'expériences de voyage authentiques et mémorables. Son expertise garantit que chaque circuit est soigneusement conçu pour mettre en valeur le meilleur du patrimoine, de la gastronomie et de l'hospitalité marocaine.",
+    "information": "Informations",
+    "address": {
+      "label": "Adresse",
+      "value": "N°15, 4ème Étage, Imm. Inflass, Bd Abderrahim Bouabid,<br />Agadir 80000, Maroc"
+    },
+    "email": {
+      "label": "E-mail",
+      "value": "biuro@maroko-ekspert.pl"
+    },
+    "phone": {
+      "label": "Téléphone",
+      "values": ["+48 725 648 880", "+212 669 035 305"]
+    },
+    "contact_button": "Contactez-nous"
+  },
+  "cities": {
+    "badge": "Meilleures Destinations",
+    "title": "Explorez les Destinations Iconiques du Maroc",
+    "subtitle": "Des anciennes médinas impériales aux villes côtières paisibles et aux dunes dorées du Sahara.",
+    "marrakech": {
+      "title": "Marrakech",
+      "subtitle": "La Perle Impériale",
+      "tagline": "Médinas Animées & Palais Historiques",
+      "desc": "Découvrez la magie sensorielle de la place Jemaa el-Fnaa, des riads de luxe, des souks animés et d'un jardin tropical verdoyant au cœur des remparts d'ocre."
+    },
+    "chefchaouen": {
+      "title": "Chefchaouen",
+      "subtitle": "La Perle Bleue",
+      "tagline": "Havre de Paix dans le Rif",
+      "desc": "Flânez dans des ruelles poétiques teintées d'indigo, nichées paisiblement au cœur des spectaculaires montagnes du Rif."
+    },
+    "fes": {
+      "title": "Fès",
+      "subtitle": "Capitale Spirituelle",
+      "tagline": "Patrimoine Médiéval Vivant",
+      "desc": "Voyagez dans le temps à travers Fès el-Bali, le plus grand sanctuaire urbain piétonnier au monde et le cœur culturel du Maroc."
+    },
+    "agadir": {
+      "title": "Agadir",
+      "subtitle": "Soleil & Littoral",
+      "tagline": "Plages Dorées & Stations Modernes",
+      "desc": "Profitez d'un ensoleillement toute l'année le long d'une baie en croissant, de promenades animées et de spots de surf réputés sur la côte atlantique."
+    },
+    "rabat": {
+      "title": "Rabat",
+      "subtitle": "La Capitale",
+      "tagline": "Élégance Cotière & Palais Royaux",
+      "desc": "Découvrez un riche patrimoine royal, la pittoresque Kasbah des Oudayas et une architecture avant-gardiste moderne."
+    },
+    "ouarzazate": {
+      "title": "Ouarzazate & Aït Ben Haddou",
+      "subtitle": "Porte du Sahara",
+      "tagline": "Kasbahs en Terre & Studios de Cinéma",
+      "desc": "Explorez d'emblématiques forteresses en terre classées à l'UNESCO, de spectaculaires vallées désertiques et des lieux de tournage cinématographiques mythiques."
+    },
+    "tangier": {
+      "title": "Tanger",
+      "subtitle": "Porte de l'Afrique",
+      "tagline": "Là où la Méditerranée Rencontre l'Atlantique",
+      "desc": "Laissez-vous séduire par son charme bohème légendaire, ses cafés à flanc de falaise, les panoramas de sa médina et ses vues imprenables sur la mer."
+    }
+  },
+  "contact": {
+    "badge": "Contactez-nous",
+    "title": "Planifions Votre Aventure Marocaine",
+    "subtitle": "Vous avez des questions ou souhaitez créer un itinéraire sur mesure ? Contactez notre équipe d'experts dès aujourd'hui.",
+    "infoTitle": "Informations de Contact",
+    "hoursLabel": "Heures d'Ouverture",
+    "hoursValue": "Lun - Sam : 9h00 - 18h00",
+    "promise1": "Réponse rapide sous 24 heures",
+    "promise2": "Itinéraires de voyage sur mesure",
+    "formTitle": "Envoyez-nous un Message",
+    "form": {
+      "nameLabel": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "emailLabel": "Adresse E-mail",
+      "emailPlaceholder": "jean@example.com",
+      "phoneLabel": "Numéro de Téléphone",
+      "phonePlaceholder": "+33 1 23 45 67 89",
+      "subjectLabel": "Sujet",
+      "subjectPlaceholder": "Demande de circuit dans le désert",
+      "messageLabel": "Votre Message",
+      "messagePlaceholder": "Parlez-nous de vos projets de voyage ou posez vos questions...",
+      "submitBtn": "Envoyer le Message"
+    }
   }
 }
