@@ -1,7 +1,7 @@
 {
   "welcome": {
     "title": "Discover Authentic Moroccan Tours",
-    "description": "Maroko Ekspert offers professional tours, excursions, and authentic activities.Now in Polish!"
+    "description": "Maroko Ekspert offers professional tours, excursions, and authentic activities. Now in Polish!"
   },
   "common": {
     "explore": "Explore Destination",
@@ -124,7 +124,17 @@
       "subjectPlaceholder": "Desert Tour Inquiry",
       "messageLabel": "Your Message",
       "messagePlaceholder": "Tell us about your travel plans or questions...",
-      "submitBtn": "Send Message"
+      "submitBtn": "Send Message",
+      "toasts": {
+        "success": "Your message has been sent successfully! We will get back to you soon.",
+        "captchaFailed": "reCAPTCHA verification failed. Please try again.",
+        "genericError": "Something went wrong while sending your message. Please try again later.",
+        "validationError": "Please check the highlighted fields and try again."
+      },
+      "submit": {
+        "send": "Send Message",
+        "sending": "Sending..."
+      }
     }
   }
 }

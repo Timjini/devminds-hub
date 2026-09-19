@@ -126,6 +126,16 @@
       "messageLabel": "Votre Message",
       "messagePlaceholder": "Parlez-nous de vos projets de voyage ou posez vos questions...",
       "submitBtn": "Envoyer le Message"
+    },
+    "toasts": {
+      "success": "Votre message a été envoyé avec succès ! Nous vous contacterons sous peu.",
+      "captchaFailed": "La vérification reCAPTCHA a échoué. Veuillez réessayer.",
+      "genericError": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer plus tard.",
+      "validationError": "Veuillez vérifier les champs indiqués et réessayer."
+    },
+    "submit": {
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours..."
     }
   }
 }

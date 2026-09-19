@@ -10,7 +10,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
 
   const solutions = [
     {
-      id: "custom-tours",
+      id: "1",
       image:
         "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/agadir/4x4-massa-tiznit-mini-sahara1.jpg",
       title:
@@ -22,7 +22,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       url: "/pages/contact",
     },
     {
-      id: "corporate-events",
+      id: "2",
       image:
         "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/marrakech/ait-ben-haddou-ouarzazate-tour-1.jpeg",
       title:
@@ -34,7 +34,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       url: "/pages/contact",
     },
     {
-      id: "transportation",
+      id: "3",
       image:
         "https://pub-56989421c96a4a83a6c1e963a31939e6.r2.dev/maroko-ekspert-media/home/eguide-banner.png",
       title:
@@ -43,7 +43,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
       description:
         dict?.solutions?.items?.transportation?.description ??
         "Stay connected with live communication...",
-      url: "/pages/contact",
+      url: "https://e-guidesolutions.com",
     },
   ];
 
