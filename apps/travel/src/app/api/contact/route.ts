@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
     );
 
     await transporter.sendMail({
-      from: process.env.NEXT_PUBLIC_EMAIL_TO,
+      from: process.env.NEXT_PUBLIC_EMAIL_FROM,
       to: process.env.NEXT_PUBLIC_EMAIL_TO,
       subject: "New From From Maroko Ekspert",
       text: message,
