@@ -18,11 +18,6 @@ export const onboardingSchema = z.object({
   childBirthDate: z
     .string()
     .min(1, { message: "La date de naissance est obligatoire" }),
-  childAge: z
-    .number({ message: "L'âge doit être un nombre" })
-    .min(4, { message: "L'âge minimum est de 4 ans" })
-    .max(17, { message: "L'adhésion mineur concerne les moins de 18 ans" }),
-
   // Medical Details
   hasMedicalCondition: z.enum(["no", "yes"]),
   medicalDetails: z.string().optional(),
@@ -33,9 +28,7 @@ export const onboardingSchema = z.object({
   mediaConsent: z.enum(["full", "whatsapp_only", "none"]),
 
   // Contract Declarations
-  agreeToTerms: z.boolean().refine((val) => val === true, {
-    message: "Vous devez accepter les termes du contrat",
-  }),
+  agreeToTerms: z.boolean(),
   signatureDate: z.string().min(1, { message: "Date de signature requise" }),
 });
 // .refine(

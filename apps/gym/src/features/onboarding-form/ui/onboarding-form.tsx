@@ -30,7 +30,6 @@ export const OnboardingForm = () => {
       parentAddress: "",
       childFullName: "",
       childBirthDate: "",
-      childAge: 6,
       hasMedicalCondition: "no",
       medicalDetails: "",
       medications: "",

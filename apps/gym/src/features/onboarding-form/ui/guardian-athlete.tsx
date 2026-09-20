@@ -109,7 +109,7 @@ export const GuardianAthlete = () => {
           {t.childTitle}
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="sm:col-span-1">
             <label className="block text-xs font-mono uppercase tracking-wider mb-1">
               {t.childFullNameLabel}
@@ -141,24 +141,6 @@ export const GuardianAthlete = () => {
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
                 <AlertCircle className="w-3 h-3" />
                 {errors.childBirthDate.message as string}
-              </p>
-            )}
-          </div>
-
-          <div>
-            <label className="block text-xs font-mono uppercase tracking-wider mb-1">
-              {t.childAgeLabel}
-            </label>
-            <input
-              {...register("childAge", { valueAsNumber: true })}
-              type="number"
-              placeholder={t.childAgePlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
-            />
-            {errors.childAge && (
-              <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
-                <AlertCircle className="w-3 h-3" />
-                {errors.childAge.message as string}
               </p>
             )}
           </div>

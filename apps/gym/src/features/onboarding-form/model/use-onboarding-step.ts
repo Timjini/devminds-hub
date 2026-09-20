@@ -20,7 +20,6 @@ const STEPS_CONFIG: StepConfig[] = [
       "parentAddress",
       "childFullName",
       "childBirthDate",
-      "childAge",
     ],
   },
   {

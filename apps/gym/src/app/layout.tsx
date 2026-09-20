@@ -24,9 +24,7 @@ export default async function RootLayout({ children, params }: LayoutProps) {
   const langCookie = cookieStore.get("lang")?.value;
 
   const language = resolvedParams?.lang || langCookie || "en";
-
   const dict = await getDictionary(language);
-
   const dir = language === "ar" ? "rtl" : "ltr";
 
   return (

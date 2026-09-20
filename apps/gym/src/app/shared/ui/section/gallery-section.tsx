@@ -30,7 +30,6 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
   tag,
   title,
   url,
-  urlTitle,
   galleryTitle,
   galleryIcon,
   GalleryData,
