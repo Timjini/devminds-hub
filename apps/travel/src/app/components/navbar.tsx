@@ -4,6 +4,7 @@ import { useDictionary, useLanguage } from "@/contexts";
 import Link from "next/link";
 import { useState } from "react";
 import LanguageSelect from "./language-select";
+import Image from "next/image";
 
 const Navbar = () => {
   const dict = useDictionary();
@@ -25,10 +26,12 @@ const Navbar = () => {
   const navKeys = ["services", "tours", "about"] as const;
 
   return (
-    <nav className="absolute z-40 w-full p-6 text-gray-900">
+    <nav className="absolute z-40 w-full p-6">
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4">
         <Link href="/" className="z-10">
-          <img
+          <Image
+            width={120}
+            height={120}
             src={LOGO}
             className="h-12 w-auto rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-110 md:h-16"
             alt="Maroko Ekspert Logo"
@@ -45,7 +48,7 @@ const Navbar = () => {
                 e.preventDefault();
                 handleScroll(key);
               }}
-              className="text-base font-semibold capitalize text-gray-800 transition-colors duration-200 hover:text-[#C19B77]"
+              className="text-base font-semibold capitalize  transition-colors duration-200 hover:text-[#C19B77]"
             >
               {dict?.nav?.[key] ?? key}
             </a>
@@ -60,7 +63,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="p-2 text-gray-800 focus:outline-none md:hidden"
+            className="p-2  focus:outline-none md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle Navigation Menu"
           >
