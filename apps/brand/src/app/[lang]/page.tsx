@@ -622,7 +622,7 @@ export default function App() {
 
             {/* English CV Download Button */}
             <a
-              href="https://pub-bc4cae30cb704275a2d82ae56b32c9b6.r2.dev/items/resume_hatim_en.pdf"
+              href={process.env.ENG_CV}
               download="resume_hatim_en.pdf"
               onClick={() => setCvModalOpen(false)}
               className="group flex items-center justify-between p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-teal-500 transition-all cursor-pointer"
@@ -639,7 +639,7 @@ export default function App() {
 
             {/* German CV Download Button */}
             <a
-              href="https://pub-bc4cae30cb704275a2d82ae56b32c9b6.r2.dev/items/resume_hatim_de.pdf"
+              href={process.env.DE_CV}
               download="resume_hatim_de.pdf"
               onClick={() => setCvModalOpen(false)}
               className="group flex items-center justify-between p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-teal-500 transition-all cursor-pointer"
