@@ -4,7 +4,6 @@ import { Geist } from "next/font/google";
 import { cookies } from "next/headers";
 import "./globals.css";
 import QueryProvider from "./query-provider";
-import Navbar from "./shared/ui/navigation/navbar";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
