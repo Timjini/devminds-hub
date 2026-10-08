@@ -644,7 +644,7 @@ export default function Content() {
 
             {/* English CV Download Button */}
             <a
-              href={process.env.ENG_CV}
+              href={process.env.NEXT_PUBLIC_EN_CV}
               download="resume_hatim_en.pdf"
               onClick={() => setCvModalOpen(false)}
               className="group flex items-center justify-between p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-teal-500 transition-all cursor-pointer"
@@ -661,7 +661,7 @@ export default function Content() {
 
             {/* German CV Download Button */}
             <a
-              href={process.env.DE_CV}
+              href={process.env.NEXT_PUBLIC_DE_CV}
               download="resume_hatim_de.pdf"
               onClick={() => setCvModalOpen(false)}
               className="group flex items-center justify-between p-4 rounded-xl bg-slate-950 border border-slate-800 hover:border-teal-500 transition-all cursor-pointer"
