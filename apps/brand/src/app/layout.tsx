@@ -21,7 +21,6 @@ export default async function RootLayout({
   return (
     <html lang="en" className={cn("font-sans", geist.variable, "dark")}>
       <body className="main-theme adaptive">
-        <Navbar />
         <QueryProvider>{children}</QueryProvider>
         <Toaster />
       </body>
