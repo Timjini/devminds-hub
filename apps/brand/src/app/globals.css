@@ -6,9 +6,10 @@
 @import "shadcn/tailwind.css";
 @import "./theme.css" layer(theme);
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* 
+
+/*
 
 brown primary #c19b77 // #c19b76
 white #2596be
@@ -38,7 +39,7 @@ light brown #decfc2
 
 /* THEME =========================================== */
 
-/* 
+/*
 
 brown primary #c19b77 // #c19b76
 white #f4f4f3
