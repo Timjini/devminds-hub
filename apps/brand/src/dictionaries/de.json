@@ -1,0 +1,60 @@
+{
+  "header": {
+    "name": "Hatim L.",
+    "location": "Berlin, DE",
+    "role": "E-Commerce & Growth Manager • Lead Developer",
+    "downloadCv": "CV Herunterladen"
+  },
+  "hero": {
+    "badge": "Full-Stack Architecture • E-Commerce Growth • MarTech",
+    "titlePrefix": "Skalierbare Tech-Lösungen &",
+    "titleHighlight": "+1 Mio. $ E-Commerce-Wachstum",
+    "description": {
+      "part1": "Softwareentwickler & Spezialist für E-Commerce Operations mit über 7 Jahren Erfahrung. Architektur von Systemen auf Basis von",
+      "boldTech": "Ruby on Rails, React Native, Next.js, Laravel, Docker & DevOps",
+      "part2": ", bei gleichzeitiger Skalierung von E-Commerce-Plattformen, Optimierung von Google Ads/GTM/SEO und Leitung des internationalen Markenwachstums auf Shopify, Shopify Plus und WooCommerce."
+    },
+    "location": "Berlin, Deutschland",
+    "languages": "EN (C2) | FR (Muttersprache) | AR (Muttersprache) | TR (C2) | DE (B1)",
+    "stats": {
+      "liveProjects": "Live-Projekte",
+      "ecomRevenue": "E-Com Umsatz",
+      "consulting": "Beratene Unternehmen",
+      "experience": "Wachstum & Dev"
+    }
+  },
+  "techCard": {
+    "title": "Kern-Tech & MarTech",
+    "badge": "Verifizierter Stack",
+    "categories": {
+      "ecom": "E-Commerce & Wachstum",
+      "engineering": "Softwareentwicklung",
+      "devops": "Infrastruktur & DevOps"
+    }
+  },
+  "brandShowcase": {
+    "badge": "Markenidentität & Kampagnensysteme",
+    "title": "Brand Design & Kreative Wachstumsprojekte",
+    "description": "Highlights aus Markenstrategie, Sportmarketing, E-Commerce-Visuals und maßgeschneiderten Ticketing-Funnels.",
+    "partnerLabel": "Partner",
+    "viewShowcase": "Showcase Ansehen"
+  },
+  "projectsTable": {
+    "badge": "Vollständiges Live-Projektverzeichnis",
+    "title": "Register für Software & Digitale Assets",
+    "description": "Direkt aus der Produktionsinfrastruktur extrahiert – über Tourismus, Sport, E-Commerce und B2B-SaaS hinweg.",
+    "showing": "Angezeigt:",
+    "of": "von",
+    "assets": "Assets",
+    "searchPlaceholder": "Projekt nach Name, Stack, Framework oder Domain suchen...",
+    "industryLabel": "Branche:",
+    "headers": {
+      "industry": "Branche",
+      "projectName": "Projektname",
+      "domainUrl": "Domain / URL",
+      "techStack": "Tech Stack",
+      "status": "Status"
+    },
+    "emptyState": "Keine Projekte gefunden, die Ihren Filterkriterien entsprechen."
+  }
+}

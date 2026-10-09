@@ -1,6 +1,60 @@
 {
-  "welcome": {
-    "title": "Welcome To KBM Gym Agadir.",
-    "description": "Our Gym registration doors open on the 1st of October."
+  "header": {
+    "name": "Hatim L.",
+    "location": "Berlin, DE",
+    "role": "E-Commerce & Growth Manager • Lead Developer",
+    "downloadCv": "Download CV"
+  },
+  "hero": {
+    "badge": "Full-Stack Architecture • E-Commerce Growth • MarTech",
+    "titlePrefix": "Building Scalable Tech &",
+    "titleHighlight": "Driving $1M+ E-Commerce Growth",
+    "description": {
+      "part1": "Software Developer & E-Commerce Operations Specialist with 7+ years of experience. Architected systems on",
+      "boldTech": "Ruby on Rails, React Native, Next.js, Laravel, Docker & DevOps",
+      "part2": ", while scaling e-commerce platforms, optimizing Google Ads/GTM/SEO, and leading international brand growth on Shopify, Shopify Plus, and WooCommerce."
+    },
+    "location": "Berlin, Germany",
+    "languages": "EN (C2) | FR (Native) | AR (Native) | TR (C2) | DE (B1)",
+    "stats": {
+      "liveProjects": "Live Projects",
+      "ecomRevenue": "E-Com Revenue",
+      "consulting": "Consulting businesses",
+      "experience": "Growth & Dev"
+    }
+  },
+  "techCard": {
+    "title": "Core Tech & MarTech",
+    "badge": "Verified Stack",
+    "categories": {
+      "ecom": "E-Commerce & Growth",
+      "engineering": "Software Engineering",
+      "devops": "Infrastructure & DevOps"
+    }
+  },
+  "brandShowcase": {
+    "badge": "Brand Identity & Campaign Systems",
+    "title": "Brand Designs & Creative Growth Projects",
+    "description": "Highlights of brand strategy, sports marketing, e-commerce visuals, and custom ticketing funnels.",
+    "partnerLabel": "Partner",
+    "viewShowcase": "View Showcase"
+  },
+  "projectsTable": {
+    "badge": "Comprehensive Live Project Directory",
+    "title": "Software & Digital Assets Registry",
+    "description": "Extracted directly from production infrastructure deployments across Tourism, Sports, E-Commerce & Business SaaS.",
+    "showing": "Showing",
+    "of": "of",
+    "assets": "assets",
+    "searchPlaceholder": "Search projects by name, stack, framework or domain...",
+    "industryLabel": "Industry:",
+    "headers": {
+      "industry": "Industry",
+      "projectName": "Project Name",
+      "domainUrl": "Domain / URL",
+      "techStack": "Tech Stack",
+      "status": "Status"
+    },
+    "emptyState": "No projects found matching your filter criteria."
   }
 }

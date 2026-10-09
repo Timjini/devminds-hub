@@ -1,6 +1,60 @@
 {
-  "welcome": {
-    "title": "Bienvenue au KBM Gym Agadir.",
-    "description": "Les inscriptions pour notre salle de sport de combat ouvrent le 1er octobre."
+  "header": {
+    "name": "Hatim L.",
+    "location": "Berlin, DE",
+    "role": "E-Commerce & Growth Manager • Lead Developer",
+    "downloadCv": "Télécharger le CV"
+  },
+  "hero": {
+    "badge": "Architecture Full-Stack • Croissance E-Commerce • MarTech",
+    "titlePrefix": "Conception de Tech Scalable &",
+    "titleHighlight": "Génération de +1M$ en Croissance E-Commerce",
+    "description": {
+      "part1": "Développeur Logiciel & Spécialiste des Opérations E-Commerce avec plus de 7 ans d'expérience. Conception de systèmes sur",
+      "boldTech": "Ruby on Rails, React Native, Next.js, Laravel, Docker & DevOps",
+      "part2": ", tout en développant des plateformes e-commerce, en optimisant Google Ads/GTM/SEO, et en pilotant la croissance de marques internationales sur Shopify, Shopify Plus et WooCommerce."
+    },
+    "location": "Berlin, Allemagne",
+    "languages": "EN (C2) | FR (Maternelle) | AR (Maternelle) | TR (C2) | DE (B1)",
+    "stats": {
+      "liveProjects": "Projets en Ligne",
+      "ecomRevenue": "Chiffre d'Affaires E-Com",
+      "consulting": "Entreprises Accompagnées",
+      "experience": "Croissance & Dev"
+    }
+  },
+  "techCard": {
+    "title": "Technologies Clés & MarTech",
+    "badge": "Stack Vérifiée",
+    "categories": {
+      "ecom": "E-Commerce & Croissance",
+      "engineering": "Ingénierie Logicielle",
+      "devops": "Infrastructure & DevOps"
+    }
+  },
+  "brandShowcase": {
+    "badge": "Identité de Marque & Systèmes de Campagne",
+    "title": "Design de Marque & Projets de Croissance Créative",
+    "description": "Aperçu des stratégies de marque, marketing sportif, visuels e-commerce et tunnels de billetterie sur mesure.",
+    "partnerLabel": "Partenaire",
+    "viewShowcase": "Voir la Présentation"
+  },
+  "projectsTable": {
+    "badge": "Répertoire Complet des Projets en Ligne",
+    "title": "Registre des Logiciels & Actifs Numériques",
+    "description": "Issu directement des déploiements d'infrastructure en production dans les secteurs du Tourisme, du Sport, de l'E-Commerce et du SaaS B2B.",
+    "showing": "Affichage de",
+    "of": "sur",
+    "assets": "actifs",
+    "searchPlaceholder": "Rechercher un projet par nom, stack, framework ou domaine...",
+    "industryLabel": "Secteur :",
+    "headers": {
+      "industry": "Secteur",
+      "projectName": "Nom du Projet",
+      "domainUrl": "Domaine / URL",
+      "techStack": "Stack Technique",
+      "status": "Statut"
+    },
+    "emptyState": "Aucun projet ne correspond à vos critères de recherche."
   }
 }
