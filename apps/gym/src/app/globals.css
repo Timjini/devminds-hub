@@ -81,3 +81,25 @@ body {
     outline: 5px dotted black;
   }
 }*/
+
+
+/*Inline styles for CSS Keyframes*/
+
+ @keyframes marquee-up {
+   0% { transform: translateY(0%); }
+   100% { transform: translateY(-50%); }
+ }
+ @keyframes marquee-down {
+   0% { transform: translateY(-50%); }
+   100% { transform: translateY(0%); }
+ }
+ .animate-marquee-up {
+   animation: marquee-up var(--marquee-duration, 140s) linear infinite;
+ }
+ .animate-marquee-down {
+   animation: marquee-down var(--marquee-duration, 155s) linear infinite;
+ }
+ .group:hover .animate-marquee-up,
+ .group:hover .animate-marquee-down {
+   animation-play-state: paused;
+ }

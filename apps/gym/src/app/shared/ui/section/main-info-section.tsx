@@ -4,6 +4,7 @@ import { Flame } from "lucide-react";
 import React from "react";
 import NavigationButton from "../button/navigation-button";
 import ImageCard from "../card/image-card";
+import { aboutImages } from "@/data/temp";
 
 export type MainInfoSectionProps = {
   title: string;
@@ -41,11 +42,6 @@ const itemVariants: Variants = {
   },
 };
 
-const DEFAULT_IMAGES = [
-  "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
-  "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
-  "https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg",
-];
 
 const MainInfoSection: React.FC<MainInfoSectionProps> = ({
   title,
@@ -53,7 +49,7 @@ const MainInfoSection: React.FC<MainInfoSectionProps> = ({
   buttonText,
   buttonHref = "/pages/onboarding",
   badgeText,
-  images = DEFAULT_IMAGES,
+  images = aboutImages,
   className = "",
 }) => {
   return (

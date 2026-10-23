@@ -46,18 +46,18 @@
     },
     "mainSection": {
       "title": "Kickboxing Morocco First Gym of its kind in Agadir.",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English.",
+      "description": "Kickboxing Morocco is proud to be the first dedicated kickboxing gym of its kind in Agadir. Built for everyone from complete beginners to seasoned athletes, our well equiped facility offers high-energy training, expert instruction, and a supportive community. Step onto the mats to build strength, learn real technique, and unlock your full potential in a world-class environment.",
       "marqueeText": "Reach your Full Potential"
     },
     "secondarySection": {
-      "title": "The standard chunk of Lorem Ipsum used since 1966",
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "title": "Discipline First, Results Follow",
+      "description": "Consistency on the pads builds confidence in life—train with purpose in Agadir’s leading kickboxing community.",
       "buttonText": "Discover",
-      "subtitle": "Entraînement & Discipline"
+      "subtitle": "Training and Discipline"
     },
     "hugeText": "Power",
     "homeGallery":{
-      "title": "The KBM Gym Atmosphere",
+      "title": "The KBM Gym Fighters",
           "tag": "Follow Our Fighters"
     }
   },

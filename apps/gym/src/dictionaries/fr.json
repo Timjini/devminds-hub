@@ -46,18 +46,18 @@
     },
     "mainSection": {
       "title": "Kickboxing Maroc Premier club du genre à Agadir.",
-      "description": "C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa disposition. L'intérêt d'utiliser le Lorem Ipsum est qu'il présente une distribution des lettres plus ou moins normale, contrairement à l'utilisation de Du texte ici, du texte ici, ce qui le fait ressembler à du français lisible.",
+      "description":"Kickboxing Morocco est fier d'être la première salle entièrement dédiée au kickboxing à Agadir. Conçues pour tous — des grands débutants aux athlètes confirmés — nos installations parfaitement équipées proposent des entraînements dynamiques, un encadrement par des experts et une communauté soudée. Rejoignez-nous sur les tapis pour gagner en force, acquérir une technique solide et révéler tout votre potentiel dans un environnement de classe mondiale.",
       "marqueeText": "Atteignez votre plein potentiel"
     },
     "secondarySection": {
-      "title": "L'extrait standard de Lorem Ipsum utilisé depuis 1966",
-      "description": "C'est un fait établi depuis longtemps qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il regarde sa disposition.",
+      "title": "La discipline d'abord, les résultats suivent.",
+      "description": "La régularité dans le travail aux paos renforce la confiance en soi au quotidien : entraînez-vous avec détermination au sein de la communauté de kickboxing de référence à Agadir.",
       "buttonText": "Découvrir",
       "subtitle": "Entraînement & Discipline"
     },
     "hugeText": "Puissance",
     "homeGallery":{
-      "title":"L'Atmosphère KBM Gym",
+      "title":"Les combattants du KBM Gym",
       "tag":"Suivez Nos Combattants"
     }
   },

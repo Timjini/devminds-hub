@@ -21,7 +21,7 @@ interface StoriesPlayerProps {
 
 export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
   stories,
-  containerClass = "relative h-screen w-full overflow-hidden rounded-xl border border-brand-primary",
+  containerClass = "relative h-screen w-full overflow-hidden rounded-xl",
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [progress, setProgress] = useState(0);
@@ -132,6 +132,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
             src={currentStory.videoUrl}
             autoPlay
             muted
+            preload="metadata"
             playsInline
             onTimeUpdate={handleTimeUpdate}
             onEnded={handleNext}
@@ -157,7 +158,7 @@ export const StoriesPlayer: React.FC<StoriesPlayerProps> = ({
           )}
 
           {/* Red Glow Accent Border */}
-          <div className="pointer-events-none absolute inset-0 border border-red-600/30 rounded-3xl md:rounded-none z-20" />
+          <div className="pointer-events-none absolute inset-0 border border-red-600/10 rounded-3xl md:rounded-none z-20" />
         </motion.div>
       </AnimatePresence>
     </div>
