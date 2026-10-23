@@ -25,7 +25,7 @@ const Navbar = () => {
   const navLinks = [
     { name: dict.navigation.registration, href: "/pages/onboarding" },
     { name: dict.navigation.about, href: "/" },
-    { name: dict.navigation.calendar, href: "/" },
+    { name: dict.navigation.calendar, href: "/pages/planning" },
   ];
 
   return (

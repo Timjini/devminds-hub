@@ -76,7 +76,7 @@ export const MediaConsent = () => {
                       )}
                     </div>
                     <div>
-                      <span className="block text-xs font-mono font-bold uppercase text-brand-text">
+                      <span className="block text-xs font-mono font-bold uppercase">
                         {option.label}
                       </span>
                       <span className="block text-[11px] text-stone-500 mt-1 font-light leading-snug">

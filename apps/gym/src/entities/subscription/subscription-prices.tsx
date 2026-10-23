@@ -43,7 +43,7 @@ const SubscriptionPrices = ({
           </span>
           <div className="text-3xl font-black font-aldrich">
             {plan.specialPrice.toLocaleString()}{" "}
-            <span className="text-brand-primary-light text-xl font-sans">
+            <span className="text-brand-primary text-xl font-sans">
               {plan.currency} {t.perYear}
             </span>
           </div>

@@ -1,3 +1,4 @@
+import { calculatePermittedAge } from "@/utils/calculate-permitted-age";
 import { z } from "zod";
 
 export const onboardingSchema = z.object({
@@ -15,9 +16,10 @@ export const onboardingSchema = z.object({
   childFullName: z.string().min(3, {
     message: "Le nom de l'enfant doit comporter au moins 3 caractères",
   }),
-  childBirthDate: z
-    .string()
-    .min(1, { message: "La date de naissance est obligatoire" }),
+  childBirthDate: z.coerce.date().refine(
+    (date) => calculatePermittedAge({ date }),
+    { message: "Child must be between 5 and 20 years old." }
+  ),
   // Medical Details
   hasMedicalCondition: z.enum(["no", "yes"]),
   medicalDetails: z.string().optional(),
@@ -26,7 +28,8 @@ export const onboardingSchema = z.object({
 
   // Media Consent
   mediaConsent: z.enum(["full", "whatsapp_only", "none"]),
-  signatureDate: z.string().min(1, { message: "Date de signature requise" }),
+  signatureDate: z.coerce.date(),
+  agreeToTerms: z.boolean()
 });
 
 

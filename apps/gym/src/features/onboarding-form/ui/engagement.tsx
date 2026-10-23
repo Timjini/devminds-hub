@@ -21,8 +21,8 @@ export function Engagement() {
         {t.title}
       </h3>
 
-      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl brand-border text-xs text-stone-600 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
-        <p className="text-brand-text font-bold">{t.summaryHeader}</p>
+      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl brand-border text-xs  space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
+        <p className=" font-bold">{t.summaryHeader}</p>
         <ul className="list-disc pl-4 space-y-1 text-[11px]">
           {t.summaryItems.map((item: string, index: number) => (
             <li key={index}>{item}</li>
