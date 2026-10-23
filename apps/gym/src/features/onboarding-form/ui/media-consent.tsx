@@ -33,13 +33,7 @@ export const MediaConsent = () => {
   ];
 
   return (
-    <motion.div
-      key="step3"
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      className="space-y-6"
-    >
+    <section>
       <h3 className="font-aldrich text-lg font-bold uppercase text-brand-primary-light border-b border-stone-800 pb-2 flex items-center gap-2">
         <Camera className="w-5 h-5 text-brand-primary-light" />
         {t.title}
@@ -59,7 +53,7 @@ export const MediaConsent = () => {
                   className={`p-4 rounded-2xl border-2 cursor-pointer transition-all block ${
                     field.value === option.id
                       ? "bg-red-950/20 border-brand-primary"
-                      : "border-stone-800 text-stone-400 hover:border-stone-700"
+                      : "border-stone-800 text-stone-500 hover:border-stone-700"
                   }`}
                 >
                   <div className="flex items-start gap-3">
@@ -82,10 +76,10 @@ export const MediaConsent = () => {
                       )}
                     </div>
                     <div>
-                      <span className="block text-xs font-mono font-bold uppercase text-stone-200">
+                      <span className="block text-xs font-mono font-bold uppercase">
                         {option.label}
                       </span>
-                      <span className="block text-[11px] text-stone-400 mt-1 font-light leading-snug">
+                      <span className="block text-[11px] text-stone-500 mt-1 font-light leading-snug">
                         {option.desc}
                       </span>
                     </div>
@@ -102,7 +96,7 @@ export const MediaConsent = () => {
           </p>
         )}
       </div>
-    </motion.div>
+    </section>
   );
 };
 

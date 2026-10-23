@@ -21,7 +21,7 @@ export function ContractHeader({
     <header
       className={`flex flex-col items-center justify-center text-center space-y-6 py-6 ${className}`}
     >
-      <Link
+      {/*<Link
         href="/"
         className="inline-block transition-transform duration-300 hover:scale-105 focus:outline-none"
       >
@@ -43,7 +43,7 @@ export function ContractHeader({
             </span>
           </div>
         </div>
-      </Link>
+      </Link>*/}
 
       {/* Season Badge */}
       {tag && (

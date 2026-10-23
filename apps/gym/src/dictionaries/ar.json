@@ -50,14 +50,14 @@
       "marqueeText": "حقّق أقصى إمكانياتك"
     },
     "secondarySection": {
-      "title": "الجزء المعياري المستعمل من لوريم إيبسوم منذ عام 1966",
-      "description": "هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للتنسيق.",
+      "title": "الانضباط أولاً، والنتائج تأتي لاحقاً",
+      "description": "إن الالتزام بالتدريب على وسائد الركل يبني الثقة في الحياة؛ تدرب بهدفٍ واضح ضمن مجتمع الكيك بوكسينغ الرائد في أغادير.",
       "buttonText": "اكتشف المزيد",
-      "subtitle": "Entraînement & Discipline"
+      "subtitle": "التدريب والانضباط"
     },
     "hugeText": "قوة",
     "homeGallery":{
-      "title": "أجواء KBM Gym",
+      "title": "مقاتلو صالة KBM الرياضية",
       "tag": "تابعوا مقاتلينا"
     }
   },
@@ -88,7 +88,7 @@
     "header":"KBM GYM",
     "tag": "الموسم الرياضي 2026 / 2027",
     "guardianAthlete": {
-      "parentTitle": "2. معلومات الولي / الوصي القانوني",
+      "parentTitle": "2: معلومات الولي / الوصي القانوني",
       "parentFullNameLabel": "الاسم الكامل للولي *",
       "parentFullNamePlaceholder": "مثال: محمد العلمي",
       "parentCinLabel": "رقم بطاقة التعريف الوطنية *",
@@ -97,7 +97,7 @@
       "parentPhonePlaceholder": "0600000000",
       "parentAddressLabel": "عنوان السكن *",
       "parentAddressPlaceholder": "مثال: حي تليلا، أكادير",
-      "childTitle": "3. معلومات الطفل",
+      "childTitle": "3: معلومات الطفل",
       "childFullNameLabel": "الاسم الكامل للطفل *",
       "childFullNamePlaceholder": "مثال: يوسف العلمي",
       "childBirthDateLabel": "تاريخ الازدياد *",

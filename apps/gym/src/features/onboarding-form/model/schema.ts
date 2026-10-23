@@ -1,3 +1,4 @@
+import { calculatePermittedAge } from "@/utils/calculate-permitted-age";
 import { z } from "zod";
 
 export const onboardingSchema = z.object({
@@ -15,14 +16,10 @@ export const onboardingSchema = z.object({
   childFullName: z.string().min(3, {
     message: "Le nom de l'enfant doit comporter au moins 3 caractères",
   }),
-  childBirthDate: z
-    .string()
-    .min(1, { message: "La date de naissance est obligatoire" }),
-  childAge: z
-    .number({ message: "L'âge doit être un nombre" })
-    .min(4, { message: "L'âge minimum est de 4 ans" })
-    .max(17, { message: "L'adhésion mineur concerne les moins de 18 ans" }),
-
+  childBirthDate: z.coerce.date().refine(
+    (date) => calculatePermittedAge({ date }),
+    { message: "Child must be between 5 and 20 years old." }
+  ),
   // Medical Details
   hasMedicalCondition: z.enum(["no", "yes"]),
   medicalDetails: z.string().optional(),
@@ -31,24 +28,9 @@ export const onboardingSchema = z.object({
 
   // Media Consent
   mediaConsent: z.enum(["full", "whatsapp_only", "none"]),
-
-  // Contract Declarations
-  agreeToTerms: z.boolean().refine((val) => val === true, {
-    message: "Vous devez accepter les termes du contrat",
-  }),
-  signatureDate: z.string().min(1, { message: "Date de signature requise" }),
+  signatureDate: z.coerce.date(),
+  agreeToTerms: z.boolean()
 });
-// .refine(
-//   (data: unknown) => {
-//     if (data?.hasMedicalCondition === "yes") {
-//       return !!data?.medicalDetails && data?.medicalDetails.trim().length > 2;
-//     }
-//     return true;
-//   },
-//   {
-//     message: "Veuillez préciser la condition médicale de l'enfant",
-//     path: ["medicalDetails"],
-//   },
-// );
+
 
 export type OnboardingFormData = z.infer<typeof onboardingSchema>;

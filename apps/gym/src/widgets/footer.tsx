@@ -50,7 +50,7 @@ export const Footer = () => {
 
   return (
     <footer
-      className="relative  border-t-2 border-brand-primary/80 
+      className="relative  border-t-2 border-brand-primary/80
       overflow-hidden pt-16 pb-8"
     >
       {/* Decoration */}
@@ -60,7 +60,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-12 border-b
-         border-stone-800"
+         dark:border-stone-800"
         >
           <div className="lg:col-span-4 space-y-6">
             <Link
@@ -76,11 +76,11 @@ export const Footer = () => {
                   className="h-16 w-auto object-contain rounded-full border-2 border-red-600/60"
                 />
                 <div>
-                  <h3 className="font-aldrich text-xl font-black uppercase tracking-wider text-stone-100">
+                  <h3 className="font-aldrich text-xl font-black uppercase tracking-wider ">
                     {dict.footer.brandName}
                   </h3>
                   <span
-                    className="text-xs text-red-500 font-mono tracking-widest uppercase flex 
+                    className="text-xs text-brand-primary font-mono tracking-widest uppercase flex
                                items-center gap-1"
                   >
                     <Flame className="w-3 h-3 animate-pulse" />{" "}
@@ -90,12 +90,12 @@ export const Footer = () => {
               </div>
             </Link>
 
-            <p className="text-stone-400 text-sm leading-relaxed max-w-sm font-light">
+            <p className=" text-sm leading-relaxed max-w-sm font-light">
               {dict.footer.description}
             </p>
 
             {/* Address & Contact Info */}
-            <div className="space-y-2 text-xs text-stone-400 font-mono pt-2">
+            <div className="space-y-2 text-xs  font-mono pt-2">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-red-500 shrink-0" />
                 <span>{dict.footer.location}</span>
@@ -115,7 +115,7 @@ export const Footer = () => {
           <div className="lg:col-span-3 space-y-6">
             <div className="space-y-4">
               <h4
-                className="font-aldrich text-sm font-bold uppercase tracking-widest text-red-500 
+                className="font-aldrich text-sm font-bold uppercase tracking-widest text-red-500
                            border-b border-stone-800 pb-2"
               >
                 {dict.footer.navigationTitle}
@@ -125,12 +125,12 @@ export const Footer = () => {
                   <li key={link.name}>
                     <Link
                       href={link.href}
-                      className="group inline-flex items-center gap-2 text-stone-300 
-                      hover:text-red-500 text-sm font-semibold transition-colors 
+                      className="group inline-flex items-center gap-2
+                      hover:text-brand-primary text-sm font-semibold transition-colors
                       uppercase tracking-wider"
                     >
                       <span
-                        className="h-1.5 w-1.5 rounded-full bg-red-600 opacity-0 
+                        className="h-1.5 w-1.5 rounded-full bg-brand-primary opacity-0
                       group-hover:opacity-100 transition-opacity"
                       />
                       {link.name}
@@ -152,7 +152,7 @@ export const Footer = () => {
               {/* Language Switcher */}
               <div className="space-y-1.5">
                 <span
-                  className="text-[10px] font-mono uppercase tracking-wider 
+                  className="text-[10px] font-mono uppercase tracking-wider
                   text-stone-500 flex items-center gap-1"
                 >
                   <Globe className="w-3 h-3 text-red-500" />
@@ -169,7 +169,7 @@ export const Footer = () => {
           {/* COLUMN 3: Social Media Accounts (Lg: 5 Cols) */}
           <div className="lg:col-span-5 space-y-4">
             <h4
-              className="font-aldrich text-sm font-bold uppercase tracking-widest 
+              className="font-aldrich text-sm font-bold uppercase tracking-widest
             text-red-500 border-b border-stone-800 pb-2"
             >
               {dict.footer.communityTitle}
@@ -187,19 +187,19 @@ export const Footer = () => {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.03, x: isRtl ? -4 : 4 }}
                     whileTap={{ scale: 0.97 }}
-                    className="group flex items-center justify-between p-3 rounded-xl 
-                    bg-stone-900/80 border border-stone-800 hover:border-red-600/60 transition-all shadow-md hover:shadow-red-600/10"
+                    className="group flex items-center justify-between p-3 rounded-xl
+                     border border-stone-800 hover:border-red-600/60 transition-all shadow-md hover:shadow-red-600/10"
                   >
                     <div className="flex items-center gap-3">
                       <div
-                        className="p-2 rounded-lg bg-stone-950 
-                      text-red-500 group-hover:bg-red-600 group-hover:text-stone-950 
+                        className="p-2 rounded-lg
+                      text-red-500 group-hover:bg-red-600 group-hover:text-stone-950
                       transition-colors"
                       >
                         <Icon className="w-5 h-5" />
                       </div>
                       <div className="text-left">
-                        <span className="block text-xs font-bold text-stone-200 uppercase tracking-wide">
+                        <span className="block text-xs font-bold uppercase tracking-wide">
                           {social.name}
                         </span>
                         <span className="block text-[10px] text-stone-500 font-mono">
@@ -208,7 +208,7 @@ export const Footer = () => {
                       </div>
                     </div>
                     <ArrowUpRight
-                      className="w-4 h-4 text-stone-600 group-hover:text-red-500 
+                      className="w-4 h-4 text-stone-600 group-hover:text-red-500
                     transition-colors"
                     />
                   </motion.a>
@@ -220,7 +220,7 @@ export const Footer = () => {
 
         {/* BOTTOM BAR: Copyright & Disclaimer */}
         <div
-          className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs 
+          className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs
         text-stone-500 font-mono"
         >
           <p>
