@@ -99,24 +99,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
   ];
   return (
     <main>
-      <Hero
-        section={
-          <>
-            <StoriesSection />
-          </>
-        }
-        title={
-          <>
-            <div className={`absolute bottom-6 z-20 text-white`}>
-              <DecoText
-                backgroundImg="https://pub-b6b56492600944d2a120f4f26623677a.r2.dev/public/boxing.jpg"
-                text={dict.welcome.title}
-              />
-            </div>
-          </>
-        }
-      />
-
+      <StoriesSection />
       <ActionSection dict={dict} />
 
       <MainInfoSection

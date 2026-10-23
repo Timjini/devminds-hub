@@ -26,22 +26,8 @@ export const onboardingSchema = z.object({
 
   // Media Consent
   mediaConsent: z.enum(["full", "whatsapp_only", "none"]),
-
-  // Contract Declarations
-  agreeToTerms: z.boolean(),
   signatureDate: z.string().min(1, { message: "Date de signature requise" }),
 });
-// .refine(
-//   (data: unknown) => {
-//     if (data?.hasMedicalCondition === "yes") {
-//       return !!data?.medicalDetails && data?.medicalDetails.trim().length > 2;
-//     }
-//     return true;
-//   },
-//   {
-//     message: "Veuillez préciser la condition médicale de l'enfant",
-//     path: ["medicalDetails"],
-//   },
-// );
+
 
 export type OnboardingFormData = z.infer<typeof onboardingSchema>;

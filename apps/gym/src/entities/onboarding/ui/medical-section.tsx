@@ -29,7 +29,7 @@ export function MedicalSection() {
       <div className="grid grid-cols-2 gap-4">
         {/* Option: No */}
         <label
-          className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex items-center gap-3 ${
+          className={`p-4 rounded-2xl border-2 bg-white cursor-pointer transition-all flex items-center gap-3 ${
             watchMedical === "no"
               ? "bg-red-950/20 border-brand-primary"
               : "border-stone-800 text-stone-400 hover:border-stone-700"
@@ -42,7 +42,7 @@ export function MedicalSection() {
             className="sr-only"
           />
           <div
-            className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
+            className={`w-4 h-4 rounded-full  border-2 flex items-center justify-center ${
               watchMedical === "no"
                 ? "border-brand-primary bg-brand-primary"
                 : "border-stone-600"
@@ -59,7 +59,7 @@ export function MedicalSection() {
 
         {/* Option: Yes */}
         <label
-          className={`p-4 rounded-2xl border-2 cursor-pointer transition-all flex items-center gap-3 ${
+          className={`p-4 rounded-2xl border-2 bg-white cursor-pointer transition-all flex items-center gap-3 ${
             watchMedical === "yes"
               ? "bg-red-950/20 border-brand-primary"
               : "border-stone-800 text-stone-400 hover:border-stone-700"
@@ -103,7 +103,7 @@ export function MedicalSection() {
               {...register("medicalDetails")}
               rows={2}
               placeholder={t.detailsPlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.medicalDetails && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -122,7 +122,7 @@ export function MedicalSection() {
                 {...register("medications")}
                 type="text"
                 placeholder={t.medicationsPlaceholder}
-                className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>
             <div>
@@ -133,7 +133,7 @@ export function MedicalSection() {
                 {...register("allergies")}
                 type="text"
                 placeholder={t.allergiesPlaceholder}
-                className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+                className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
               />
             </div>
           </div>

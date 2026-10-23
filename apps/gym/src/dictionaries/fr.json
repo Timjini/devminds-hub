@@ -88,7 +88,7 @@
     "header":"KBM GYM",
     "tag": "Saison Sportive 2026 / 2027",
     "guardianAthlete": {
-      "parentTitle": "2. Informations du Parent / Tuteur Légal",
+      "parentTitle": "ARTICLE 2. Informations du Parent / Tuteur Légal",
       "parentFullNameLabel": "Nom et prénom du parent *",
       "parentFullNamePlaceholder": "ex: Mohamed Alami",
       "parentCinLabel": "N° de CIN *",
@@ -97,7 +97,7 @@
       "parentPhonePlaceholder": "0600000000",
       "parentAddressLabel": "Adresse résidentielle *",
       "parentAddressPlaceholder": "ex: Quartier Tilila, Agadir",
-      "childTitle": "3. Informations de l'Enfant",
+      "childTitle": "ARTICLE 3. Informations de l'Enfant",
       "childFullNameLabel": "Nom et prénom de l'enfant *",
       "childFullNamePlaceholder": "ex: Youssef Alami",
       "childBirthDateLabel": "Date de naissance *",

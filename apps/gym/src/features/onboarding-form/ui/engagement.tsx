@@ -15,20 +15,14 @@ export function Engagement() {
   } = useFormContext();
 
   return (
-    <motion.div
-      key="step4"
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      className="space-y-6"
-    >
+    <section>
       <h3 className="font-aldrich text-lg font-bold uppercase text-brand-primary-light border-b border-stone-800 pb-2 flex items-center gap-2">
         <FileCheck className="w-5 h-5 text-brand-primary-light" />
         {t.title}
       </h3>
 
-      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl brand-border text-xs text-stone-400 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
-        <p className="text-stone-200 font-bold">{t.summaryHeader}</p>
+      <div className="max-h-48 overflow-y-auto p-4 rounded-2xl brand-border text-xs text-stone-600 space-y-2 font-mono scrollbar-thin scrollbar-thumb-stone-800">
+        <p className="text-brand-text font-bold">{t.summaryHeader}</p>
         <ul className="list-disc pl-4 space-y-1 text-[11px]">
           {t.summaryItems.map((item: string, index: number) => (
             <li key={index}>{item}</li>
@@ -80,7 +74,7 @@ export function Engagement() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 }
 

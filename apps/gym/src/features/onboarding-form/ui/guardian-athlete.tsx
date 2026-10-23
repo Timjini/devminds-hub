@@ -13,13 +13,7 @@ export const GuardianAthlete = () => {
   } = useFormContext();
 
   return (
-    <motion.div
-      key="step1"
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      className="space-y-6"
-    >
+    <section>
       {/* PARENT SECTION */}
       <div className="space-y-4">
         <h3 className="font-aldrich text-lg font-bold uppercase text-brand-primary-light border-b border-brand-text pb-2 flex items-center gap-2">
@@ -36,7 +30,7 @@ export const GuardianAthlete = () => {
               {...register("parentFullName")}
               type="text"
               placeholder={t.parentFullNamePlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.parentFullName && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -54,7 +48,7 @@ export const GuardianAthlete = () => {
               {...register("parentCin")}
               type="text"
               placeholder={t.parentCinPlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm uppercase"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm uppercase"
             />
             {errors.parentCin && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -72,7 +66,7 @@ export const GuardianAthlete = () => {
               {...register("parentPhone")}
               type="tel"
               placeholder={t.parentPhonePlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.parentPhone && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -90,7 +84,7 @@ export const GuardianAthlete = () => {
               {...register("parentAddress")}
               type="text"
               placeholder={t.parentAddressPlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.parentAddress && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -118,7 +112,7 @@ export const GuardianAthlete = () => {
               {...register("childFullName")}
               type="text"
               placeholder={t.childFullNamePlaceholder}
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.childFullName && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -135,7 +129,7 @@ export const GuardianAthlete = () => {
             <input
               {...register("childBirthDate")}
               type="date"
-              className="w-full px-4 py-3 rounded-xl brand-border placeholder-stone-600 focus:border-brand-primary focus:outline-none transition-colors text-sm"
+              className="w-full px-4 py-3 rounded-xl bg-white brand-border placeholder-stone-400 focus:border-brand-primary focus:outline-none transition-colors text-sm"
             />
             {errors.childBirthDate && (
               <p className="text-brand-primary-light text-xs mt-1 font-mono flex items-center gap-1">
@@ -146,6 +140,6 @@ export const GuardianAthlete = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
