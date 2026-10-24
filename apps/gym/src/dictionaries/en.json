@@ -39,10 +39,22 @@
     "title": "Welcome To KBM Gym Agadir.",
     "description": "Our Gym registration doors open on the 1st of October."
   },
+  "trust": {
+      "safeTitle": "Encrypted & Safe",
+      "safeDesc": "Your payment & personal details are strictly protected.",
+      "refundTitle": "Refund Eligible",
+      "refundDesc": "Full refund guaranteed within 14 days if unsatisfied.",
+      "supportTitle": "Dedicated Support",
+      "supportDesc": "Our support team is here to help with your transaction."
+  },
+  "contact": {
+      "question": "Need help with your payment?",
+      "subtext": "Reach out to us directly for immediate assistance."
+  },
   "homePage": {
     "actionSection": {
       "title": "Registration Doors are open",
-      "buttonText": "Discover"
+      "buttonText": "Become a Fighter"
     },
     "mainSection": {
       "title": "Kickboxing Morocco First Gym of its kind in Agadir.",
@@ -168,5 +180,54 @@
         "standardOfferStartDate": "From {date}",
         "standardOfferDescription": "Standard rate without discount.",
         "perYear": "/ Year"
-      }
+  },
+  "membershipPaymentForm":{
+    "title": "Complete Your Payment",
+        "subtitle": "Please transfer the specified amount to the bank account below and upload the transfer receipt.",
+        "installment": {
+          "toggle": "Pay in Installments",
+          "threeMonths": "3 Installments",
+          "sixMonths": "6 Installments",
+          "perMonth": "/ mo"
+        },
+        "summary": {
+          "totalAmountDue": "Total Amount Due",
+          "firstInstallmentDue": "1st Installment Due Now",
+          "paymentReference": "Payment Reference",
+          "copyReference": "Copy Reference"
+        },
+        "bankDetails": {
+          "title": "Bank Account Details",
+          "bankName": "Bank Name",
+          "accountName": "Account Name",
+          "iban": "IBAN",
+          "swift": "SWIFT / BIC"
+        },
+        "upload": {
+          "title": "Upload Proof of Payment",
+          "label": "Payment Slip / Receipt (PNG, JPG, PDF)",
+          "dragAndDrop": "Drag and drop your receipt here, or",
+          "browse": "browse",
+          "maxSize": "Maximum file size: 5MB"
+        },
+        "errors": {
+          "fileSize": "File size must be under 5MB.",
+          "noFile": "Please upload your payment slip before proceeding.",
+          "uploadFailed": "Failed to upload payment slip. Please try again."
+        },
+        "buttons": {
+          "uploading": "Uploading...",
+          "submit": "Submit Payment Proof"
+        },
+        "submitted": {
+          "title": "Payment Verification Pending",
+          "description": "Thank you! Your payment slip has been submitted successfully. We will verify your transaction and update your account within 24 hours.",
+          "dashboardButton": "Go to Dashboard"
+        }
+  },
+  "paymentHeader": {
+      "badgeText": "Secure Bank Transfer",
+      "title": "Membership Checkout",
+      "subtitle": "Complete your subscription safely. Follow the bank details below and submit your payment slip for instant verification."
+  }
 }

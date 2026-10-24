@@ -7,9 +7,9 @@ import MainInfoSection from "../shared/ui/section/main-info-section";
 import { SecondarySection } from "../shared/ui/section/secondary-section";
 import { CombatLineSeparator } from "../shared/ui/separator/combatLine-separator";
 import { DiagonalSeparator } from "../shared/ui/separator/diagonal-separator";
-import { StoriesSection } from "../shared/ui/video/stories-section";
-import { cardsData, GalleryData, galleryImages } from "@/data/temp";
+import { cardsData, combatStories, GalleryData, galleryImages } from "@/data/temp";
 import VerticalGallery from "@/features/showcases/vertical-gallery";
+import StoriesPlayer from "../shared/ui/video/story-player";
 
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -17,7 +17,12 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
 
   return (
     <main>
-      <StoriesSection />
+      <div className="relative w-screen h-screen overflow-hidden bg-black m-1 rounded-2xl">
+        <StoriesPlayer
+          stories={combatStories}
+          containerClass="relative w-full h-full overflow-hidden"
+        />
+      </div>
       <ActionSection dict={dict} />
 
       <VerticalGallery />
