@@ -39,6 +39,18 @@
     "title": "Bienvenue au KBM Gym Agadir.",
     "description": "Les inscriptions à notre salle de sport ouvrent le 1er octobre."
   },
+  "trust": {
+      "safeTitle": "Chiffré & Sécurisé",
+      "safeDesc": "Vos informations personnelles et votre paiement sont strictement protégés.",
+      "refundTitle": "Éligible au remboursement",
+      "refundDesc": "Remboursement intégral garanti sous 14 jours en cas d'insatisfaction.",
+      "supportTitle": "Support dédié",
+      "supportDesc": "Notre équipe d'assistance est là pour vous aider avec votre transaction."
+  },
+  "contact": {
+      "question": "Besoin d'aide pour votre paiement ?",
+      "subtext": "Contactez-nous directement pour une assistance immédiate."
+  },
   "homePage": {
     "actionSection": {
       "title": "Les inscriptions sont ouvertes",
@@ -168,5 +180,54 @@
         "standardOfferStartDate": "À partir du {date}",
         "standardOfferDescription": "Tarif standard sans réduction.",
         "perYear": "/ An"
+  },
+  "membershipPaymentForm": {
+      "title": "Finaliser votre paiement",
+      "subtitle": "Veuillez transférer le montant indiqué sur le compte bancaire ci-dessous et téléverser le reçu de paiement.",
+      "installment": {
+        "toggle": "Payer en plusieurs fois",
+        "threeMonths": "3 versements",
+        "sixMonths": "6 versements",
+        "perMonth": "/ mois"
+      },
+      "summary": {
+        "totalAmountDue": "Montant total dû",
+        "firstInstallmentDue": "1er versement dû maintenant",
+        "paymentReference": "Référence de paiement",
+        "copyReference": "Copier la référence"
+      },
+      "bankDetails": {
+        "title": "Coordonnées bancaires",
+        "bankName": "Nom de la banque",
+        "accountName": "Nom du titulaire du compte",
+        "iban": "IBAN",
+        "swift": "SWIFT / BIC"
+      },
+      "upload": {
+        "title": "Téléverser la preuve de paiement",
+        "label": "Bordereau / Reçu de paiement (PNG, JPG, PDF)",
+        "dragAndDrop": "Glissez et déposez votre reçu ici, ou",
+        "browse": "parcourir",
+        "maxSize": "Taille maximale du fichier : 5 Mo"
+      },
+      "errors": {
+        "fileSize": "La taille du fichier doit être inférieure à 5 Mo.",
+        "noFile": "Veuillez téléverser votre justificatif de paiement avant de continuer.",
+        "uploadFailed": "Échec du téléversement du justificatif. Veuillez réessayer."
+      },
+      "buttons": {
+        "uploading": "Téléversement en cours...",
+        "submit": "Soumettre la preuve de paiement"
+      },
+      "submitted": {
+        "title": "Vérification du paiement en attente",
+        "description": "Merci ! Votre justificatif de paiement a été soumis avec succès. Nous vérifierons votre transaction et mettrons à jour votre compte sous 24 heures.",
+        "dashboardButton": "Accéder au tableau de bord"
       }
+  },
+  "paymentHeader": {
+      "badgeText": "Virement bancaire sécurisé",
+      "title": "Paiement de l'abonnement",
+      "subtitle": "Finalisez votre abonnement en toute sécurité. Suivez les coordonnées bancaires ci-dessous et téléversez votre reçu de paiement pour une vérification rapide."
+  }
 }

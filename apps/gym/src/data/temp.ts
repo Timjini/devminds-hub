@@ -91,6 +91,8 @@ export const BASE_URL = process.env.NEXT_PUBLIC_MEDIA_BASE
          `${ BASE_URL }/videos/kb.mp4`,
       title: "KickBoxing Session",
       subtitle: "Coach Issam - 18:00 Session",
+      actionUrl: "/pages/onboarding",
+      ctaText: ""
     },
     {
       id: "kickboxing-2",
@@ -98,6 +100,8 @@ export const BASE_URL = process.env.NEXT_PUBLIC_MEDIA_BASE
         `${ BASE_URL }/videos/mma.mp4`,
       title: "MMA - JUJUTSU Session",
       subtitle: "Coach Amine - 19:30 Session",
+      actionUrl: "",
+      ctaText: ""
     },
   ];
 
