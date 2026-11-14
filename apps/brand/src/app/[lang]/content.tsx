@@ -7,6 +7,8 @@ import { CapabilitiesSection } from '../entities/capability/capability-section';
 import { BLOG_POSTS, SERVICES } from '../data/temp';
 import { BlogSection } from '../entities/blog/ui/blog-section';
 import { Footer } from '../shared/ui/footer';
+import { CUSTOMERS } from '../data/customers';
+import { CustomerLogosMarquee } from '../entities/customer/customer-logos-marquee';
 
 
 export default function Content() {
@@ -46,6 +48,9 @@ export default function Content() {
           posts={BLOG_POSTS}
           onSelectPost={(post) => setActivePost(post)}
         />
+
+        <CustomerLogosMarquee customers={CUSTOMERS} />
+
       </main>
 
       <Footer onOpenInquiry={handleOpenInquiry} />

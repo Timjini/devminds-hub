@@ -1,4 +1,5 @@
-import { ServiceItem, BlogPost } from "../types";
+import { ServiceItem } from "../entities/service/types";
+import { BlogPost } from "../types";
 
 export const SERVICE_OPTIONS: string[] = [
   'FULL TECHNICAL SETUP',
@@ -49,7 +50,7 @@ export const BLOG_POSTS: BlogPost[] = [
     number: '01',
     tag: '01 / OPEN SOURCE STACK',
     readTime: '3 MIN READ',
-    title: 'CRM INTEGRATION WITH OPEN SOURCE CHATWOOT AND MAILCOW',
+    title: 'CRM INTEGRATION',
     excerpt:
       'Turn self-hosted email into a shared customer CRM and support inbox without paying per-seat SaaS fees.',
     relatedService: 'CRM INTEGRATION',

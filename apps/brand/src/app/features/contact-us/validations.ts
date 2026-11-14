@@ -2,9 +2,14 @@ import { PURPOSE_OPTIONS } from "./types";
 import { z } from 'zod';
 
 export const contactFormSchema = z.object({
-  purpose: z.enum(PURPOSE_OPTIONS, {
-    errorMap: () => ({ message: 'PLEASE SELECT A PROJECT PURPOSE.' }),
-  }),
+  purpose: z.enum([
+      "Infrastructure & Hosting",
+      "Domain & DNS Management",
+      "Business Email Setup",
+      "CRM Integration (Chatwoot / Mailcow)",
+      "Full Startup Launch Stack",
+      "General Inquiry"
+    ]).or(z.literal('')),
   name: z
     .string()
     .trim()

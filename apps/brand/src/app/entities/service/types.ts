@@ -3,7 +3,7 @@ export interface ServiceCardProps {
   onSelectService: (serviceTitle: string) => void;
 }
 
-interface ServiceItem {
+export interface ServiceItem {
   id: string;
   number: string;
   title: string;

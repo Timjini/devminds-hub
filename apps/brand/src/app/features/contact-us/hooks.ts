@@ -6,25 +6,27 @@ import { contactFormSchema, ContactFormValues } from './validations';
 import { useApiMutation } from '@/app/hooks/use-api-mutation';
 
 export interface UseContactFormOptions {
-  defaultPurpose?: string;
+  defaultPurpose?: ContactFormValues['purpose'];
   endpoint?: string;
   onSuccessCallback?: (response: ContactApiResponse) => void;
 }
 
 export function useContactForm({
-  defaultPurpose = PURPOSE_OPTIONS[0],
+  defaultPurpose,
   endpoint = '/api/contact',
   onSuccessCallback,
 }: UseContactFormOptions = {}) {
-  const validInitialPurpose = PURPOSE_OPTIONS.includes(defaultPurpose)
-    ? defaultPurpose
-    : PURPOSE_OPTIONS[0];
+  // Only use defaultPurpose if it's valid, otherwise default to empty string
+  const initialPurpose =
+    defaultPurpose && PURPOSE_OPTIONS.includes(defaultPurpose)
+      ? defaultPurpose
+      : '';
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     mode: 'onTouched',
     defaultValues: {
-      purpose: validInitialPurpose,
+      purpose: initialPurpose,
       name: '',
       email: '',
       phone: '',
@@ -55,7 +57,7 @@ export function useContactForm({
   const resetAll = () => {
     submission.reset();
     form.reset({
-      purpose: validInitialPurpose,
+      purpose: initialPurpose,
       name: '',
       email: '',
       phone: '',

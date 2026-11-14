@@ -89,3 +89,29 @@ body {
     outline: 5px dotted black;
   }
 }*/
+
+
+@keyframes devminds-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-devminds-marquee {
+  display: flex;
+  width: max-content;
+  animation: devminds-marquee 28s linear infinite;
+}
+
+.group\/marquee:hover .animate-devminds-marquee {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-devminds-marquee {
+    animation: none;
+  }
+}

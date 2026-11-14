@@ -1,4 +1,5 @@
 import { ArrowRight, ArrowUp } from "lucide-react";
+import Link from "next/link";
 
 interface FooterProps {
   onOpenInquiry: (serviceTitle?: string) => void;
@@ -22,14 +23,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
           </h2>
         </div>
 
-        <button
+        <Link
           type="button"
-          onClick={() => onOpenInquiry('FULL TECHNICAL SETUP')}
+          href="/pages/start-setup"
           className="px-8 py-5 bg-black text-white border-2 border-black text-base sm:text-lg font-black tracking-wider uppercase hover:bg-white hover:text-black transition-colors duration-150 flex items-center justify-center gap-3 cursor-pointer self-start lg:self-auto"
         >
           START YOUR SETUP
           <ArrowRight className="w-5 h-5 stroke-[2.5]" />
-        </button>
+        </Link>
       </div>
 
       {/* Bottom Legal & Back-to-Top Row */}
@@ -40,10 +41,10 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
 
         <div className="flex items-center gap-6">
           <a
-            href="mailto:hello@devminds.cloud"
+            href={`mailto:${process.env.NEXT_PUBLIC_ADMIN_EMAIL}`}
             className="text-xs sm:text-sm font-black tracking-widest uppercase underline decoration-2 underline-offset-4 hover:bg-black hover:text-white px-2 py-1 transition-colors"
           >
-            HELLO@DEVMINDS.CLOUD
+            {process.env.NEXT_PUBLIC_ADMIN_EMAIL}
           </a>
 
           <button

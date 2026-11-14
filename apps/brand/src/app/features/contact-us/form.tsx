@@ -1,19 +1,19 @@
+'use client'
 import React from 'react';
-import { PURPOSE_OPTIONS } from '../data/services';
-import { UseContactFormReturn } from '../hooks/useContactForm';
+import { PURPOSE_OPTIONS } from './types';
+import { useContactForm } from './hooks';
 
 export interface ContactFormProps {
-  contactForm: UseContactFormReturn;
+  // contactForm: UseContactFormReturn;
   purposeOptions?: string[];
   onNavigateHome?: () => void;
 }
 
 export const ContactForm: React.FC<ContactFormProps> = ({
-  contactForm,
+  // contactForm,
   purposeOptions = PURPOSE_OPTIONS,
-  onNavigateHome,
 }) => {
-  const { form, onSubmit, resetAll, submission } = contactForm;
+  const { form, onSubmit, resetAll, submission } = useContactForm();
 
   const {
     register,
@@ -108,7 +108,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div className="flex items-center justify-between mb-3">
           <label
             htmlFor="contact-purpose"
-            className="block text-xs font-black tracking-[0.2em] uppercase"
+            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase"
           >
             01 / SELECT PURPOSE *
           </label>
@@ -166,7 +166,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
       <div>
         <label
           htmlFor="contact-name"
-          className="block text-xs font-black tracking-[0.2em] uppercase mb-3"
+          className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
         >
           02 / YOUR NAME *
         </label>
@@ -192,7 +192,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div>
           <label
             htmlFor="contact-email"
-            className="block text-xs font-black tracking-[0.2em] uppercase mb-3"
+            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
           >
             03 / WORK EMAIL *
           </label>
@@ -216,14 +216,14 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div>
           <label
             htmlFor="contact-phone"
-            className="block text-xs font-black tracking-[0.2em] uppercase mb-3"
+            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
           >
             04 / PHONE NUMBER *
           </label>
           <input
             id="contact-phone"
             type="tel"
-            placeholder="+44 20 7946 0958"
+            placeholder="+49 20 7946 0958"
             {...register('phone')}
             className="w-full border-2 border-black p-4 text-lg font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150"
           />
@@ -242,7 +242,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
       <div>
         <label
           htmlFor="contact-message"
-          className="block text-xs font-black tracking-[0.2em] uppercase mb-3"
+          className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
         >
           05 / PROJECT MESSAGE *
         </label>

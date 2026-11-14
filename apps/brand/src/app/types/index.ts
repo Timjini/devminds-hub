@@ -26,3 +26,12 @@ export interface BlogPost {
   ctaSubheading: string;
   sections: BlogSectionBlock[];
 }
+
+export interface CustomerItem {
+  id: string;
+  name: string;
+  sector: string;
+  logoSrc: string;
+  logoAlt?: string;
+  url?: string;
+}

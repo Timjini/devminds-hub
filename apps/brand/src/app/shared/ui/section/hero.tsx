@@ -1,4 +1,6 @@
 import { ArrowRight } from "lucide-react";
+import { motion } from "motion/react";
+import Link from "next/link";
 
 interface HeroSectionProps {
   onOpenInquiry: (serviceTitle?: string) => void;
@@ -6,6 +8,11 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
   return (
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+  >
     <section
       id="top"
       className="max-w-7xl mx-auto px-6 sm:px-10 pt-16 pb-20 sm:pt-24 sm:pb-32 border-b-2 border-black"
@@ -31,16 +38,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
         </p>
 
         <div className="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-4">
-          <button
-            type="button"
-            onClick={() => onOpenInquiry('FULL TECHNICAL SETUP')}
+          <Link
+              href="/pages/start-setup"
             className="w-full sm:w-auto px-8 py-5 bg-black text-white border-2 border-black text-base sm:text-lg font-black tracking-wider uppercase hover:bg-white hover:text-black transition-colors duration-150 flex items-center justify-center gap-3 cursor-pointer"
           >
             START A PROJECT
             <ArrowRight className="w-5 h-5 stroke-[2.5]" />
-          </button>
+          </Link>
         </div>
       </div>
-    </section>
+      </section>
+  </motion.div>
   );
 };
