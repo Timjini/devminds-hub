@@ -54,8 +54,8 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
             </h1>
 
             <p className="text-lg font-medium leading-snug text-ink-muted mb-8 pb-8 border-b-brutal border-line">
-              Tell us what your startup needs—from zero-downtime cloud
-              infrastructure to self-hosted &amp; CRM integration.
+              Tell us what your brand needs—from bold visual identity and high-converting
+              web design to Meta Ads, Google Ads &amp; SEO.
             </p>
 
             <div className="space-y-4 text-xs font-black tracking-cta uppercase">
