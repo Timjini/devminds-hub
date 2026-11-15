@@ -1,6 +1,5 @@
-import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
-import Link from "next/link";
+import { NavButton } from "../button/nav-button";
 
 interface HeroSectionProps {
   onOpenInquiry: (serviceTitle?: string) => void;
@@ -19,7 +18,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
     >
       {/* Eyebrow Tag */}
       <div className="mb-8 sm:mb-12">
-        <span className="inline-block text-xs sm:text-sm font-black tracking-[0.2em] uppercase border-2 border-black px-3 py-1">
+        <span className="hover:bg-brand-accent inline-block text-xs sm:text-sm font-black tracking-[0.2em] uppercase border-2 border-black px-3 py-1">
           FOR STARTUPS &amp; EARLY-STAGE FOUNDERS
         </span>
       </div>
@@ -38,13 +37,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
         </p>
 
         <div className="lg:col-span-5 flex flex-col sm:flex-row lg:justify-end gap-4">
-          <Link
-              href="/pages/start-setup"
-            className="w-full sm:w-auto px-8 py-5 bg-black text-white border-2 border-black text-base sm:text-lg font-black tracking-wider uppercase hover:bg-white hover:text-black transition-colors duration-150 flex items-center justify-center gap-3 cursor-pointer"
-          >
+          <NavButton href="/pages/start-setup">
             START A PROJECT
-            <ArrowRight className="w-5 h-5 stroke-[2.5]" />
-          </Link>
+          </NavButton>
         </div>
       </div>
       </section>

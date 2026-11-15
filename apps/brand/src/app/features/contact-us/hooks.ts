@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { toast } from "@/components/ui/toast"
 import { ContactApiResponse, PURPOSE_OPTIONS } from './types';
 import { contactFormSchema, ContactFormValues } from './validations';
 import { useApiMutation } from '@/app/hooks/use-api-mutation';
@@ -9,14 +10,15 @@ export interface UseContactFormOptions {
   defaultPurpose?: ContactFormValues['purpose'];
   endpoint?: string;
   onSuccessCallback?: (response: ContactApiResponse) => void;
+  onErrorCallback?: (error: Error) => void;
 }
 
 export function useContactForm({
   defaultPurpose,
   endpoint = '/api/contact',
   onSuccessCallback,
+  onErrorCallback,
 }: UseContactFormOptions = {}) {
-  // Only use defaultPurpose if it's valid, otherwise default to empty string
   const initialPurpose =
     defaultPurpose && PURPOSE_OPTIONS.includes(defaultPurpose)
       ? defaultPurpose
@@ -45,7 +47,19 @@ export function useContactForm({
     mutationKey: ['contact-submission', endpoint],
     options: {
       onSuccess: (response) => {
+        toast.add({
+          type: "success",
+          description: "WE WILL REPLY WITHIN 24 HOURS."
+        });
         onSuccessCallback?.(response);
+      },
+      onError: (error) => {
+        toast.add({
+          type: "error",
+          description: "UNABLE TO REACH /API/CONTACT.",
+          priority: "high",
+        });
+        onErrorCallback?.(error);
       },
     },
   });
@@ -72,3 +86,5 @@ export function useContactForm({
     submission,
   };
 }
+
+export type UseContactFormReturn = ReturnType<typeof useContactForm>;

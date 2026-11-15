@@ -60,6 +60,19 @@ light brown #decfc2
   --text-dark: #f4f4f3;
 }
 
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  /* --font-knockout: "Knockout-Bold", sans-serif; */
+  --color-brand-primary: #2d372b;
+  --color-brand-white: #fff;
+  --color-brand-dark: #2d372b;
+  --color-brand-text: #2d372b;
+  --color-brand-primary-background: #2d372b;
+  --color-brand-secondary: #e6c2bf; /* fancy brown */
+  --color-brand-accent: #c1ff72; /* pistaccio green */
+}
+
 html,
 body {
   width: 100%;
@@ -113,5 +126,12 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .animate-devminds-marquee {
     animation: none;
+  }
+}
+
+@media (pointer: fine) {
+  html.devminds-custom-cursor,
+  html.devminds-custom-cursor * {
+    cursor: none !important;
   }
 }

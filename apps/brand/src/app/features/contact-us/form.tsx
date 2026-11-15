@@ -1,13 +1,9 @@
 'use client'
-import React from 'react';
-import { PURPOSE_OPTIONS } from './types';
+import React, { useState } from 'react';
+import { ContactFormProps, PURPOSE_OPTIONS } from './types';
 import { useContactForm } from './hooks';
+import { Turnstile } from "@marsidev/react-turnstile";
 
-export interface ContactFormProps {
-  // contactForm: UseContactFormReturn;
-  purposeOptions?: string[];
-  onNavigateHome?: () => void;
-}
 
 export const ContactForm: React.FC<ContactFormProps> = ({
   // contactForm,
@@ -15,6 +11,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 }) => {
   const { form, onSubmit, resetAll, submission } = useContactForm();
 
+  const [token, setToken] = useState<string | null>(null);
   const {
     register,
     watch,
@@ -24,64 +21,6 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 
   const selectedPurpose = watch('purpose');
 
-  if (submission.isSuccess && submission.data) {
-    return (
-      <div className="py-6">
-        <div className="inline-block bg-black text-white px-3 py-1 text-xs font-black tracking-[0.2em] uppercase mb-6">
-          TRANSMISSION CONFIRMED
-        </div>
-
-        <h2 className="text-4xl sm:text-5xl font-black tracking-tighter uppercase leading-[0.95] mb-6">
-          INQUIRY LOGGED.
-        </h2>
-
-        <p className="text-lg font-bold leading-relaxed mb-8">
-          Your brief has been dispatched to our engineering desk. We will review your stack
-          requirements and reply shortly.
-        </p>
-
-        <div className="border-2 border-black divide-y-2 divide-black mb-8 text-xs font-black tracking-wider uppercase">
-          <div className="p-4 flex justify-between gap-4">
-            <span>REFERENCE ID</span>
-            <span>{submission.data.referenceId}</span>
-          </div>
-          <div className="p-4 flex justify-between gap-4">
-            <span>PURPOSE</span>
-            <span>{submission.data.payload.purpose}</span>
-          </div>
-          <div className="p-4 flex justify-between gap-4">
-            <span>CONTACT</span>
-            <span>
-              {submission.data.payload.name} ({submission.data.payload.email})
-            </span>
-          </div>
-          <div className="p-4 flex justify-between gap-4">
-            <span>PHONE</span>
-            <span>{submission.data.payload.phone}</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4">
-          <button
-            type="button"
-            onClick={resetAll}
-            className="bg-black text-white border-2 border-black px-8 py-4 text-xs font-black tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-150 cursor-pointer"
-          >
-            SEND ANOTHER BRIEF
-          </button>
-          {onNavigateHome && (
-            <button
-              type="button"
-              onClick={onNavigateHome}
-              className="bg-white text-black border-2 border-black px-8 py-4 text-xs font-black tracking-widest uppercase hover:bg-black hover:text-white transition-colors duration-150 cursor-pointer"
-            >
-              RETURN HOME →
-            </button>
-          )}
-        </div>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-8">
@@ -123,7 +62,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                 key={option}
                 type="button"
                 onClick={() =>
-                  setValue('purpose', option, {
+                  setValue('purpose', "Infrastructure & Hosting", {
                     shouldValidate: true,
                     shouldDirty: true,
                   })
@@ -262,6 +201,13 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           </p>
         )}
       </div>
+
+      <Turnstile
+             siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "0x4AAAAAAFyhj_1whTboExX3"}
+             onSuccess={(newToken: string) => setToken(newToken)}
+             onExpire={() => setToken(null)}
+             onError={() => setToken(null)}
+           />
 
       <button
         type="submit"

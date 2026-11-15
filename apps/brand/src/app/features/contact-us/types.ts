@@ -19,3 +19,16 @@ export interface ContactApiResponse {
   data: ContactFormValues;
   simulated?: boolean;
 }
+
+export interface ContactFormProps {
+  // contactForm: UseContactFormReturn;
+  purposeOptions?: string[];
+}
+
+export interface Contact {
+  email: string;
+  phone: string;
+  message: string;
+  purpose: string;
+  fullName: string;
+}

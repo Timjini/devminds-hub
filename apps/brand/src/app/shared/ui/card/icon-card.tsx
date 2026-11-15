@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import NavigationButton from "../button/navigation-button";
 import DynamicAccentBar from "../decorations/dynamic-accent-bar";
 import DynamicThreeDots from "../decorations/dynamic-three-dots";
 import RotatingItem from "../decorations/rotating-item";
+import NavigationButton from "../button/navigation-button";
 
 interface IconCardProps {
   icon?: React.ReactNode;
