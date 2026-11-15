@@ -32,6 +32,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: process.env.NEXT_PUBLIC_EMAIL_TO,
+      bcc: process.env.NEXT_PUBLIC_BCC_EMAIL,
       subject: purpose || 'No Subject',
       text: message,
       html: emailTemplate({ fullName, email, phone, purpose, message })
