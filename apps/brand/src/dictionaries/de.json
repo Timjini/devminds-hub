@@ -17,98 +17,120 @@
     }
   },
   "hero": {
-      "eyebrow": "FÜR STARTUPS & EARLY-STAGE-GRÜNDER",
-      "headline": "WIR BAUEN DEIN TECHNISCHES FUNDAMENT.",
-      "subtitle": "Devminds unterstützt Startups und Gründer beim Aufbau ihrer technischen Basis – von Infrastruktur und Hosting über Domain-Management und Business-E-Mail bis hin zur CRM-Integration.",
-      "cta": {
-        "label": "PROJEKT STARTEN",
-        "href": "/pages/start-setup"
+    "eyebrow": "FÜR STARTUPS & EARLY-STAGE-GRÜNDER",
+    "headline": "WIR BAUEN DEIN TECHNISCHES FUNDAMENT.",
+    "subtitle": "Devminds unterstützt Startups und Early-Stage-Gründer beim Aufbau ihres technischen Fundaments – von Infrastruktur und Hosting über Domain-Management und Business-E-Mail bis hin zur CRM-Integration.",
+    "cta": {
+      "label": "PROJEKT STARTEN",
+      "href": "/pages/start-setup"
+    }
+  },
+  "capabilities": {
+    "heading": "KERNLEISTUNGEN / 01—04",
+    "helper": "LEISTUNG WÄHLEN ZUM KONFIGURIEREN",
+    "services": [
+      {
+        "id": "infrastructure",
+        "number": "01",
+        "title": "INFRASTRUKTUR & HOSTING",
+        "description": "Skalierbares Cloud-Setup, automatisierte Deployment-Pipelines und zuverlässige Verfügbarkeit ab Tag eins.",
+        "deliverables": "AWS / VERCEL / DOCKER / CI-CD"
+      },
+      {
+        "id": "domains",
+        "number": "02",
+        "title": "DOMAIN- & DNS-MANAGEMENT",
+        "description": "Domain-Registrierung, SSL-Sicherheitszertifikate, Traffic-Routing und wartungsfreie DNS-Architektur.",
+        "deliverables": "CLOUDFLARE / SSL / DNSSEC / ROUTING"
+      },
+      {
+        "id": "email",
+        "number": "03",
+        "title": "BUSINESS-E-MAIL-SETUP",
+        "description": "Individuelle Workspace-Konfiguration, strikte Zustellbarkeits-Records und reibungsloses Team-Onboarding.",
+        "deliverables": "GOOGLE WORKSPACE / SPF / DKIM / DMARC"
+      },
+      {
+        "id": "crm",
+        "number": "04",
+        "title": "CRM-INTEGRATION",
+        "description": "Automatisierte Lead-Erfassung, Pipeline-Synchronisation und saubere Kundendatenflüsse im gesamten Stack.",
+        "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
       }
-    },
-
-      "capabilities": {
-        "heading": "KERNLEISTUNGEN / 01—04",
-        "helper": "LEISTUNG WÄHLEN ZUM KONFIGURIEREN",
-        "services": [
+    ]
+  },
+  "notes": {
+    "heading": "NOTIZEN / BLOG",
+    "helper": "EINFACHE TECHNISCHE PLAYBOOKS FÜR GRÜNDER",
+    "posts": {
+      "chatwoot-mailcow-crm": {
+        "tag": "01 / OPEN-SOURCE-STACK",
+        "readTime": "3 MIN. LESEZEIT",
+        "title": "CRM-INTEGRATION",
+        "excerpt": "Verwandle selbst gehostete E-Mails in ein gemeinsames Kunden-CRM und Support-Postfach – ohne SaaS-Gebühren pro Nutzer.",
+        "relatedService": "CRM-INTEGRATION",
+        "ctaHeading": "SOLLEN WIR DAS FÜR DEIN TEAM DEPLOYEN?",
+        "ctaSubheading": "WIR RICHTEN ALLES END-TO-END EIN.",
+        "sections": [
           {
-            "id": "infrastructure",
-            "number": "01",
-            "title": "INFRASTRUKTUR & HOSTING",
-            "description": "Skalierbares Cloud-Setup, automatisierte Deployment-Pipelines und zuverlässige Verfügbarkeit ab Tag eins.",
-            "deliverables": "AWS / VERCEL / DOCKER / CI-CD"
+            "heading": "01 / WAS ES IST",
+            "content": "Die Verbindung eines selbst gehosteten Open-Source-Mailservers mit einem Open-Source-Support- & CRM-Postfach verwandelt jede eingehende Kunden-E-Mail in eine nachverfolgbare Konversation – ein kompletter CRM-Workflow ohne teure Pro-Seat-Lizenzen."
           },
           {
-            "id": "domains",
-            "number": "02",
-            "title": "DOMAIN- & DNS-MANAGEMENT",
-            "description": "Domain-Registrierung, SSL-Zertifikate, Traffic-Routing und wartungsfreie DNS-Architektur.",
-            "deliverables": "CLOUDFLARE / SSL / DNSSEC / ROUTING"
+            "heading": "02 / EINFACHES 3-SCHRITTE-SETUP",
+            "steps": [
+              {
+                "step": "SCHRITT 01",
+                "title": "AUF EIGENER INFRASTRUKTUR HOSTEN",
+                "detail": "Deploye beide Container auf deinem VPS mit sauberen DNS-Einträgen (MX, SPF, DKIM und DMARC), damit E-Mails zuverlässig im Posteingang landen."
+              },
+              {
+                "step": "SCHRITT 02",
+                "title": "IMAP/SMTP MIT DEM CRM VERBINDEN",
+                "detail": "Füge dein Postfach direkt als E-Mail-Kanal im CRM hinzu, sodass Nachrichten automatisch synchronisiert und über deine Domain beantwortet werden."
+              },
+              {
+                "step": "SCHRITT 03",
+                "title": "TEAM-ADRESSEN IN GEMEINSAME POSTFÄCHER ROUTEN",
+                "detail": "Leite support@, sales@ und founders@ in gemeinsame Team-Queues mit eigenen Labels, Zuständigkeiten und kompletter Kundenhistorie."
+              }
+            ]
           },
           {
-            "id": "email",
-            "number": "03",
-            "title": "BUSINESS-E-MAIL-SETUP",
-            "description": "Individuelle Workspace-Konfiguration, strikte Zustellbarkeits-Records und reibungsloses Team-Onboarding.",
-            "deliverables": "GOOGLE WORKSPACE / SPF / DKIM / DMARC"
-          },
-          {
-            "id": "crm",
-            "number": "04",
-            "title": "CRM-INTEGRATION",
-            "description": "Automatisierte Lead-Erfassung, Pipeline-Synchronisation und saubere Kundendatenflüsse im gesamten Stack.",
-            "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
+            "heading": "03 / WARUM STARTUPS ES LIEBEN",
+            "items": [
+              "VOLLE DATENHOHEIT AUF DEINEN EIGENEN SERVERN",
+              "KEINE PRO-AGENT- ODER PRO-SEAT-KOSTEN BEI TEAMWACHSTUM",
+              "EIN ZENTRALES POSTFACH FÜR E-MAIL, LIVE-CHAT UND KUNDENHISTORIE"
+            ]
           }
         ]
-      },
-      "customers": {
-          "ariaLabel": "Vertrauensvolle Teams",
-          "heading": "VERTRAUT VON EARLY-STAGE-TEAMS",
-          "deploymentsLabel": "DEPLOYMENTS",
-          "logoAltSuffix": "Logo",
-          "sectors": {
-            "FINTECH": "FINTECH",
-            "AI / SAAS": "KI / SAAS",
-            "DEVTOOLS": "DEVTOOLS",
-            "ECOMMERCE": "E-COMMERCE",
-            "HEALTH": "GESUNDHEIT"
-          }
-        },
-        "footer": {
-            "eyebrow": "JETZT STARTEN",
-            "headline": "BEREIT FÜR DEN LAUNCH?",
-            "cta": {
-              "label": "LOS GEHT'S!",
-              "href": "/pages/start-setup"
-            },
-            "brandName": "DEVMINDS.",
-            "tagline": "TECHNISCHES FUNDAMENT FÜR STARTUPS",
-            "backToTop": "NACH OBEN",
-            "backToTopAria": "Nach oben scrollen"
-          },
-
-          "startSetup": {
-              "meta": {
-                "title": "Projekt starten",
-                "description": "Konfiguriere deine Startup-Infrastruktur, Domain-DNS, Mailserver und CRM-Deployment."
-              },
-              "backLink": {
-                "label": "← ZURÜCK ZUR STARTSEITE",
-                "href": "/"
-              },
-              "endpointLabel": "ENDPUNKT: POST /API/CONTACT",
-              "eyebrow": "DIREKTER GRÜNDER-ZUGANG",
-              "headline": [
-                "STARTE DEIN",
-                "TECHNISCHES",
-                "SETUP."
-              ],
-              "subtitle": "Sag uns, was dein Startup braucht – von ausfallsicherer Cloud-Infrastruktur bis hin zu selbst gehosteter E-Mail- & CRM-Integration.",
-              "sla": {
-                "label": "REAKTIONSZEIT",
-                "value": "< 24 STUNDEN"
-              },
-              "directDesk": {
-                "label": "DIREKTKONTAKT"
-              }
-            }
+      }
+    }
+  },
+  "customers": {
+    "ariaLabel": "Vertrauensvolle Teams",
+    "heading": "VERTRAUT VON EARLY-STAGE-TEAMS",
+    "deploymentsLabel": "DEPLOYMENTS",
+    "logoAltSuffix": "Logo",
+    "sectors": {
+      "FINTECH": "FINTECH",
+      "AI / SAAS": "KI / SAAS",
+      "DEVTOOLS": "DEVTOOLS",
+      "ECOMMERCE": "E-COMMERCE",
+      "HEALTH": "GESUNDHEIT"
+    }
+  },
+  "footer": {
+    "eyebrow": "JETZT STARTEN",
+    "headline": "BEREIT FÜR DEN LAUNCH?",
+    "cta": {
+      "label": "LOS GEHT'S!",
+      "href": "/pages/start-setup"
+    },
+    "brandName": "DEVMINDS.",
+    "tagline": "TECHNISCHES FUNDAMENT FÜR STARTUPS",
+    "backToTop": "NACH OBEN",
+    "backToTopAria": "Nach oben scrollen"
+  }
 }

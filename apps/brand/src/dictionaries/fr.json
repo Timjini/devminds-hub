@@ -57,54 +57,54 @@
         "description": "Capture automatisée des leads, synchronisation des pipelines et flux de données clients propres sur toute votre stack.",
         "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
       }
-    ],
-    "notes": {
-      "heading": "NOTES / BLOG",
-      "helper": "GUIDES TECHNIQUES SIMPLES POUR FONDATEURS",
-      "posts": {
-        "chatwoot-mailcow-crm": {
-          "tag": "01 / STACK OPEN SOURCE",
-          "readTime": "3 MIN DE LECTURE",
-          "title": "INTÉGRATION CRM",
-          "excerpt": "Transformez votre serveur e-mail auto-hébergé en un CRM client et une boîte de support partagée sans frais SaaS par utilisateur.",
-          "relatedService": "INTÉGRATION CRM",
-          "ctaHeading": "VOUS VOULEZ CE DÉPLOIEMENT POUR VOTRE ÉQUIPE ?",
-          "ctaSubheading": "NOUS CONFIGURONS TOUT DE BOUT EN BOUT.",
-          "sections": [
-            {
-              "heading": "01 / CE QUE C'EST",
-              "content": "Connecter un serveur e-mail open-source auto-hébergé à une boîte de support client et CRM open-source transforme chaque e-mail entrant en une conversation suivie — offrant aux équipes early-stage un workflow CRM complet sans coûts SaaS par siège."
-            },
-            {
-              "heading": "02 / CONFIGURATION SIMPLE EN 3 ÉTAPES",
-              "steps": [
-                {
-                  "step": "ÉTAPE 01",
-                  "title": "HÉBERGEZ SUR VOTRE PROPRE INFRASTRUCTURE",
-                  "detail": "Déployez les deux conteneurs sur votre VPS avec des enregistrements DNS propres (MX, SPF, DKIM et DMARC) pour que vos e-mails arrivent en boîte de réception, jamais en spam."
-                },
-                {
-                  "step": "ÉTAPE 02",
-                  "title": "CONNECTEZ IMAP/SMTP AU CRM",
-                  "detail": "Ajoutez votre boîte mail directement dans le CRM comme canal e-mail afin que les messages entrants se synchronisent automatiquement et que les réponses partent depuis votre domaine."
-                },
-                {
-                  "step": "ÉTAPE 03",
-                  "title": "ROUTEZ LES ADRESSES D'ÉQUIPE VERS DES BOÎTES PARTAGÉES",
-                  "detail": "Redirigez support@, sales@ et founders@ vers des files d'équipe partagées avec étiquettes personnalisées, attribution de responsables et historique client complet."
-                }
-              ]
-            },
-            {
-              "heading": "03 / POURQUOI LES STARTUPS ADORENT",
-              "items": [
-                "PROPRIÉTÉ TOTALE DES DONNÉES SUR VOS PROPRES SERVEURS",
-                "ZÉRO TARIFICATION PAR AGENT OU PAR SIÈGE LORSQUE VOTRE ÉQUIPE GRANDIT",
-                "UNE BOÎTE DE RÉCEPTION UNIFIÉE POUR LES E-MAILS, LE CHAT EN DIRECT ET L'HISTORIQUE CLIENT"
-              ]
-            }
-          ]
-        }
+    ]
+  },
+  "notes": {
+    "heading": "NOTES / BLOG",
+    "helper": "GUIDES TECHNIQUES SIMPLES POUR FONDATEURS",
+    "posts": {
+      "chatwoot-mailcow-crm": {
+        "tag": "01 / STACK OPEN SOURCE",
+        "readTime": "3 MIN DE LECTURE",
+        "title": "INTÉGRATION CRM",
+        "excerpt": "Transformez votre serveur e-mail auto-hébergé en un CRM client et une boîte de support partagée sans frais SaaS par utilisateur.",
+        "relatedService": "INTÉGRATION CRM",
+        "ctaHeading": "VOUS VOULEZ CE DÉPLOIEMENT POUR VOTRE ÉQUIPE ?",
+        "ctaSubheading": "NOUS CONFIGURONS TOUT DE BOUT EN BOUT.",
+        "sections": [
+          {
+            "heading": "01 / CE QUE C'EST",
+            "content": "Connecter un serveur e-mail open-source auto-hébergé à une boîte de support client et CRM open-source transforme chaque e-mail entrant en une conversation suivie — offrant aux équipes early-stage un workflow CRM complet sans coûts SaaS par siège."
+          },
+          {
+            "heading": "02 / CONFIGURATION SIMPLE EN 3 ÉTAPES",
+            "steps": [
+              {
+                "step": "ÉTAPE 01",
+                "title": "HÉBERGEZ SUR VOTRE PROPRE INFRASTRUCTURE",
+                "detail": "Déployez les deux conteneurs sur votre VPS avec des enregistrements DNS propres (MX, SPF, DKIM et DMARC) pour que vos e-mails arrivent en boîte de réception, jamais en spam."
+              },
+              {
+                "step": "ÉTAPE 02",
+                "title": "CONNECTEZ IMAP/SMTP AU CRM",
+                "detail": "Ajoutez votre boîte mail directement dans le CRM comme canal e-mail afin que les messages entrants se synchronisent automatiquement et que les réponses partent depuis votre domaine."
+              },
+              {
+                "step": "ÉTAPE 03",
+                "title": "ROUTEZ LES ADRESSES D'ÉQUIPE VERS DES BOÎTES PARTAGÉES",
+                "detail": "Redirigez support@, sales@ et founders@ vers des files d'équipe partagées avec étiquettes personnalisées, attribution de responsables et historique client complet."
+              }
+            ]
+          },
+          {
+            "heading": "03 / POURQUOI LES STARTUPS ADORENT",
+            "items": [
+              "PROPRIÉTÉ TOTALE DES DONNÉES SUR VOS PROPRES SERVEURS",
+              "ZÉRO TARIFICATION PAR AGENT OU PAR SIÈGE LORSQUE VOTRE ÉQUIPE GRANDIT",
+              "UNE BOÎTE DE RÉCEPTION UNIFIÉE POUR LES E-MAILS, LE CHAT EN DIRECT ET L'HISTORIQUE CLIENT"
+            ]
+          }
+        ]
       }
     }
   },
