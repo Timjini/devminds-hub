@@ -1,22 +1,22 @@
-'use client'
+'use client';
+
 import React, { useState } from 'react';
+import { Turnstile } from '@marsidev/react-turnstile';
 import { ContactFormProps, PURPOSE_OPTIONS } from './types';
 import { useContactForm } from './hooks';
-import { Turnstile } from "@marsidev/react-turnstile";
 
 export const ContactForm: React.FC<ContactFormProps> = ({
-  // contactForm,
   purposeOptions = PURPOSE_OPTIONS,
 }) => {
   const [token, setToken] = useState<string | null>(null);
 
+  const { form, onSubmit, resetAll, submission } = useContactForm({
+    token,
+    onResetTurnstile: () => {
+      setToken(null);
+    },
+  });
 
-    const { form, onSubmit, resetAll, submission } = useContactForm({
-      token,
-      onResetTurnstile: () => {
-        setToken(null);
-      },
-    });
   const {
     register,
     watch,
@@ -26,21 +26,26 @@ export const ContactForm: React.FC<ContactFormProps> = ({
 
   const selectedPurpose = watch('purpose');
 
+  const inputBaseClass =
+    'w-full rounded-control border-brutal border-line p-4 text-base sm:text-lg font-bold bg-surface text-ink placeholder:text-ink-muted/60 shadow-soft focus:outline-none focus:border-highlight focus:bg-surface-muted/50 transition-all duration-200';
+
+  const errorBannerClass =
+    'mt-2 rounded-control bg-highlight text-ink-inverse px-3.5 py-1.5 text-xs font-black tracking-cta uppercase shadow-soft';
 
   return (
     <form onSubmit={onSubmit} noValidate className="space-y-8">
       {submission.isError && (
         <div
           role="alert"
-          className="bg-black text-white border-2 border-black p-4 flex items-center justify-between gap-4"
+          className="rounded-control bg-highlight text-ink-inverse border-brutal border-line p-4 shadow-soft flex items-center justify-between gap-4"
         >
-          <span className="text-xs font-black tracking-widest uppercase">
+          <span className="text-xs font-black tracking-cta uppercase">
             SUBMISSION ERROR: {submission.error?.message || 'UNABLE TO REACH /API/CONTACT'}
           </span>
           <button
             type="button"
             onClick={() => submission.reset()}
-            className="border-2 border-white px-2.5 py-1 text-xs font-black uppercase hover:bg-white hover:text-black cursor-pointer shrink-0"
+            className="rounded-pill border-brutal border-line-inverse px-3 py-1 text-xs font-black uppercase hover:bg-surface hover:text-ink transition-colors duration-150 cursor-pointer shrink-0"
           >
             DISMISS
           </button>
@@ -52,11 +57,13 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div className="flex items-center justify-between mb-3">
           <label
             htmlFor="contact-purpose"
-            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase"
+            className="block text-ink text-xs font-black tracking-label uppercase"
           >
             01 / SELECT PURPOSE *
           </label>
-          <span className="text-xs text-brand-dark font-black tracking-widest uppercase">REQUIRED</span>
+          <span className="rounded-pill bg-surface-muted border border-line/30 px-2.5 py-0.5 text-[11px] text-ink-muted font-black tracking-cta uppercase">
+            REQUIRED
+          </span>
         </div>
 
         <div className="flex flex-wrap gap-2 mb-3">
@@ -72,10 +79,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                     shouldDirty: true,
                   })
                 }
-                className={`border-2 border-black px-3.5 py-2 text-xs font-black tracking-wider uppercase transition-colors duration-150 cursor-pointer ${
+                className={`rounded-pill border-brutal px-4 py-2 text-xs font-black tracking-cta uppercase transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? 'bg-black text-white'
-                    : 'bg-white text-black hover:bg-black hover:text-white'
+                    ? 'bg-highlight border-highlight text-ink-inverse shadow-soft'
+                    : 'bg-surface border-line text-ink hover:bg-surface-inverse hover:border-line hover:text-ink-inverse'
                 }`}
               >
                 {option}
@@ -87,20 +94,17 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <select
           id="contact-purpose"
           {...register('purpose')}
-          className="w-full border-2 border-black p-4 text-base font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150 uppercase"
+          className={`${inputBaseClass} uppercase cursor-pointer`}
         >
           {purposeOptions.map((option) => (
-            <option key={option} value={option} className="bg-white text-black">
+            <option key={option} value={option} className="bg-surface text-ink">
               {option}
             </option>
           ))}
         </select>
 
         {errors.purpose && (
-          <p
-            role="alert"
-            className="mt-2 bg-black text-white px-3 py-1 text-xs font-black tracking-wider uppercase"
-          >
+          <p role="alert" className={errorBannerClass}>
             ! {errors.purpose.message}
           </p>
         )}
@@ -110,7 +114,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
       <div>
         <label
           htmlFor="contact-name"
-          className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
+          className="block text-ink text-xs font-black tracking-label uppercase mb-3"
         >
           02 / YOUR NAME *
         </label>
@@ -119,13 +123,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           type="text"
           placeholder="JANE DOE"
           {...register('name')}
-          className="w-full border-2 border-black p-4 text-lg font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150"
+          className={inputBaseClass}
         />
         {errors.name && (
-          <p
-            role="alert"
-            className="mt-2 bg-black text-white px-3 py-1 text-xs font-black tracking-wider uppercase"
-          >
+          <p role="alert" className={errorBannerClass}>
             ! {errors.name.message}
           </p>
         )}
@@ -136,7 +137,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div>
           <label
             htmlFor="contact-email"
-            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
+            className="block text-ink text-xs font-black tracking-label uppercase mb-3"
           >
             03 / WORK EMAIL *
           </label>
@@ -145,13 +146,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             type="email"
             placeholder="JANE@STARTUP.IO"
             {...register('email')}
-            className="w-full border-2 border-black p-4 text-lg font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150"
+            className={inputBaseClass}
           />
           {errors.email && (
-            <p
-              role="alert"
-              className="mt-2 bg-black text-white px-3 py-1 text-xs font-black tracking-wider uppercase"
-            >
+            <p role="alert" className={errorBannerClass}>
               ! {errors.email.message}
             </p>
           )}
@@ -160,7 +158,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
         <div>
           <label
             htmlFor="contact-phone"
-            className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
+            className="block text-ink text-xs font-black tracking-label uppercase mb-3"
           >
             04 / PHONE NUMBER *
           </label>
@@ -169,13 +167,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({
             type="tel"
             placeholder="+49 20 7946 0958"
             {...register('phone')}
-            className="w-full border-2 border-black p-4 text-lg font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150"
+            className={inputBaseClass}
           />
           {errors.phone && (
-            <p
-              role="alert"
-              className="mt-2 bg-black text-white px-3 py-1 text-xs font-black tracking-wider uppercase"
-            >
+            <p role="alert" className={errorBannerClass}>
               ! {errors.phone.message}
             </p>
           )}
@@ -186,7 +181,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
       <div>
         <label
           htmlFor="contact-message"
-          className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3"
+          className="block text-ink text-xs font-black tracking-label uppercase mb-3"
         >
           05 / PROJECT MESSAGE *
         </label>
@@ -195,41 +190,40 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           rows={5}
           placeholder="TELL US ABOUT YOUR TIMELINE, DOMAIN SETUP, OR STACK GOALS..."
           {...register('message')}
-          className="w-full border-2 border-black p-4 text-lg font-bold bg-white text-black focus:outline-none focus:bg-black focus:text-white transition-colors duration-150 resize-none"
+          className={`${inputBaseClass} resize-none`}
         />
         {errors.message && (
-          <p
-            role="alert"
-            className="mt-2 bg-black text-white px-3 py-1 text-xs font-black tracking-wider uppercase"
-          >
+          <p role="alert" className={errorBannerClass}>
             ! {errors.message.message}
           </p>
         )}
       </div>
 
-      <div className="border-2 border-black p-4 bg-white">
-              <span className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3">
-                06 / BOT VERIFICATION *
-              </span>
-              <Turnstile
-                     siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
-                     onSuccess={(newToken) => setToken(newToken)}
-                     onExpire={() => setToken(null)}
-                     onError={() => setToken(null)}
-                   />
-            </div>
+      {/* 06 / TURNSTILE VERIFICATION */}
+      <div className="rounded-control border-brutal border-line p-4 bg-surface-muted/60 shadow-soft">
+        <span className="block text-ink text-xs font-black tracking-label uppercase mb-3">
+          06 / BOT VERIFICATION *
+        </span>
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''}
+          onSuccess={(newToken) => setToken(newToken)}
+          onExpire={() => setToken(null)}
+          onError={() => setToken(null)}
+        />
+      </div>
 
-            <button
-              type="submit"
-              disabled={submission.isPending || !token }
-              className="w-full bg-black text-white border-2 border-black py-5 text-base font-black tracking-widest uppercase hover:bg-white hover:text-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-150 cursor-pointer"
-            >
-              {submission.isPending
-                ? 'TRANSMITTING TO /API/CONTACT...'
-                : !token
-                ? 'COMPLETE VERIFICATION TO SEND'
-                : 'SEND INQUIRY →'}
-            </button>
+      {/* SUBMIT CTA */}
+      <button
+        type="submit"
+        disabled={submission.isPending || !token}
+        className="w-full rounded-control font-display bg-surface-inverse text-ink-inverse border-brutal border-line py-5 text-base font-bold tracking-cta uppercase shadow-soft hover:bg-highlight hover:border-highlight hover:text-ink-inverse hover:shadow-soft-hover active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none transition-all duration-200 cursor-pointer"
+      >
+        {submission.isPending
+          ? 'TRANSMITTING TO /API/CONTACT...'
+          : !token
+          ? 'COMPLETE VERIFICATION TO SEND'
+          : 'SEND INQUIRY →'}
+      </button>
     </form>
   );
 };

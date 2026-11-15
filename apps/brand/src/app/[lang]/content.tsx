@@ -2,7 +2,6 @@
 import { Navbar } from '../shared/ui/navigation/navbar';
 import { HeroSection } from '../shared/ui/section/hero';
 import { CapabilitiesSection } from '../entities/capability/capability-section';
-import { BlogSection } from '../entities/blog/ui/blog-section';
 import { Footer } from '../shared/ui/footer';
 import { CUSTOMERS } from '../data/customers';
 import { useDictionary } from '@/contexts';

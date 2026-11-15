@@ -7,101 +7,102 @@
         "href": "#capabilities"
       },
       "notes": {
-        "label": "NOTES",
+        "label": "GUIDES",
         "href": "#notes"
       }
     },
     "cta": {
-      "label": "LANCER UN PROJET",
+      "label": "LANCER UNE CAMPAGNE",
       "href": "/pages/start-setup"
     }
   },
   "hero": {
-    "eyebrow": "POUR STARTUPS & FONDATEURS EARLY-STAGE",
-    "headline": "NOUS BÂTISSONS VOTRE SOCLE TECHNIQUE.",
-    "subtitle": "Devminds accompagne les startups et fondateurs early-stage dans la mise en place de leur socle technique — de l'infrastructure et l'hébergement à la gestion de domaines, la configuration e-mail et l'intégration CRM.",
+    "eyebrow": "AGENCE DE PUBLICITÉ & DESIGN",
+    "headline": "NOUS CRÉONS DES MARQUES QUI PERFORMENT.",
+    "subtitle": "GoAdway propulse les marques ambitieuses grâce au web design haute conversion, à l'identité de marque, au setup Meta Ads et à la performance Google Ads & SEO.",
     "cta": {
-      "label": "LANCER UN PROJET",
+      "label": "ACCÉLÉRER VOTRE CROISSANCE",
       "href": "/pages/start-setup"
     }
   },
   "capabilities": {
     "heading": "EXPERTISES CLÉS / 01—04",
-    "helper": "CLIQUEZ SUR UNE EXPERTISE POUR DÉFINIR VOTRE BESOIN",
+    "helper": "CLIQUEZ SUR UNE EXPERTISE POUR DÉFINIR VOTRE PROJET",
     "services": [
       {
         "id": "infrastructure",
         "number": "01",
-        "title": "INFRASTRUCTURE & HÉBERGEMENT",
-        "description": "Configuration cloud évolutive, pipelines de déploiement automatisés et haute disponibilité conçus dès le premier jour.",
-        "deliverables": "AWS / VERCEL / DOCKER / CI-CD"
+        "title": "BRANDING & IDENTITÉ VISUELLE",
+        "description": "Systèmes visuels distinctifs, création de logo, charte graphique et positionnement conçus pour marquer les esprits.",
+        "deliverables": "STRATÉGIE DE MARQUE / LOGO / IDENTITÉ / CHARTE"
       },
       {
         "id": "domains",
         "number": "02",
-        "title": "GESTION DE DOMAINES & DNS",
-        "description": "Acquisition de domaines, certificats de sécurité SSL, routage du trafic et architecture DNS sans friction.",
-        "deliverables": "CLOUDFLARE / SSL / DNSSEC / ROUTING"
+        "title": "WEB DESIGN & LANDING PAGES",
+        "description": "Sites web orientés conversion, design UI/UX responsive et landing pages rapides conçus pour transformer vos visiteurs en clients.",
+        "deliverables": "UI-UX / LANDING PAGES / FIGMA / CONVERSION"
       },
       {
         "id": "email",
         "number": "03",
-        "title": "CONFIGURATION E-MAIL PROFESSIONNEL",
-        "description": "Configuration d'espace de travail sur mesure, enregistrements stricts de délivrabilité et intégration fluide de votre équipe.",
-        "deliverables": "GOOGLE WORKSPACE / SPF / DKIM / DMARC"
+        "title": "SETUP META ADS & CRÉATIVES",
+        "description": "Configuration complète Business Manager, tracking Pixel & API Conversions, audiences ciblées et créatives publicitaires percutantes.",
+        "deliverables": "META PIXEL / CAPI / CRÉATIVES ADS / RETARGETING"
       },
       {
         "id": "crm",
         "number": "04",
-        "title": "INTÉGRATION CRM",
-        "description": "Capture automatisée des leads, synchronisation des pipelines et flux de données clients propres sur toute votre stack.",
-        "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
+        "title": "GOOGLE ADS & SEO",
+        "description": "Campagnes Search à forte intention, SEO technique on-page et suivi des conversions pour un trafic payant et organique durable.",
+        "deliverables": "SEARCH ADS / SEO TECHNIQUE / GA4 / GTM"
       }
     ]
   },
   "notes": {
-    "heading": "NOTES / BLOG",
-    "helper": "GUIDES TECHNIQUES SIMPLES POUR FONDATEURS",
+    "heading": "NOTES / PLAYBOOKS",
+    "helper": "GUIDES CRÉATIFS & ACQUISITION POUR MARQUES MODERNES",
+    "readLabel": "LIRE",
     "posts": {
       "chatwoot-mailcow-crm": {
-        "tag": "01 / STACK OPEN SOURCE",
+        "tag": "01 / ACQUISITION PAYANTE",
         "readTime": "3 MIN DE LECTURE",
-        "title": "INTÉGRATION CRM",
-        "excerpt": "Transformez votre serveur e-mail auto-hébergé en un CRM client et une boîte de support partagée sans frais SaaS par utilisateur.",
-        "relatedService": "INTÉGRATION CRM",
-        "ctaHeading": "VOUS VOULEZ CE DÉPLOIEMENT POUR VOTRE ÉQUIPE ?",
-        "ctaSubheading": "NOUS CONFIGURONS TOUT DE BOUT EN BOUT.",
+        "title": "ARCHITECTURE META ADS & PIXEL",
+        "excerpt": "Comment un tracking serveur propre, des landing pages optimisées et le test créatif réduisent votre coût d'acquisition client.",
+        "relatedService": "SETUP META ADS & CRÉATIVES",
+        "ctaHeading": "VOUS VOULEZ CE FUNNEL POUR VOTRE MARQUE ?",
+        "ctaSubheading": "NOUS CONCEVONS, TRACKONS & LANÇONS DE BOUT EN BOUT.",
         "sections": [
           {
             "heading": "01 / CE QUE C'EST",
-            "content": "Connecter un serveur e-mail open-source auto-hébergé à une boîte de support client et CRM open-source transforme chaque e-mail entrant en une conversation suivie — offrant aux équipes early-stage un workflow CRM complet sans coûts SaaS par siège."
+            "content": "Associer des landing pages conçues pour la conversion à un tracking Meta Pixel, Conversions API (CAPI) et Google Tag Manager bien configuré fournit aux algorithmes des signaux précis — transformant votre budget pub en revenus prévisibles."
           },
           {
-            "heading": "02 / CONFIGURATION SIMPLE EN 3 ÉTAPES",
+            "heading": "02 / LANCEMENT EN 3 ÉTAPES",
             "steps": [
               {
                 "step": "ÉTAPE 01",
-                "title": "HÉBERGEZ SUR VOTRE PROPRE INFRASTRUCTURE",
-                "detail": "Déployez les deux conteneurs sur votre VPS avec des enregistrements DNS propres (MX, SPF, DKIM et DMARC) pour que vos e-mails arrivent en boîte de réception, jamais en spam."
+                "title": "ALIGNEMENT MARQUE & LANDING PAGE",
+                "detail": "Conception d'une landing page rapide et percutante avec une proposition de valeur claire adaptée à chaque angle publicitaire."
               },
               {
                 "step": "ÉTAPE 02",
-                "title": "CONNECTEZ IMAP/SMTP AU CRM",
-                "detail": "Ajoutez votre boîte mail directement dans le CRM comme canal e-mail afin que les messages entrants se synchronisent automatiquement et que les réponses partent depuis votre domaine."
+                "title": "CONFIGURATION PIXEL, CAPI & GA4",
+                "detail": "Paramétrage de Meta Business Manager, de l'API Conversions côté serveur et des événements Google Ads avec attribution vérifiée."
               },
               {
                 "step": "ÉTAPE 03",
-                "title": "ROUTEZ LES ADRESSES D'ÉQUIPE VERS DES BOÎTES PARTAGÉES",
-                "detail": "Redirigez support@, sales@ et founders@ vers des files d'équipe partagées avec étiquettes personnalisées, attribution de responsables et historique client complet."
+                "title": "LANCEMENT DES CAMPAGNES & DU SEO",
+                "detail": "Déploiement de campagnes Meta Ads structurées, de mots-clés Google Search à forte intention et d'une base SEO technique solide."
               }
             ]
           },
           {
-            "heading": "03 / POURQUOI LES STARTUPS ADORENT",
+            "heading": "03 / POURQUOI LES MARQUES ADORENT",
             "items": [
-              "PROPRIÉTÉ TOTALE DES DONNÉES SUR VOS PROPRES SERVEURS",
-              "ZÉRO TARIFICATION PAR AGENT OU PAR SIÈGE LORSQUE VOTRE ÉQUIPE GRANDIT",
-              "UNE BOÎTE DE RÉCEPTION UNIFIÉE POUR LES E-MAILS, LE CHAT EN DIRECT ET L'HISTORIQUE CLIENT"
+              "IDENTITÉ DE MARQUE COHÉRENTE SUR LE WEB, LES RÉSEAUX ET GOOGLE",
+              "ATTRIBUTION PRÉCISE DES CONVERSIONS SANS BUDGET GASPILLÉ",
+              "UN SEUL PARTENAIRE POUR LE DESIGN, LES ADS ET LE SEO"
             ]
           }
         ]
@@ -109,27 +110,27 @@
     }
   },
   "customers": {
-    "ariaLabel": "Équipes partenaires",
+    "ariaLabel": "Marques partenaires",
     "heading": "ILS NOUS FONT CONFIANCE",
-    "deploymentsLabel": "DÉPLOIEMENTS",
+    "deploymentsLabel": "CAMPAGNES",
     "logoAltSuffix": "logo",
     "sectors": {
       "FINTECH": "FINTECH",
       "AI / SAAS": "IA / SAAS",
-      "DEVTOOLS": "DEVTOOLS",
+      "DEVTOOLS": "D2C / RETAIL",
       "ECOMMERCE": "E-COMMERCE",
-      "HEALTH": "SANTÉ"
+      "HEALTH": "BIEN-ÊTRE"
     }
   },
   "footer": {
-    "eyebrow": "DÉMARRER",
-    "headline": "PRÊT À LANCER ?",
+    "eyebrow": "PASSER À L'ACTION",
+    "headline": "PRÊT À ACCÉLÉRER ?",
     "cta": {
       "label": "C'EST PARTI !",
       "href": "/pages/start-setup"
     },
-    "brandName": "DEVMINDS.",
-    "tagline": "SOCLE TECHNIQUE POUR STARTUPS",
+    "brandName": "GOADWAY.",
+    "tagline": "AGENCE DE PUBLICITÉ, BRANDING & WEB DESIGN",
     "backToTop": "HAUT",
     "backToTopAria": "Retourner en haut de la page"
   }

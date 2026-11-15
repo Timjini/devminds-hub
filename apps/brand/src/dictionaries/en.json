@@ -7,21 +7,21 @@
         "href": "#capabilities"
       },
       "notes": {
-        "label": "NOTES",
+        "label": "PLAYBOOKS",
         "href": "#notes"
       }
     },
     "cta": {
-      "label": "START A PROJECT",
+      "label": "START A CAMPAIGN",
       "href": "/pages/start-setup"
     }
   },
   "hero": {
-    "eyebrow": "FOR STARTUPS & EARLY-STAGE FOUNDERS",
-    "headline": "WE BUILD YOUR TECHNICAL FOUNDATION.",
-    "subtitle": "Devminds helps startups and early-stage founders handle their technical foundation—from infrastructure and hosting to domain management, email setup, and CRM integration.",
+    "eyebrow": "ADVERTISING & DESIGN STUDIO",
+    "headline": "WE DESIGN BRANDS THAT SCALE.",
+    "subtitle": "GoAdway helps ambitious brands grow with high-converting web design, bold brand identity, Meta Ads setup, and performance-driven Google Ads & SEO.",
     "cta": {
-      "label": "START A PROJECT",
+      "label": "LAUNCH YOUR GROWTH",
       "href": "/pages/start-setup"
     }
   },
@@ -32,76 +32,77 @@
       {
         "id": "infrastructure",
         "number": "01",
-        "title": "INFRASTRUCTURE & HOSTING",
-        "description": "Scalable cloud setup, automated deployment pipelines, and reliable uptime engineered from day one.",
-        "deliverables": "AWS / VERCEL / DOCKER / CI-CD"
+        "title": "BRANDING & IDENTITY",
+        "description": "Distinctive visual systems, logo architecture, brand guidelines, and messaging built to stand out in crowded markets.",
+        "deliverables": "BRAND STRATEGY / LOGO / VISUAL SYSTEM / GUIDELINES"
       },
       {
         "id": "domains",
         "number": "02",
-        "title": "DOMAIN & DNS MANAGEMENT",
-        "description": "Domain acquisition, SSL security certificates, traffic routing, and zero-headache DNS architecture.",
-        "deliverables": "CLOUDFLARE / SSL / DNSSEC / ROUTING"
+        "title": "WEB DESIGN & LANDING PAGES",
+        "description": "Conversion-engineered websites, responsive UI/UX design, and fast landing pages crafted to turn visitors into customers.",
+        "deliverables": "UI-UX / LANDING PAGES / FIGMA / CONVERSION DESIGN"
       },
       {
         "id": "email",
         "number": "03",
-        "title": "BUSINESS EMAIL SETUP",
-        "description": "Custom workspace configuration, strict deliverability records, and seamless team onboarding.",
-        "deliverables": "GOOGLE WORKSPACE / SPF / DKIM / DMARC"
+        "title": "META ADS SETUP & CREATIVE",
+        "description": "Full Business Manager setup, Pixel & Conversions API tracking, audience architecture, and thumb-stopping ad creatives.",
+        "deliverables": "META PIXEL / CAPI / AD CREATIVES / RETARGETING"
       },
       {
         "id": "crm",
         "number": "04",
-        "title": "CRM INTEGRATION",
-        "description": "Automated lead capture, pipeline syncing, and clean customer data flows across your entire stack.",
-        "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
+        "title": "GOOGLE ADS & SEO",
+        "description": "High-intent search campaigns, technical on-page SEO, and conversion tracking designed for compounding organic and paid traffic.",
+        "deliverables": "SEARCH ADS / TECHNICAL SEO / GA4 / GTM"
       }
     ]
   },
   "notes": {
-    "heading": "NOTES / BLOG",
-    "helper": "SIMPLE TECHNICAL PLAYBOOKS FOR FOUNDERS",
+    "heading": "NOTES / PLAYBOOKS",
+    "helper": "GROWTH & CREATIVE PLAYBOOKS FOR MODERN BRANDS",
+    "readLabel": "READ",
     "posts": {
       "chatwoot-mailcow-crm": {
-        "tag": "01 / OPEN SOURCE STACK",
+        "tag": "01 / PAID ACQUISITION",
         "readTime": "3 MIN READ",
-        "title": "CRM INTEGRATION",
-        "excerpt": "Turn self-hosted email into a shared customer CRM and support inbox without paying per-seat SaaS fees.",
-        "relatedService": "CRM INTEGRATION",
-        "ctaHeading": "WANT THIS DEPLOYED FOR YOUR TEAM?",
-        "ctaSubheading": "WE SET UP + END-TO-END.",
+        "title": "META ADS & PIXEL ARCHITECTURE",
+        "excerpt": "How clean server-side tracking, high-converting landing pages, and creative testing cut your customer acquisition cost.",
+        "relatedService": "META ADS SETUP & CREATIVE",
+        "ctaHeading": "WANT THIS FUNNEL BUILT FOR YOUR BRAND?",
+        "ctaSubheading": "WE DESIGN, TRACK & LAUNCH END-TO-END.",
         "sections": [
           {
             "heading": "01 / WHAT IT IS",
-            "content": "Connecting (a self-hosted open-source email server) with (an open-source customer support & CRM inbox) turns every incoming customer email into a trackable conversation—giving early-stage teams a complete CRM workflow without expensive per-seat SaaS fees."
+            "content": "Pairing custom conversion-focused landing pages with properly configured Meta Pixel, Conversions API (CAPI), and Google Tag Manager gives ad algorithms clean conversion signals—turning ad spend into predictable pipeline."
           },
           {
-            "heading": "02 / SIMPLE 3-STEP SETUP",
+            "heading": "02 / SIMPLE 3-STEP LAUNCH",
             "steps": [
               {
                 "step": "STEP 01",
-                "title": "HOST & ON YOUR OWN INFRASTRUCTURE",
-                "detail": "Deploy both containers on your VPS with clean DNS records (MX, SPF, DKIM, and DMARC) so your emails land in inboxes, never spam."
+                "title": "BRAND & LANDING PAGE ALIGNMENT",
+                "detail": "Design a fast, sharp landing page with clear value propositions and message-match tailored to every ad angle."
               },
               {
                 "step": "STEP 02",
-                "title": "CONNECT IMAP/SMTP INTO CRM",
-                "detail": "Add your mailbox directly inside CRM as an Email Channel so incoming messages sync automatically and replies send from your domain."
+                "title": "WIRE PIXEL, CAPI & GA4 TRACKING",
+                "detail": "Configure Meta Business Manager, server-side Conversions API, and Google Ads conversion events with verified domain attribution."
               },
               {
                 "step": "STEP 03",
-                "title": "ROUTE TEAM ADDRESSES INTO SHARED INBOXES",
-                "detail": "Pipe support@, sales@, and founders@ into shared team queues with custom labels, owner assignment, and full customer contact history."
+                "title": "LAUNCH CREATIVE & SEARCH CAMPAIGNS",
+                "detail": "Deploy structured Meta ad sets alongside high-intent Google Search keywords and technical SEO foundations for compounding reach."
               }
             ]
           },
           {
-            "heading": "03 / WHY STARTUPS LOVE IT",
+            "heading": "03 / WHY BRANDS LOVE IT",
             "items": [
-              "FULL DATA OWNERSHIP ON YOUR OWN SERVERS",
-              "ZERO PER-AGENT OR PER-SEAT PRICING AS YOUR TEAM GROWS",
-              "ONE UNIFIED INBOX FOR EMAIL, LIVE CHAT, AND CUSTOMER HISTORY"
+              "UNIFIED BRAND IDENTITY ACROSS WEB, SOCIAL, AND SEARCH",
+              "ACCURATE CONVERSION ATTRIBUTION WITH ZERO WASTED AD SPEND",
+              "ONE PARTNER FOR DESIGN, PAID ADS, AND ORGANIC SEO"
             ]
           }
         ]
@@ -109,27 +110,27 @@
     }
   },
   "customers": {
-    "ariaLabel": "Trusted Teams",
-    "heading": "TRUSTED BY EARLY-STAGE TEAMS",
-    "deploymentsLabel": "DEPLOYMENTS",
+    "ariaLabel": "Trusted Brands",
+    "heading": "TRUSTED BY AMBITIOUS BRANDS",
+    "deploymentsLabel": "CAMPAIGNS",
     "logoAltSuffix": "logo",
     "sectors": {
       "FINTECH": "FINTECH",
       "AI / SAAS": "AI / SAAS",
-      "DEVTOOLS": "DEVTOOLS",
+      "DEVTOOLS": "D2C / RETAIL",
       "ECOMMERCE": "E-COMMERCE",
-      "HEALTH": "HEALTH"
+      "HEALTH": "WELLNESS"
     }
   },
   "footer": {
-    "eyebrow": "GET STARTED",
-    "headline": "READY TO LAUNCH?",
+    "eyebrow": "LET'S GROW",
+    "headline": "READY TO SCALE?",
     "cta": {
-      "label": "YEEAH!",
+      "label": "LET'S GO!",
       "href": "/pages/start-setup"
     },
-    "brandName": "DEVMINDS.",
-    "tagline": "TECHNICAL FOUNDATION FOR STARTUPS",
+    "brandName": "GOADWAY.",
+    "tagline": "ADVERTISING, BRANDING & WEB DESIGN AGENCY",
     "backToTop": "TOP",
     "backToTopAria": "Scroll back to top"
   }

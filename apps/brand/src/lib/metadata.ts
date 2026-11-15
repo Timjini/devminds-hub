@@ -9,9 +9,10 @@ export interface ConstructMetadataOptions {
   noIndex?: boolean;
 }
 
-const DEFAULT_TITLE = 'Devminds | Technical Foundation & DevOps Infrastructure for Startups';
+const DEFAULT_TITLE =
+  'GoAdway | Advertising, Branding, Web Design & Paid Growth Agency';
 const DEFAULT_DESCRIPTION =
-  'Devminds builds your startup’s technical foundation—production cloud infrastructure, zero-downtime hosting, domain & DNS management, authenticated business email, and CRM integration.';
+  'GoAdway helps ambitious brands scale with bold brand identity, high-converting web design, Meta Ads setup, and performance-driven Google Ads & SEO.';
 
 export function constructMetadata({
   title,
@@ -24,8 +25,8 @@ export function constructMetadata({
 
   return {
     title: title
-      ? { default: title, template: '%s | Devminds' }
-      : { default: DEFAULT_TITLE, template: '%s | Devminds' },
+      ? { default: title, template: '%s | GoAdway' }
+      : { default: DEFAULT_TITLE, template: '%s | GoAdway' },
     description,
     alternates: {
       canonical,
@@ -47,7 +48,7 @@ export function constructMetadata({
       title: resolvedTitle,
       description,
       url: canonical,
-      siteName: 'Devminds',
+      siteName: 'GoAdway',
       images: [
         {
           url: image,
