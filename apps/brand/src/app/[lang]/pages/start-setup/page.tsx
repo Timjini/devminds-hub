@@ -65,7 +65,7 @@ export default async function Page({ params }: PageProps<'/[lang]'>) {
 
                 <p className="text-lg font-bold leading-snug text-stone-800 mb-8 pb-8 border-b-2 border-black">
                   Tell us what your startup needs—from zero-downtime cloud infrastructure to self-hosted
-                  Mailcow &amp; Chatwoot CRM integration.
+                  &amp; CRM integration.
                 </p>
 
                 <div className="space-y-4 text-xs font-black tracking-[0.18em] uppercase">

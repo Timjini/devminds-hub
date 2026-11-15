@@ -32,7 +32,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'BUSINESS EMAIL SETUP',
     description:
       'Custom workspace configuration, strict deliverability records, and seamless team onboarding.',
-    deliverables: 'GOOGLE WORKSPACE / MAILCOW / SPF / DKIM / DMARC',
+    deliverables: 'GOOGLE WORKSPACE / SPF / DKIM / DMARC',
   },
   {
     id: 'crm',
@@ -40,7 +40,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'CRM INTEGRATION',
     description:
       'Automated lead capture, pipeline syncing, and clean customer data flows across your entire stack.',
-    deliverables: 'CHATWOOT / HUBSPOT / ATTIO / WEBHOOKS',
+    deliverables: 'CRM / HUBSPOT / ATTIO / WEBHOOKS',
   },
 ];
 
@@ -55,13 +55,13 @@ export const BLOG_POSTS: BlogPost[] = [
       'Turn self-hosted email into a shared customer CRM and support inbox without paying per-seat SaaS fees.',
     relatedService: 'CRM INTEGRATION',
     ctaHeading: 'WANT THIS DEPLOYED FOR YOUR TEAM?',
-    ctaSubheading: 'WE SET UP MAILCOW + CHATWOOT END-TO-END.',
+    ctaSubheading: 'WE SET UP + END-TO-END.',
     sections: [
       {
         heading: '01 / WHAT IT IS',
         type: 'paragraph',
         content:
-          'Connecting Mailcow (a self-hosted open-source email server) with Chatwoot (an open-source customer support & CRM inbox) turns every incoming customer email into a trackable conversation—giving early-stage teams a complete CRM workflow without expensive per-seat SaaS fees.',
+          'Connecting (a self-hosted open-source email server) with (an open-source customer support & CRM inbox) turns every incoming customer email into a trackable conversation—giving early-stage teams a complete CRM workflow without expensive per-seat SaaS fees.',
       },
       {
         heading: '02 / SIMPLE 3-STEP SETUP',
@@ -69,15 +69,15 @@ export const BLOG_POSTS: BlogPost[] = [
         steps: [
           {
             step: 'STEP 01',
-            title: 'HOST MAILCOW & CHATWOOT ON YOUR OWN INFRASTRUCTURE',
+            title: 'HOST & ON YOUR OWN INFRASTRUCTURE',
             detail:
               'Deploy both containers on your VPS with clean DNS records (MX, SPF, DKIM, and DMARC) so your emails land in inboxes, never spam.',
           },
           {
             step: 'STEP 02',
-            title: 'CONNECT MAILCOW IMAP/SMTP INTO CHATWOOT',
+            title: 'CONNECT IMAP/SMTP INTO CRM',
             detail:
-              'Add your Mailcow mailbox directly inside Chatwoot as an Email Channel so incoming messages sync automatically and replies send from your domain.',
+              'Add your mailbox directly inside CRM as an Email Channel so incoming messages sync automatically and replies send from your domain.',
           },
           {
             step: 'STEP 03',
