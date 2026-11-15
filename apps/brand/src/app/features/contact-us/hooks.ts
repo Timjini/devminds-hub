@@ -17,7 +17,7 @@ export function useContactForm({
   onResetTurnstile,
 }: UseContactFormOptions = {}) {
   const initialPurpose =
-    defaultPurpose && PURPOSE_OPTIONS.includes("Infrastructure & Hosting")
+    defaultPurpose && PURPOSE_OPTIONS.includes(PURPOSE_OPTIONS[0])
       ? defaultPurpose
       : '';
 
@@ -34,7 +34,7 @@ export function useContactForm({
   });
 
   useEffect(() => {
-    if (defaultPurpose && PURPOSE_OPTIONS.includes("Infrastructure & Hosting")) {
+    if (defaultPurpose && PURPOSE_OPTIONS.includes(PURPOSE_OPTIONS[0])) {
       form.setValue('purpose', defaultPurpose, { shouldValidate: false });
     }
   }, [defaultPurpose, form]);
