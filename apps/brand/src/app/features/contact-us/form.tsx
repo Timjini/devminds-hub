@@ -57,7 +57,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           >
             01 / SELECT PURPOSE *
           </label>
-          <span className="text-xs font-black tracking-widest uppercase">REQUIRED</span>
+          <span className="text-xs text-brand-dark font-black tracking-widest uppercase">REQUIRED</span>
         </div>
 
         <div className="flex flex-wrap gap-2 mb-3">

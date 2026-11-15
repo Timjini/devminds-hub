@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUp } from "lucide-react";
 import Link from "next/link";
+import { NavButton } from "./button/nav-button";
 
 interface FooterProps {
   onOpenInquiry: (serviceTitle?: string) => void;
@@ -23,14 +24,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
           </h2>
         </div>
 
-        <Link
-          type="button"
-          href="/pages/start-setup"
-          className="px-8 py-5 bg-black text-white border-2 border-black text-base sm:text-lg font-black tracking-wider uppercase hover:bg-white hover:text-black transition-colors duration-150 flex items-center justify-center gap-3 cursor-pointer self-start lg:self-auto"
-        >
-          START YOUR SETUP
-          <ArrowRight className="w-5 h-5 stroke-[2.5]" />
-        </Link>
+        <NavButton href="/pages/start-setup">
+          YEEAH!
+        </NavButton>
       </div>
 
       {/* Bottom Legal & Back-to-Top Row */}

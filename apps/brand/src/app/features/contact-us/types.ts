@@ -4,7 +4,7 @@ export const PURPOSE_OPTIONS = [
   'Infrastructure & Hosting',
   'Domain & DNS Management',
   'Business Email Setup',
-  'CRM Integration (Chatwoot / Mailcow)',
+  'CRM Integration',
   'Full Startup Launch Stack',
   'General Inquiry',
 ] as const;
