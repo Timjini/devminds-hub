@@ -33,7 +33,7 @@ export const CUSTOMERS: CustomerItem[] = [
     sector: 'ENGINEERING',
     logoSrc: `${BASE_URL}/bcelogo.png`,
     logoAlt: 'BCE-USA logo',
-   url: 'https://bca-usa.com/?utm_source=devminds&utm_medium=referral&utm_campaign=customer_showcase'
+   url: 'https://www.bce-usa.com'
   },
   {
     id: '05',
