@@ -14,7 +14,7 @@ export default function Content() {
   const services =  capabilities.services;
   // const blogPosts = dict.notes;
   return (
-    <div className="min-h-screen bg-white text-black font-sans selection:bg-black selection:text-white antialiased">
+    <div className="min-h-screen bg-surface text-black font-sans selection:bg-black selection:text-white antialiased">
       <Navbar />
 
       <main>
