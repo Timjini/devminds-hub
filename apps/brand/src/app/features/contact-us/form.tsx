@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { ContactFormProps, PURPOSE_OPTIONS } from './types';
 import { useContactForm } from './hooks';
 import { Turnstile } from "@marsidev/react-turnstile";
@@ -211,23 +211,23 @@ export const ContactForm: React.FC<ContactFormProps> = ({
               <span className="block text-stone-900 text-xs font-black tracking-[0.2em] uppercase mb-3">
                 06 / BOT VERIFICATION *
               </span>
-              {/*<Turnstile
+              <Turnstile
                      siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
                      onSuccess={(newToken) => setToken(newToken)}
                      onExpire={() => setToken(null)}
                      onError={() => setToken(null)}
-                   />*/}
+                   />
             </div>
 
             <button
               type="submit"
-              disabled={submission.isPending }
+              disabled={submission.isPending || !token }
               className="w-full bg-black text-white border-2 border-black py-5 text-base font-black tracking-widest uppercase hover:bg-white hover:text-black disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-150 cursor-pointer"
             >
               {submission.isPending
                 ? 'TRANSMITTING TO /API/CONTACT...'
-                // : !token
-                // ? 'COMPLETE VERIFICATION TO SEND'
+                : !token
+                ? 'COMPLETE VERIFICATION TO SEND'
                 : 'SEND INQUIRY →'}
             </button>
     </form>

@@ -6,24 +6,24 @@ export async function POST(req: NextRequest) {
   try {
     const { turnstileToken, fullName, email, purpose, message, phone }: { turnstileToken: string } & Contact = await req.json();
 
-    // if (!turnstileToken) {
-    //   return NextResponse.json({ error: 'Missing token' }, { status: 400 });
-    // }
+    if (!turnstileToken) {
+      return NextResponse.json({ error: 'Missing token' }, { status: 400 });
+    }
 
-    // const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //   body: new URLSearchParams({
-    //     secret: process.env.TURNSTILE_SECRET_KEY!,
-    //     response: turnstileToken,
-    //   }),
-    // });
+    const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        secret: process.env.TURNSTILE_SECRET_KEY!,
+        response: turnstileToken,
+      }),
+    });
 
-    // const outcome = await verifyRes.json();
+    const outcome = await verifyRes.json();
 
-    // if (!outcome.success) {
-    //   return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
-    // }
+    if (!outcome.success) {
+      return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
+    }
 
     const transporter = nodemailer.createTransport(
          `smtps://${process.env.SMTP_USER}:${process.env.SMTP_PASS}@${process.env.SMTP_HOST}/?pool=true`

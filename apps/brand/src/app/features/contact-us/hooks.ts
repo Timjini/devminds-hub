@@ -62,18 +62,18 @@ export function useContactForm({
   });
 
   const onSubmit = form.handleSubmit((values) => {
-    // if (!token) {
-    //   toast.add({
-    //     type: "error",
-    //     description: "COMPLETE THE TURNSTILE VERIFICATION BEFORE SUBMITTING.",
-    //     priority: "high",
-    //   });
-    //     return;
-    //   }
+    if (!token) {
+      toast.add({
+        type: "error",
+        description: "COMPLETE THE TURNSTILE VERIFICATION BEFORE SUBMITTING.",
+        priority: "high",
+      });
+        return;
+      }
 
       submission.mutate({
         ...values,
-        turnstileToken: "token",
+        turnstileToken: token,
       });
   });
 
