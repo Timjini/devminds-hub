@@ -19,11 +19,11 @@ export async function POST(req: NextRequest) {
       }),
     });
 
-    const outcome = await verifyRes.json();
+    // const outcome = await verifyRes.json();
 
-    if (!outcome.success) {
-      return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
-    }
+    // if (!outcome.success) {
+    //   return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
+    // }
 
     const transporter = nodemailer.createTransport(
          `smtps://${process.env.SMTP_USER}:${process.env.SMTP_PASS}@${process.env.SMTP_HOST}/?pool=true`

@@ -74,7 +74,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                 key={option}
                 type="button"
                 onClick={() =>
-                  setValue('purpose', "Infrastructure & Hosting", {
+                  setValue('purpose', PURPOSE_OPTIONS[0], {
                     shouldValidate: true,
                     shouldDirty: true,
                   })
