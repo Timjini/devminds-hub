@@ -4,17 +4,25 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
   try {
-    const { turnstileToken, fullName, email, purpose, message, phone }: { turnstileToken: string } & Contact = await req.json();
+    const body = await req.json();
+    const { turnstileToken, email, purpose, message, phone } = body;
+    const fullName = body.name || body.fullName || 'Unknown';
 
     if (!turnstileToken) {
       return NextResponse.json({ error: 'Missing token' }, { status: 400 });
+    }
+
+    const secretKey = process.env.TURNSTILE_SECRET_KEY;
+    if (!secretKey) {
+      console.error('TURNSTILE_SECRET_KEY is missing in environment variables');
+      return NextResponse.json({ error: 'Server Turnstile secret not configured' }, { status: 500 });
     }
 
     const verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams({
-        secret: process.env.TURNSTILE_SECRET_KEY!,
+        secret: secretKey,
         response: turnstileToken,
       }),
     });
@@ -22,21 +30,37 @@ export async function POST(req: NextRequest) {
     const outcome = await verifyRes.json();
 
     if (!outcome.success) {
-      return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
+      console.error('Cloudflare Turnstile verification failed:', outcome['error-codes']);
+      return NextResponse.json(
+        {
+          error: 'Bot detected / Invalid token',
+          codes: outcome['error-codes'], // e.g. ['invalid-input-secret'] or ['timeout-or-duplicate']
+        },
+        { status: 403 }
+      );
     }
 
     const to = process.env.NEXT_PUBLIC_EMAIL_TO;
+    const smtpUser = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
 
-    const transporter = nodemailer.createTransport(
-      `smtps://${process.env.NEXT_PUBLIC_ADMIN_EMAIL}:${process.env.SMTP_PASS}@${process.env.SMTP_HOST}/?pool=true`
-    );
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: 465,
+      secure: true,
+      pool: true,
+      auth: {
+        user: smtpUser,
+        pass: process.env.SMTP_PASS,
+      },
+    });
 
     await transporter.sendMail({
-      from: process.env.NEXT_PUBLIC_ADMIN_EMAIL,
+      from: smtpUser,
       to,
+      replyTo: email,
       subject: purpose || 'No Subject',
       text: message,
-      html: emailTemplate({ fullName, email, phone, purpose, message })
+      html: emailTemplate({ fullName, email, phone, purpose, message } as Contact),
     });
 
     return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 });
