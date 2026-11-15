@@ -2,20 +2,19 @@
 import React, { useRef, useState } from 'react';
 import { ContactFormProps, PURPOSE_OPTIONS } from './types';
 import { useContactForm } from './hooks';
-import { Turnstile, type TurnstileInstance } from '@marsidev/react-turnstile';
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export const ContactForm: React.FC<ContactFormProps> = ({
   // contactForm,
   purposeOptions = PURPOSE_OPTIONS,
 }) => {
   const [token, setToken] = useState<string | null>(null);
-    const turnstileRef = useRef<TurnstileInstance | null>(null);
+
 
     const { form, onSubmit, resetAll, submission } = useContactForm({
       token,
       onResetTurnstile: () => {
         setToken(null);
-        turnstileRef.current?.reset();
       },
     });
   const {
@@ -213,13 +212,11 @@ export const ContactForm: React.FC<ContactFormProps> = ({
                 06 / BOT VERIFICATION *
               </span>
               <Turnstile
-                ref={turnstileRef}
-                siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '0x4AAAAAAFyhj_1whTboExX3'}
-                options={{ theme: 'light' }}
-                onSuccess={(newToken: string) => setToken(newToken)}
-                onExpire={() => setToken(null)}
-                onError={() => setToken(null)}
-              />
+                     siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
+                     onSuccess={(newToken) => setToken(newToken)}
+                     onExpire={() => setToken(null)}
+                     onError={() => setToken(null)}
+                   />
             </div>
 
             <button
