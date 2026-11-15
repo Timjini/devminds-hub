@@ -3,11 +3,10 @@ import { CapabilitiesSectionProps } from "./types";
 
 export const CapabilitiesSection: React.FC<CapabilitiesSectionProps> = ({
   services,
-  onSelectService,
+  onSelectService
 }) => {
   return (
     <section id="capabilities" className="w-full">
-      {/* Section Header */}
       <div className="max-w-7xl mx-auto px-6 sm:px-10 py-8 sm:py-10 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
         <h2 className="text-xs sm:text-sm font-black tracking-[0.2em] uppercase">
           CORE CAPABILITIES / 01—04

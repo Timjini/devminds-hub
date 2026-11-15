@@ -49,7 +49,7 @@ const IconCard = ({
   const mainColorAlpha05 = hexToRgba(mainColor, 0.05);
   const mainColorAlpha10 = hexToRgba(mainColor, 0.1);
   const mainColorAlpha20 = hexToRgba(mainColor, 0.2);
-  const mainColorAlpha40 = hexToRgba(mainColor, 0.4);
+  // const mainColorAlpha40 = hexToRgba(mainColor, 0.4);
 
   return (
     <div

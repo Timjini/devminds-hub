@@ -1,12 +1,8 @@
-import { ArrowRight, ArrowUp } from "lucide-react";
-import Link from "next/link";
+import { ArrowUp } from "lucide-react";
 import { NavButton } from "./button/nav-button";
 
-interface FooterProps {
-  onOpenInquiry: (serviceTitle?: string) => void;
-}
 
-export const Footer: React.FC<FooterProps> = ({ onOpenInquiry }) => {
+export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

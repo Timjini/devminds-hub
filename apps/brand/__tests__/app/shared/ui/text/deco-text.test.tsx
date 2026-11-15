@@ -23,7 +23,7 @@ describe("Render Text with Background Image", ()=>{
         const { container } = renderComponent();
 
         const title = container.querySelector('h1');
-        // console.log("------>", title?.innerText); // its empty it seems that the text doesn't render
+        console.log("------>", title?.innerText); // its empty it seems that the text doesn't render
         //  expect(title?.children).toBe("You Got This");
     })
 })

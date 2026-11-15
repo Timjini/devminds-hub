@@ -1,11 +1,8 @@
 import { motion } from "motion/react";
 import { NavButton } from "../button/nav-button";
 
-interface HeroSectionProps {
-  onOpenInquiry: (serviceTitle?: string) => void;
-}
 
-export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenInquiry }) => {
+export const HeroSection = () => {
   return (
   <motion.div
     initial={{ opacity: 0, y: -20 }}
