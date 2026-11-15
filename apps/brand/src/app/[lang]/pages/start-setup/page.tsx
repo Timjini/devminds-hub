@@ -4,12 +4,20 @@
 
 
 import { ContactForm } from "@/app/features/contact-us/form";
+import { constructMetadata } from "@/lib/metadata";
+import { Metadata } from "next";
 import Link from "next/link";
 
 export interface ContactPageProps {
   initialPurpose?: string;
   onNavigateHome: () => void;
 }
+
+export const metadata: Metadata = constructMetadata({
+  title: 'Start a Project',
+  description: 'Configure your startup infrastructure, domain DNS, email server, and CRM deployment.',
+  canonical: 'https://devminds.cloud/pages/start-setup',
+});
 
 export default async function Page({ params }: PageProps<'/[lang]'>) {
 

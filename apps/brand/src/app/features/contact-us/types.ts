@@ -32,3 +32,16 @@ export interface Contact {
   purpose: string;
   fullName: string;
 }
+
+export interface ContactSubmissionPayload extends ContactFormValues {
+  turnstileToken: string;
+}
+
+export interface UseContactFormOptions {
+  token?: string | null;
+  defaultPurpose?: ContactFormValues['purpose'];
+  endpoint?: string;
+  onSuccessCallback?: (response: ContactApiResponse) => void;
+  onErrorCallback?: (error: Error) => void;
+  onResetTurnstile?: () => void;
+}

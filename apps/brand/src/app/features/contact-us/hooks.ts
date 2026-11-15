@@ -2,22 +2,19 @@ import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { toast } from "@/components/ui/toast"
-import { ContactApiResponse, PURPOSE_OPTIONS } from './types';
+import { ContactApiResponse, ContactSubmissionPayload, PURPOSE_OPTIONS, UseContactFormOptions } from './types';
 import { contactFormSchema, ContactFormValues } from './validations';
 import { useApiMutation } from '@/app/hooks/use-api-mutation';
 
-export interface UseContactFormOptions {
-  defaultPurpose?: ContactFormValues['purpose'];
-  endpoint?: string;
-  onSuccessCallback?: (response: ContactApiResponse) => void;
-  onErrorCallback?: (error: Error) => void;
-}
+
 
 export function useContactForm({
+  token,
   defaultPurpose,
   endpoint = '/api/contact',
   onSuccessCallback,
   onErrorCallback,
+  onResetTurnstile,
 }: UseContactFormOptions = {}) {
   const initialPurpose =
     defaultPurpose && PURPOSE_OPTIONS.includes(defaultPurpose)
@@ -42,7 +39,7 @@ export function useContactForm({
     }
   }, [defaultPurpose, form]);
 
-  const submission = useApiMutation<ContactApiResponse, ContactFormValues>({
+  const submission = useApiMutation<ContactApiResponse, ContactSubmissionPayload>({
     endpoint,
     mutationKey: ['contact-submission', endpoint],
     options: {
@@ -65,26 +62,39 @@ export function useContactForm({
   });
 
   const onSubmit = form.handleSubmit((values) => {
-    submission.mutate(values);
+    if (!token) {
+      toast.add({
+        type: "error",
+        description: "COMPLETE THE TURNSTILE VERIFICATION BEFORE SUBMITTING.",
+        priority: "high",
+      });
+        return;
+      }
+
+      submission.mutate({
+        ...values,
+        turnstileToken: token,
+      });
   });
 
   const resetAll = () => {
-    submission.reset();
-    form.reset({
-      purpose: initialPurpose,
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
-  };
+      submission.reset();
+      onResetTurnstile?.();
+      form.reset({
+        purpose: initialPurpose,
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+    };
 
-  return {
-    form,
-    onSubmit,
-    resetAll,
-    submission,
-  };
+    return {
+      form,
+      onSubmit,
+      resetAll,
+      submission,
+    };
 }
 
 export type UseContactFormReturn = ReturnType<typeof useContactForm>;
