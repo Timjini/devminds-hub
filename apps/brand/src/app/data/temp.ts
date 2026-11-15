@@ -9,40 +9,6 @@ export const SERVICE_OPTIONS: string[] = [
   'CRM INTEGRATION',
 ];
 
-export const SERVICES: ServiceItem[] = [
-  {
-    id: 'infrastructure',
-    number: '01',
-    title: 'INFRASTRUCTURE & HOSTING',
-    description:
-      'Scalable cloud setup, automated deployment pipelines, and reliable uptime engineered from day one.',
-    deliverables: 'AWS / VERCEL / DOCKER / CI-CD',
-  },
-  {
-    id: 'domains',
-    number: '02',
-    title: 'DOMAIN & DNS MANAGEMENT',
-    description:
-      'Domain acquisition, SSL security certificates, traffic routing, and zero-headache DNS architecture.',
-    deliverables: 'CLOUDFLARE / SSL / DNSSEC / ROUTING',
-  },
-  {
-    id: 'email',
-    number: '03',
-    title: 'BUSINESS EMAIL SETUP',
-    description:
-      'Custom workspace configuration, strict deliverability records, and seamless team onboarding.',
-    deliverables: 'GOOGLE WORKSPACE / SPF / DKIM / DMARC',
-  },
-  {
-    id: 'crm',
-    number: '04',
-    title: 'CRM INTEGRATION',
-    description:
-      'Automated lead capture, pipeline syncing, and clean customer data flows across your entire stack.',
-    deliverables: 'CRM / HUBSPOT / ATTIO / WEBHOOKS',
-  },
-];
 
 export const BLOG_POSTS: BlogPost[] = [
   {

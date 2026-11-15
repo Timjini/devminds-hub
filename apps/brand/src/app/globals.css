@@ -61,16 +61,54 @@ light brown #decfc2
 }
 
 @theme {
+  /* Fonts */
   --font-roboto: "Roboto", sans-serif;
   --font-montserrat: "Montserrat", sans-serif;
-  /* --font-knockout: "Knockout-Bold", sans-serif; */
+  --font-sans: var(--font-roboto);
+  --font-display: var(--font-montserrat);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Core Brand Palette */
   --color-brand-primary: #2d372b;
-  --color-brand-white: #fff;
+  --color-brand-white: #ffffff;
   --color-brand-dark: #2d372b;
   --color-brand-text: #2d372b;
   --color-brand-primary-background: #2d372b;
   --color-brand-secondary: #e6c2bf; /* fancy brown */
-  --color-brand-accent: #c1ff72; /* pistaccio green */
+  --color-brand-accent: #c1ff72; /* pistachio green */
+
+  /* Semantic Surface, Ink & Border Tokens (Zero Hardcoding in JSX) */
+  --color-surface: var(--color-brand-white);
+  --color-surface-inverse: var(--color-brand-dark);
+  --color-surface-muted: #f7f7f5;
+  --color-ink: var(--color-brand-text);
+  --color-ink-inverse: var(--color-brand-white);
+  --color-ink-muted: #525c50;
+  --color-line: var(--color-brand-dark);
+  --color-line-inverse: var(--color-brand-white);
+  --color-highlight: var(--color-brand-accent);
+  --color-highlight-secondary: var(--color-brand-secondary);
+
+  /* Architectural Border Widths */
+  --border-width-brutal: 2px;
+  --border-width-hud: 4px;
+
+  /* Typography Tracking Tokens */
+  --tracking-hud: 0.25em;
+  --tracking-label: 0.2em;
+  --tracking-cta: 0.14em;
+
+  /* Z-Index Layers */
+  --z-transition: 9990;
+  --z-cursor: 9999;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
 }
 
 html,
