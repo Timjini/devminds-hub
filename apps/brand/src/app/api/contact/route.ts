@@ -25,14 +25,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: 'Bot detected / Invalid token' }, { status: 403 });
     }
 
-    const to = process.env.NEXT_PUBLIC_ADMIN_EMAIL;
+    const to = process.env.NEXT_PUBLIC_EMAIL_TO;
 
     const transporter = nodemailer.createTransport(
-      `smtps://${process.env.SMTP_USER}:${process.env.SMTP_PASS}@${process.env.SMTP_HOST}/?pool=true`
+      `smtps://${process.env.NEXT_PUBLIC_ADMIN_EMAIL}:${process.env.SMTP_PASS}@${process.env.SMTP_HOST}/?pool=true`
     );
 
     await transporter.sendMail({
-      from: process.env.NEXT_PUBLIC_EMAIL_TO,
+      from: process.env.NEXT_PUBLIC_ADMIN_EMAIL,
       to,
       subject: purpose || 'No Subject',
       text: message,
