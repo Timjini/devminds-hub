@@ -1,9 +1,9 @@
 {
   "navbar": {
-    "ariaLabel": "Primary Navigation",
+    "ariaLabel": "Navigation principale",
     "links": {
       "capabilities": {
-        "label": "CAPABILITIES",
+        "label": "EXPERTISES",
         "href": "#capabilities"
       },
       "notes": {
@@ -12,17 +12,125 @@
       }
     },
     "cta": {
-      "label": "START A PROJECT",
+      "label": "LANCER UN PROJET",
       "href": "/pages/start-setup"
     }
   },
   "hero": {
-      "eyebrow": "FOR STARTUPS & EARLY-STAGE FOUNDERS",
-      "headline": "WE BUILD YOUR TECHNICAL FOUNDATION.",
-      "subtitle": "Devminds helps startups and early-stage founders handle their technical foundation—from infrastructure and hosting to domain management, email setup, and CRM integration.",
-      "cta": {
-        "label": "START A PROJECT",
-        "href": "/pages/start-setup"
+    "eyebrow": "POUR STARTUPS & FONDATEURS EARLY-STAGE",
+    "headline": "NOUS BÂTISSONS VOTRE SOCLE TECHNIQUE.",
+    "subtitle": "Devminds accompagne les startups et fondateurs early-stage dans la mise en place de leur socle technique — de l'infrastructure et l'hébergement à la gestion de domaines, la configuration e-mail et l'intégration CRM.",
+    "cta": {
+      "label": "LANCER UN PROJET",
+      "href": "/pages/start-setup"
+    }
+  },
+  "capabilities": {
+    "heading": "EXPERTISES CLÉS / 01—04",
+    "helper": "CLIQUEZ SUR UNE EXPERTISE POUR DÉFINIR VOTRE BESOIN",
+    "services": [
+      {
+        "id": "infrastructure",
+        "number": "01",
+        "title": "INFRASTRUCTURE & HÉBERGEMENT",
+        "description": "Configuration cloud évolutive, pipelines de déploiement automatisés et haute disponibilité conçus dès le premier jour.",
+        "deliverables": "AWS / VERCEL / DOCKER / CI-CD"
+      },
+      {
+        "id": "domains",
+        "number": "02",
+        "title": "GESTION DE DOMAINES & DNS",
+        "description": "Acquisition de domaines, certificats de sécurité SSL, routage du trafic et architecture DNS sans friction.",
+        "deliverables": "CLOUDFLARE / SSL / DNSSEC / ROUTING"
+      },
+      {
+        "id": "email",
+        "number": "03",
+        "title": "CONFIGURATION E-MAIL PROFESSIONNEL",
+        "description": "Configuration d'espace de travail sur mesure, enregistrements stricts de délivrabilité et intégration fluide de votre équipe.",
+        "deliverables": "GOOGLE WORKSPACE / SPF / DKIM / DMARC"
+      },
+      {
+        "id": "crm",
+        "number": "04",
+        "title": "INTÉGRATION CRM",
+        "description": "Capture automatisée des leads, synchronisation des pipelines et flux de données clients propres sur toute votre stack.",
+        "deliverables": "CRM / HUBSPOT / ATTIO / WEBHOOKS"
+      }
+    ],
+    "notes": {
+      "heading": "NOTES / BLOG",
+      "helper": "GUIDES TECHNIQUES SIMPLES POUR FONDATEURS",
+      "posts": {
+        "chatwoot-mailcow-crm": {
+          "tag": "01 / STACK OPEN SOURCE",
+          "readTime": "3 MIN DE LECTURE",
+          "title": "INTÉGRATION CRM",
+          "excerpt": "Transformez votre serveur e-mail auto-hébergé en un CRM client et une boîte de support partagée sans frais SaaS par utilisateur.",
+          "relatedService": "INTÉGRATION CRM",
+          "ctaHeading": "VOUS VOULEZ CE DÉPLOIEMENT POUR VOTRE ÉQUIPE ?",
+          "ctaSubheading": "NOUS CONFIGURONS TOUT DE BOUT EN BOUT.",
+          "sections": [
+            {
+              "heading": "01 / CE QUE C'EST",
+              "content": "Connecter un serveur e-mail open-source auto-hébergé à une boîte de support client et CRM open-source transforme chaque e-mail entrant en une conversation suivie — offrant aux équipes early-stage un workflow CRM complet sans coûts SaaS par siège."
+            },
+            {
+              "heading": "02 / CONFIGURATION SIMPLE EN 3 ÉTAPES",
+              "steps": [
+                {
+                  "step": "ÉTAPE 01",
+                  "title": "HÉBERGEZ SUR VOTRE PROPRE INFRASTRUCTURE",
+                  "detail": "Déployez les deux conteneurs sur votre VPS avec des enregistrements DNS propres (MX, SPF, DKIM et DMARC) pour que vos e-mails arrivent en boîte de réception, jamais en spam."
+                },
+                {
+                  "step": "ÉTAPE 02",
+                  "title": "CONNECTEZ IMAP/SMTP AU CRM",
+                  "detail": "Ajoutez votre boîte mail directement dans le CRM comme canal e-mail afin que les messages entrants se synchronisent automatiquement et que les réponses partent depuis votre domaine."
+                },
+                {
+                  "step": "ÉTAPE 03",
+                  "title": "ROUTEZ LES ADRESSES D'ÉQUIPE VERS DES BOÎTES PARTAGÉES",
+                  "detail": "Redirigez support@, sales@ et founders@ vers des files d'équipe partagées avec étiquettes personnalisées, attribution de responsables et historique client complet."
+                }
+              ]
+            },
+            {
+              "heading": "03 / POURQUOI LES STARTUPS ADORENT",
+              "items": [
+                "PROPRIÉTÉ TOTALE DES DONNÉES SUR VOS PROPRES SERVEURS",
+                "ZÉRO TARIFICATION PAR AGENT OU PAR SIÈGE LORSQUE VOTRE ÉQUIPE GRANDIT",
+                "UNE BOÎTE DE RÉCEPTION UNIFIÉE POUR LES E-MAILS, LE CHAT EN DIRECT ET L'HISTORIQUE CLIENT"
+              ]
+            }
+          ]
+        }
       }
     }
+  },
+  "customers": {
+    "ariaLabel": "Équipes partenaires",
+    "heading": "ILS NOUS FONT CONFIANCE",
+    "deploymentsLabel": "DÉPLOIEMENTS",
+    "logoAltSuffix": "logo",
+    "sectors": {
+      "FINTECH": "FINTECH",
+      "AI / SAAS": "IA / SAAS",
+      "DEVTOOLS": "DEVTOOLS",
+      "ECOMMERCE": "E-COMMERCE",
+      "HEALTH": "SANTÉ"
+    }
+  },
+  "footer": {
+    "eyebrow": "DÉMARRER",
+    "headline": "PRÊT À LANCER ?",
+    "cta": {
+      "label": "C'EST PARTI !",
+      "href": "/pages/start-setup"
+    },
+    "brandName": "DEVMINDS.",
+    "tagline": "SOCLE TECHNIQUE POUR STARTUPS",
+    "backToTop": "HAUT",
+    "backToTopAria": "Retourner en haut de la page"
+  }
 }
