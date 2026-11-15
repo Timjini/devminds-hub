@@ -8,6 +8,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import { MagneticSnapCursor } from "./shared/ui/magnetic-snap-cursor";
 import { Metadata } from "next";
 import { constructMetadata } from "@/lib/metadata";
+import { Analytics } from "@vercel/analytics/next"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -26,6 +27,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={cn("font-sans", geist.variable, "dark")}>
       <body className="main-theme adaptive">
+        <Analytics/>
         {/*<FuturisticCursor/>*/}
         {/*<TerminalPromptCursor />*/}
         <MagneticSnapCursor />
