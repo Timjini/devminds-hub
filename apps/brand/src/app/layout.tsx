@@ -5,12 +5,10 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import QueryProvider from "./query-provider";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { MagneticSnapCursor } from "./shared/ui/magnetic-snap-cursor";
 import { Metadata } from "next";
 import { constructMetadata } from "@/lib/metadata";
 import { Analytics } from "@vercel/analytics/next"
-import { TerminalPromptCursor } from "./shared/ui/terminal-prompt-cursor";
-import { OfficePaperCursor } from "./shared/ui/office-paper-cursor";
+import { OfficePaperCursor } from "./ui/office-paper-cursor";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 

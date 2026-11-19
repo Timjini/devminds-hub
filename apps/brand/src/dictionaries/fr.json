@@ -166,7 +166,7 @@
       "resetButton": "Envoyer un autre message"
     }
   },
-  "pricing": {
+  "pricingSection": {
       "sectionLabel": "Section 05",
       "eyebrow": "Barème des tarifs",
       "title": "Une facturation forfaitaire claire pour votre bureau",
