@@ -1,137 +1,206 @@
 {
   "navbar": {
+    "cta": "Start now",
     "ariaLabel": "Primary Navigation",
+    "brand": "AskYourFiles",
+    "tagline": "Private Office Desk",
     "links": {
-      "capabilities": {
-        "label": "CAPABILITIES",
-        "href": "#capabilities"
-      },
-      "notes": {
-        "label": "PLAYBOOKS",
-        "href": "#notes"
-      }
+      "capabilities": "What it does",
+      "example": "See an example",
+      "privacy": "Privacy promise",
+      "pricing": "How we start"
     },
-    "cta": {
-      "label": "START A CAMPAIGN",
-      "href": "/pages/start-setup"
-    }
+    "languageSwitcher": {
+      "ariaLabel": "Select language",
+      "en": "EN",
+      "de": "DE"
+    },
+    "inspectJsonButton": "JSON"
   },
   "hero": {
-    "eyebrow": "ADVERTISING & DESIGN STUDIO",
-    "headline": "WE DESIGN BRANDS THAT SCALE.",
-    "subtitle": "GoAdway helps ambitious brands grow with high-converting web design, bold brand identity, Meta Ads setup, and performance-driven Google Ads & SEO.",
-    "cta": {
-      "label": "LAUNCH YOUR GROWTH",
-      "href": "/pages/start-setup"
-    }
-  },
+      "eyebrow": "For small & mid-sized offices — No technical setup required",
+      "headline": "A private helper for your office paperwork.",
+      "subheadline": "Give your team a simple place to search your own folders, understand PDFs and invoices, draft everyday letters, and translate documents—without ever sending company files to public websites.",
+      "primaryCta": "Book a 15-minute phone call",
+      "secondaryCta": "See how it answers a question",
+      "reassurance": [
+        "We set everything up for you—your staff just logs in and asks in plain English.",
+        "No token counters, usage meters, or hidden fees—just one predictable flat monthly rate.",
+        "Hosted exclusively in the EU under strict GDPR compliance—ensuring full European data sovereignty and zero transfers to third countries."
+      ]
+    },
   "capabilities": {
-    "heading": "CORE CAPABILITIES / 01—04",
-    "helper": "CLICK ANY CAPABILITY TO SCOPE",
-    "services": [
+    "sectionLabel": "Section 01",
+    "title": "Five everyday jobs it handles for your office",
+    "subtitle": "No complicated software to learn. Just plain answers pulled directly from the documents your business already owns.",
+    "items": [
       {
-        "id": "infrastructure",
+        "id": "sop",
         "number": "01",
-        "title": "BRANDING & IDENTITY",
-        "description": "Distinctive visual systems, logo architecture, brand guidelines, and messaging built to stand out in crowded markets.",
-        "deliverables": "BRAND STRATEGY / LOGO / VISUAL SYSTEM / GUIDELINES"
+        "title": "SOPs & Company Handbooks",
+        "description": "New or existing staff can ask questions about daily rules, onboarding steps, or safety checklists and get the exact answer from your manuals.",
+        "examplePrompt": "“What is our step-by-step checklist when a new client signs on?”"
       },
       {
-        "id": "domains",
+        "id": "search",
         "number": "02",
-        "title": "WEB DESIGN & LANDING PAGES",
-        "description": "Conversion-engineered websites, responsive UI/UX design, and fast landing pages crafted to turn visitors into customers.",
-        "deliverables": "UI-UX / LANDING PAGES / FIGMA / CONVERSION DESIGN"
+        "title": "Private File Search",
+        "description": "Find a specific contract clause, a renewal date, or a client note buried inside thousands of Word files and folders in seconds.",
+        "examplePrompt": "“Which supplier contracts renew before the end of next quarter?”"
       },
       {
-        "id": "email",
+        "id": "drafting",
         "number": "03",
-        "title": "META ADS SETUP & CREATIVE",
-        "description": "Full Business Manager setup, Pixel & Conversions API tracking, audience architecture, and thumb-stopping ad creatives.",
-        "deliverables": "META PIXEL / CAPI / AD CREATIVES / RETARGETING"
+        "title": "Generating & Drafting Documents",
+        "description": "Draft client replies, standard letters, meeting summaries, and internal memos written in your own company tone using your past templates.",
+        "examplePrompt": "“Draft a polite payment reminder letter based on our standard template.”"
       },
       {
-        "id": "crm",
+        "id": "pdf-invoice",
         "number": "04",
-        "title": "GOOGLE ADS & SEO",
-        "description": "High-intent search campaigns, technical on-page SEO, and conversion tracking designed for compounding organic and paid traffic.",
-        "deliverables": "SEARCH ADS / TECHNICAL SEO / GA4 / GTM"
+        "title": "Reading PDFs & Explaining Invoices",
+        "description": "Drop in a dense 40-page PDF report or a confusing supplier invoice and get a clear, line-by-line explanation of what it says and what you owe.",
+        "examplePrompt": "“Explain this freight invoice in plain words and flag any extra fees.”"
+      },
+      {
+        "id": "translation",
+        "number": "05",
+        "title": "Everyday Office Translation",
+        "description": "Translate emails, contracts, and staff manuals between languages accurately while keeping your company’s exact terms consistent.",
+        "examplePrompt": "“Translate this service agreement into German and keep our legal terms.”"
       }
     ]
   },
-  "notes": {
-    "heading": "NOTES / PLAYBOOKS",
-    "helper": "GROWTH & CREATIVE PLAYBOOKS FOR MODERN BRANDS",
-    "readLabel": "READ",
-    "posts": {
-      "chatwoot-mailcow-crm": {
-        "tag": "01 / PAID ACQUISITION",
-        "readTime": "3 MIN READ",
-        "title": "META ADS & PIXEL ARCHITECTURE",
-        "excerpt": "How clean server-side tracking, high-converting landing pages, and creative testing cut your customer acquisition cost.",
-        "relatedService": "META ADS SETUP & CREATIVE",
-        "ctaHeading": "WANT THIS FUNNEL BUILT FOR YOUR BRAND?",
-        "ctaSubheading": "WE DESIGN, TRACK & LAUNCH END-TO-END.",
-        "sections": [
-          {
-            "heading": "01 / WHAT IT IS",
-            "content": "Pairing custom conversion-focused landing pages with properly configured Meta Pixel, Conversions API (CAPI), and Google Tag Manager gives ad algorithms clean conversion signals—turning ad spend into predictable pipeline."
-          },
-          {
-            "heading": "02 / SIMPLE 3-STEP LAUNCH",
-            "steps": [
-              {
-                "step": "STEP 01",
-                "title": "BRAND & LANDING PAGE ALIGNMENT",
-                "detail": "Design a fast, sharp landing page with clear value propositions and message-match tailored to every ad angle."
-              },
-              {
-                "step": "STEP 02",
-                "title": "WIRE PIXEL, CAPI & GA4 TRACKING",
-                "detail": "Configure Meta Business Manager, server-side Conversions API, and Google Ads conversion events with verified domain attribution."
-              },
-              {
-                "step": "STEP 03",
-                "title": "LAUNCH CREATIVE & SEARCH CAMPAIGNS",
-                "detail": "Deploy structured Meta ad sets alongside high-intent Google Search keywords and technical SEO foundations for compounding reach."
-              }
-            ]
-          },
-          {
-            "heading": "03 / WHY BRANDS LOVE IT",
-            "items": [
-              "UNIFIED BRAND IDENTITY ACROSS WEB, SOCIAL, AND SEARCH",
-              "ACCURATE CONVERSION ATTRIBUTION WITH ZERO WASTED AD SPEND",
-              "ONE PARTNER FOR DESIGN, PAID ADS, AND ORGANIC SEO"
-            ]
-          }
-        ]
+  "example": {
+    "sectionLabel": "Section 02",
+    "title": "See how it works on real office paperwork",
+    "subtitle": "Click any of the three everyday questions below. Every answer shows the exact document and page it came from so you can verify it yourself.",
+    "selectorLabel": "Choose a sample office question:",
+    "questionLabel": "Staff Question",
+    "answerLabel": "Private Helper Answer",
+    "sourceLabel": "Verified Source",
+    "samples": [
+      {
+        "id": "invoice",
+        "tabLabel": "Explain an invoice PDF",
+        "question": "Can you explain this supplier invoice and tell me why it is higher than last month?",
+        "answer": "This invoice totals $4,280.00 (due November 30). It is $640.00 higher than September’s bill for two reasons:\n\n1. Express Pallet Delivery ($490.00) was added on October 14 for Order #8821.\n2. Storage Overrun Fee ($150.00) was charged because 3 pallets stayed past the 14-day free window.\n\nAll base unit prices match your 2026 signed rate sheet.",
+        "source": "Supplier_Invoice_Oct2026.pdf — Page 2, Line Items 4–7"
+      },
+      {
+        "id": "sop",
+        "tabLabel": "Check an office SOP",
+        "question": "What is our company SOP if a customer reports a damaged delivery?",
+        "answer": "According to your Operations Manual, follow these three steps within 24 hours:\n\n1. Ask the customer for two photos of the outer box and damaged item before discarding packaging.\n2. Issue a replacement order immediately using code REPL-01 (no manager approval needed under $500).\n3. Log the carrier tracking number in the Friday Claims Sheet.",
+        "source": "Operations_Handbook_v4.docx — Section 6.2 (Returns & Claims)"
+      },
+      {
+        "id": "translate",
+        "tabLabel": "Translate a client letter",
+        "question": "Translate our standard warranty confirmation letter into German for our Munich client.",
+        "answer": "Sehr geehrte Damen und Herren,\n\nhiermit bestätigen wir, dass für Ihre Lieferung vom 12. Oktober unsere standardmäßige 24-monatige Herstellergarantie gilt. Alle Wartungsarbeiten werden direkt über unser Service-Team abgewickelt.\n\nMit freundlichen Grüßen,\nIhr Kundenservice-Team",
+        "source": "Warranty_Letter_Template_EN.docx — Matched with Client_Glossary_DE.pdf"
       }
-    }
+    ]
   },
-  "customers": {
-    "ariaLabel": "Trusted Brands",
-    "heading": "TRUSTED BY AMBITIOUS BRANDS",
-    "deploymentsLabel": "CAMPAIGNS",
-    "logoAltSuffix": "logo",
-    "sectors": {
-      "FINTECH": "FINTECH",
-      "AI / SAAS": "AI / SAAS",
-      "DEVTOOLS": "D2C / RETAIL",
-      "ECOMMERCE": "E-COMMERCE",
-      "HEALTH": "WELLNESS"
-    }
+  "privacy": {
+    "sectionLabel": "Section 03",
+    "title": "Why your confidential files stay completely safe",
+    "subtitle": "Public chat websites store and learn from whatever employees paste into them. Your office setup works like a locked filing cabinet that belongs only to you.",
+    "promises": [
+      {
+        "title": "Your own private space",
+        "description": "Your documents live in an isolated digital folder rented solely for your business—never mixed with any other company."
+      },
+      {
+        "title": "Never shared or used for training",
+        "description": "Your contracts, invoices, and client names never leave your private setup and are never used to train outside tools."
+      },
+      {
+        "title": "Staff permissions respected",
+        "description": "HR salary sheets stay visible only to managers, while general office manuals are open to the whole team."
+      }
+    ]
   },
-  "footer": {
-    "eyebrow": "LET'S GROW",
-    "headline": "READY TO SCALE?",
-    "cta": {
-      "label": "LET'S GO!",
-      "href": "/pages/start-setup"
+  "steps": {
+    "sectionLabel": "Section 04",
+    "title": "Simple setup, flat monthly care",
+    "subtitle": "You never have to touch a server, install software, or hire IT specialists. We prepare everything and keep it running smoothly.",
+    "items": [
+      {
+        "stepLabel": "Step 1",
+        "title": "One-Time Office Setup",
+        "description": "We connect your existing Google Drive, SharePoint, or local PDF folders, set up staff logins, and test it on your real documents."
+      },
+      {
+        "stepLabel": "Step 2",
+        "title": "Flat Monthly Care Plan",
+        "description": "One predictable monthly bill covers your private hosting, automatic syncing when you add new files, security updates, and phone support."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Simple Pricing",
+    "title": "Straightforward office pricing",
+    "subtitle": "Everyone in your office can use it without worrying about extra logins or surprise add-ons.",
+    "note": "No per-user seat fees—one clear setup fee and a predictable monthly care plan sized to your office."
+  },
+  "cta": {
+    "title": "Request a friendly 15-minute callback",
+    "subtitle": "No technical jargon and no sales pressure. Tell us a bit about your office and we will show you how it works.",
+    "form": {
+      "nameLabel": "Your name",
+      "namePlaceholder": "e.g. Sarah Jenkins",
+      "companyLabel": "Company or firm name",
+      "companyPlaceholder": "e.g. Jenkins & Partner Accounting",
+      "contactLabel": "Phone number or work email",
+      "contactPlaceholder": "e.g. sarah@jenkinspartners.com",
+      "noteLabel": "What paperwork takes your team the most time? (Optional)",
+      "notePlaceholder": "e.g. Checking supplier invoices, answering staff SOP questions...",
+      "submitButton": "Request a callback"
     },
-    "brandName": "GOADWAY.",
-    "tagline": "ADVERTISING, BRANDING & WEB DESIGN AGENCY",
-    "backToTop": "TOP",
-    "backToTopAria": "Scroll back to top"
+    "confirmation": {
+      "title": "Thank you—we have noted your request.",
+      "message": "One of our founders will reach out within one business day to schedule a brief, plain-English walkthrough.",
+      "resetButton": "Send another note"
+    }
+  },
+  "pricingSection": {
+      "sectionLabel": "Section 05",
+      "eyebrow": "Schedule of Fees",
+      "title": "Simple, flat-rate office billing",
+      "subtitle": "No per-seat charges, no token counters, and no surprise overages. Just two clear line items for your entire office.",
+      "invoiceHeader": {
+        "documentTitle": "STANDARD FEE SCHEDULE",
+        "reference": "REF: AYF-2026-FLAT",
+        "columns": {
+          "item": "Line Item",
+          "description": "What Is Included",
+          "billing": "Billing Cycle",
+          "rate": "Flat Rate"
+        }
+      },
+      "items": [
+        {
+          "code": "01",
+          "title": "One-Time Office Setup & Onboarding",
+          "description": "Dedicated single-tenant EU workspace provisioning, connection to your existing folders (Drive, SharePoint, or local PDFs), staff permission rules, and team walkthrough.",
+          "billing": "Once upon launch",
+          "rate": "€1,490"
+        },
+        {
+          "code": "02",
+          "title": "Managed Private Desk — Flat Monthly Care",
+          "description": "Private EU server hosting, unlimited staff logins across your office, automatic syncing of new documents, GDPR compliance updates, and direct phone/email support.",
+          "billing": "Per month (all-inclusive)",
+          "rate": "€390 / mo"
+        }
+      ],
+      "note": "All fees are billed in EUR (excl. VAT). Cancel anytime with 30 days' notice—your documents always remain 100% yours.",
+      "cta": "Request a written quote"
+    },
+  "footer": {
+    "note": "AskYourFiles — Private document search, PDF reading, and drafting for everyday offices.",
+    "rights": "© 2026 AskYourFiles. All client workspaces are single-tenant and private."
   }
 }

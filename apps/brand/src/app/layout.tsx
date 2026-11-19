@@ -9,6 +9,8 @@ import { MagneticSnapCursor } from "./shared/ui/magnetic-snap-cursor";
 import { Metadata } from "next";
 import { constructMetadata } from "@/lib/metadata";
 import { Analytics } from "@vercel/analytics/next"
+import { TerminalPromptCursor } from "./shared/ui/terminal-prompt-cursor";
+import { OfficePaperCursor } from "./shared/ui/office-paper-cursor";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -30,7 +32,7 @@ export default async function RootLayout({
         <Analytics/>
         {/*<FuturisticCursor/>*/}
         {/*<TerminalPromptCursor />*/}
-        <MagneticSnapCursor />
+        <OfficePaperCursor />
          <GoogleTagManager gtmId={`${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER}`} />
         <QueryProvider>{children}</QueryProvider>
         <Toaster />

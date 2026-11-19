@@ -6,57 +6,46 @@ import { motion } from 'motion/react';
 
 export default function Template({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
-  const sectorName =
-    pathname === '/'
-      ? 'SECTOR_00 // HUB'
-      : `SECTOR_${pathname.replace('/pages/', '').replace(/\//g, '_').toUpperCase()}`;
+
+  const segments = pathname.split('/').filter(Boolean);
+  const slug = segments[segments.length - 1];
+  const folderLabel =
+    !slug || ['en', 'de', 'fr'].includes(slug)
+      ? 'Main Desk'
+      : slug
+          .replace(/[-_]/g, ' ')
+          .replace(/\b\w/g, (char) => char.toUpperCase());
 
   return (
     <>
-      {/* Tactical HUD Corner Lock-In Overlay */}
+      {/* Manila Folder / Fresh Paper Sheet Slide-Away Overlay */}
       <motion.div
-        key={`hud-${pathname}`}
+        key={`sheet-${pathname}`}
         aria-hidden="true"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 0 }}
-        transition={{ duration: 0.4, delay: 0.55, ease: 'easeOut' }}
-        className="pointer-events-none fixed inset-0 z-[9990] flex items-center justify-center"
+        initial={{ y: '0%' }}
+        animate={{ y: '-100%' }}
+        transition={{ duration: 0.55, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+        className="pointer-events-none fixed inset-0 z-[9990] bg-[#F4F0E6] border-b border-[#CFC8B8] flex items-end justify-between px-8 py-6 shadow-[0_2px_10px_rgba(28,27,24,0.06)]"
       >
-        {/* Expanding / Locking 4-Corner Tactical Frame */}
-        <motion.div
-          initial={{ width: '140px', height: '140px' }}
-          animate={{ width: '96vw', height: '94vh' }}
-          transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
-          className="relative"
-        >
-          {/* Top-Left Bracket */}
-          <span className="absolute top-0 left-0 h-8 w-8 border-t-4 border-l-4 border-black" />
-          {/* Top-Right Bracket */}
-          <span className="absolute top-0 right-0 h-8 w-8 border-t-4 border-r-4 border-black" />
-          {/* Bottom-Left Bracket */}
-          <span className="absolute bottom-0 left-0 h-8 w-8 border-b-4 border-l-4 border-black" />
-          {/* Bottom-Right Bracket */}
-          <span className="absolute bottom-0 right-0 h-8 w-8 border-b-4 border-r-4 border-black" />
-        </motion.div>
+        {/* Top-edge File Folder Tab & Stamp */}
+        <div className="flex items-center gap-3">
+          <span className="inline-block h-2 w-2 bg-[#1E4D3B]" />
+          <span className="font-serif text-sm text-[#1C1B18] tracking-wide">
+            {folderLabel}
+          </span>
+        </div>
 
-        {/* Center Sector Telemetry Tag */}
-        <motion.div
-          initial={{ scale: 0.9, opacity: 1 }}
-          animate={{ scale: 1.04, opacity: 0 }}
-          transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
-          className="absolute bg-black text-white px-4 py-2 border-2 border-black font-mono text-xs font-black tracking-[0.25em] uppercase flex items-center gap-3"
-        >
-          <span className="inline-block h-2 w-2 bg-white animate-ping" />
-          <span>{sectorName}</span>
-        </motion.div>
+        <span className="px-2.5 py-0.5 bg-[#FFFFFF] border border-[#CFC8B8] font-serif text-[11px] uppercase tracking-[0.15em] text-[#5C574E]">
+          AskYourFiles
+        </span>
       </motion.div>
 
-      {/* Page Reveal */}
+      {/* Page Reveal (Settling gently like a sheet of paper placed on a desk) */}
       <motion.div
         key={`view-${pathname}`}
-        initial={{ opacity: 0, scale: 0.985 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.65, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.45, delay: 0.18, ease: 'easeOut' }}
       >
         {children}
       </motion.div>

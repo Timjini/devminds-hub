@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { SEO_GENERAL_DATA } from './seo';
+import { SEO_GENERAL_DATA, type SupportedLocale } from './seo';
 
 export interface ConstructMetadataOptions {
+  locale?: SupportedLocale;
   title?: string;
   description?: string;
   canonical?: string;
@@ -9,27 +10,36 @@ export interface ConstructMetadataOptions {
   noIndex?: boolean;
 }
 
-const DEFAULT_TITLE =
-  'GoAdway | Advertising, Branding, Web Design & Paid Growth Agency';
-const DEFAULT_DESCRIPTION =
-  'GoAdway helps ambitious brands scale with bold brand identity, high-converting web design, Meta Ads setup, and performance-driven Google Ads & SEO.';
-
 export function constructMetadata({
+  locale = 'en',
   title,
-  description = DEFAULT_DESCRIPTION,
-  canonical = SEO_GENERAL_DATA.home.canonical,
+  description,
+  canonical,
   image = SEO_GENERAL_DATA.home.cover,
   noIndex = false,
 }: ConstructMetadataOptions = {}): Metadata {
-  const resolvedTitle = title ?? DEFAULT_TITLE;
+  const localeContent = SEO_GENERAL_DATA.locales[locale] ?? SEO_GENERAL_DATA.locales.en;
+  const resolvedTitle = title ?? localeContent.title;
+  const resolvedDescription = description ?? localeContent.description;
+  const resolvedCanonical =
+    canonical ?? `${SEO_GENERAL_DATA.domain}/${locale}`;
 
   return {
+    metadataBase: new URL(SEO_GENERAL_DATA.domain),
     title: title
-      ? { default: title, template: '%s | GoAdway' }
-      : { default: DEFAULT_TITLE, template: '%s | GoAdway' },
-    description,
+      ? { default: title, template: `%s | ${SEO_GENERAL_DATA.brandName}` }
+      : { default: localeContent.title, template: `%s | ${SEO_GENERAL_DATA.brandName}` },
+    description: resolvedDescription,
+    keywords: [...localeContent.keywords],
+    applicationName: SEO_GENERAL_DATA.brandName,
     alternates: {
-      canonical,
+      canonical: resolvedCanonical,
+      languages: {
+        'en': `${SEO_GENERAL_DATA.domain}/en`,
+        'de': `${SEO_GENERAL_DATA.domain}/de`,
+        'fr': `${SEO_GENERAL_DATA.domain}/fr`,
+        'x-default': `${SEO_GENERAL_DATA.domain}/en`,
+      },
     },
     robots: noIndex
       ? { index: false, follow: false }
@@ -46,9 +56,9 @@ export function constructMetadata({
         },
     openGraph: {
       title: resolvedTitle,
-      description,
-      url: canonical,
-      siteName: 'GoAdway',
+      description: resolvedDescription,
+      url: resolvedCanonical,
+      siteName: SEO_GENERAL_DATA.brandName,
       images: [
         {
           url: image,
@@ -57,13 +67,13 @@ export function constructMetadata({
           alt: resolvedTitle,
         },
       ],
-      locale: 'en_US',
+      locale: localeContent.ogLocale,
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
       title: resolvedTitle,
-      description,
+      description: resolvedDescription,
       images: [image],
     },
   };

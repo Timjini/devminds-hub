@@ -1,137 +1,207 @@
 {
   "navbar": {
+    "cta": "Commencer",
     "ariaLabel": "Navigation principale",
+    "brand": "AskYourFiles",
+    "tagline": "Assistant de bureau privé",
     "links": {
-      "capabilities": {
-        "label": "EXPERTISES",
-        "href": "#capabilities"
-      },
-      "notes": {
-        "label": "GUIDES",
-        "href": "#notes"
-      }
+      "capabilities": "Ce qu’il fait",
+      "example": "Voir un exemple",
+      "privacy": "Confidentialité",
+      "pricing": "Mise en place"
     },
-    "cta": {
-      "label": "LANCER UNE CAMPAGNE",
-      "href": "/pages/start-setup"
-    }
+    "languageSwitcher": {
+      "ariaLabel": "Choisir la langue",
+      "en": "EN",
+      "de": "DE",
+      "fr": "FR"
+    },
+    "inspectJsonButton": "JSON"
   },
   "hero": {
-    "eyebrow": "AGENCE DE PUBLICITÉ & DESIGN",
-    "headline": "NOUS CRÉONS DES MARQUES QUI PERFORMENT.",
-    "subtitle": "GoAdway propulse les marques ambitieuses grâce au web design haute conversion, à l'identité de marque, au setup Meta Ads et à la performance Google Ads & SEO.",
-    "cta": {
-      "label": "ACCÉLÉRER VOTRE CROISSANCE",
-      "href": "/pages/start-setup"
-    }
-  },
+      "eyebrow": "Pour les petits et moyens bureaux — Aucune configuration technique requise",
+      "headline": "Un assistant privé pour la paperasse de votre bureau.",
+      "subheadline": "Offrez à votre équipe un espace simple pour rechercher dans vos propres dossiers, comprendre vos PDF et factures, rédiger vos courriers courants et traduire vos documents — sans jamais envoyer les fichiers de l’entreprise sur des sites publics.",
+      "primaryCta": "Réserver un appel de 15 minutes",
+      "secondaryCta": "Voir comment il répond à une question",
+      "reassurance": [
+        "Nous installons tout pour vous — votre équipe se connecte simplement et pose ses questions en français.",
+        "Aucun compteur de jetons, limite d’usage ni frais cachés — juste un forfait mensuel fixe et prévisible.",
+        "Hébergé exclusivement dans l’UE en stricte conformité avec le RGPD — garantissant une pleine souveraineté européenne des données sans transfert vers des pays tiers."
+      ]
+    },
   "capabilities": {
-    "heading": "EXPERTISES CLÉS / 01—04",
-    "helper": "CLIQUEZ SUR UNE EXPERTISE POUR DÉFINIR VOTRE PROJET",
-    "services": [
+    "sectionLabel": "Section 01",
+    "title": "Cinq tâches quotidiennes qu’il gère pour votre bureau",
+    "subtitle": "Aucun logiciel complexe à apprendre. Uniquement des réponses claires, tirées directement des documents que votre entreprise possède déjà.",
+    "items": [
       {
-        "id": "infrastructure",
+        "id": "sop",
         "number": "01",
-        "title": "BRANDING & IDENTITÉ VISUELLE",
-        "description": "Systèmes visuels distinctifs, création de logo, charte graphique et positionnement conçus pour marquer les esprits.",
-        "deliverables": "STRATÉGIE DE MARQUE / LOGO / IDENTITÉ / CHARTE"
+        "title": "Procédures internes & Manuels d’entreprise",
+        "description": "Vos collaborateurs nouveaux ou anciens peuvent poser des questions sur les règles quotidiennes, les étapes d’intégration ou les listes de contrôle et obtenir la réponse exacte issue de vos manuels.",
+        "examplePrompt": "« Quelle est notre liste de contrôle étape par étape lorsqu’un nouveau client signe ? »"
       },
       {
-        "id": "domains",
+        "id": "search",
         "number": "02",
-        "title": "WEB DESIGN & LANDING PAGES",
-        "description": "Sites web orientés conversion, design UI/UX responsive et landing pages rapides conçus pour transformer vos visiteurs en clients.",
-        "deliverables": "UI-UX / LANDING PAGES / FIGMA / CONVERSION"
+        "title": "Recherche privée dans vos fichiers",
+        "description": "Retrouvez une clause de contrat précise, une date de renouvellement ou une note client enfouie parmi des milliers de fichiers Word et de dossiers en quelques secondes.",
+        "examplePrompt": "« Quels contrats fournisseurs arrivent à renouvellement avant la fin du prochain trimestre ? »"
       },
       {
-        "id": "email",
+        "id": "drafting",
         "number": "03",
-        "title": "SETUP META ADS & CRÉATIVES",
-        "description": "Configuration complète Business Manager, tracking Pixel & API Conversions, audiences ciblées et créatives publicitaires percutantes.",
-        "deliverables": "META PIXEL / CAPI / CRÉATIVES ADS / RETARGETING"
+        "title": "Rédaction & Préparation de documents",
+        "description": "Rédigez des réponses clients, des courriers types, des comptes rendus de réunion et des notes internes dans le ton habituel de votre entreprise, à partir de vos modèles existants.",
+        "examplePrompt": "« Rédige une lettre de relance de paiement courtoise basée sur notre modèle habituel. »"
       },
       {
-        "id": "crm",
+        "id": "pdf-invoice",
         "number": "04",
-        "title": "GOOGLE ADS & SEO",
-        "description": "Campagnes Search à forte intention, SEO technique on-page et suivi des conversions pour un trafic payant et organique durable.",
-        "deliverables": "SEARCH ADS / SEO TECHNIQUE / GA4 / GTM"
+        "title": "Lecture de PDF & Explication de factures",
+        "description": "Déposez un rapport PDF dense de 40 pages ou une facture fournisseur complexe et obtenez une explication claire, ligne par ligne, de ce qu’il contient et de ce que vous devez.",
+        "examplePrompt": "« Explique cette facture de transport en mots simples et signale les frais supplémentaires. »"
+      },
+      {
+        "id": "translation",
+        "number": "05",
+        "title": "Traduction de bureau au quotidien",
+        "description": "Traduisez fidèlement vos e-mails, contrats et manuels internes d’une langue à l’autre tout en conservant la terminologie exacte de votre entreprise.",
+        "examplePrompt": "« Traduis ce contrat de prestation en allemand en conservant nos termes juridiques. »"
       }
     ]
   },
-  "notes": {
-    "heading": "NOTES / PLAYBOOKS",
-    "helper": "GUIDES CRÉATIFS & ACQUISITION POUR MARQUES MODERNES",
-    "readLabel": "LIRE",
-    "posts": {
-      "chatwoot-mailcow-crm": {
-        "tag": "01 / ACQUISITION PAYANTE",
-        "readTime": "3 MIN DE LECTURE",
-        "title": "ARCHITECTURE META ADS & PIXEL",
-        "excerpt": "Comment un tracking serveur propre, des landing pages optimisées et le test créatif réduisent votre coût d'acquisition client.",
-        "relatedService": "SETUP META ADS & CRÉATIVES",
-        "ctaHeading": "VOUS VOULEZ CE FUNNEL POUR VOTRE MARQUE ?",
-        "ctaSubheading": "NOUS CONCEVONS, TRACKONS & LANÇONS DE BOUT EN BOUT.",
-        "sections": [
-          {
-            "heading": "01 / CE QUE C'EST",
-            "content": "Associer des landing pages conçues pour la conversion à un tracking Meta Pixel, Conversions API (CAPI) et Google Tag Manager bien configuré fournit aux algorithmes des signaux précis — transformant votre budget pub en revenus prévisibles."
-          },
-          {
-            "heading": "02 / LANCEMENT EN 3 ÉTAPES",
-            "steps": [
-              {
-                "step": "ÉTAPE 01",
-                "title": "ALIGNEMENT MARQUE & LANDING PAGE",
-                "detail": "Conception d'une landing page rapide et percutante avec une proposition de valeur claire adaptée à chaque angle publicitaire."
-              },
-              {
-                "step": "ÉTAPE 02",
-                "title": "CONFIGURATION PIXEL, CAPI & GA4",
-                "detail": "Paramétrage de Meta Business Manager, de l'API Conversions côté serveur et des événements Google Ads avec attribution vérifiée."
-              },
-              {
-                "step": "ÉTAPE 03",
-                "title": "LANCEMENT DES CAMPAGNES & DU SEO",
-                "detail": "Déploiement de campagnes Meta Ads structurées, de mots-clés Google Search à forte intention et d'une base SEO technique solide."
-              }
-            ]
-          },
-          {
-            "heading": "03 / POURQUOI LES MARQUES ADORENT",
-            "items": [
-              "IDENTITÉ DE MARQUE COHÉRENTE SUR LE WEB, LES RÉSEAUX ET GOOGLE",
-              "ATTRIBUTION PRÉCISE DES CONVERSIONS SANS BUDGET GASPILLÉ",
-              "UN SEUL PARTENAIRE POUR LE DESIGN, LES ADS ET LE SEO"
-            ]
-          }
-        ]
+  "example": {
+    "sectionLabel": "Section 02",
+    "title": "Voyez comment cela fonctionne sur de vrais documents de bureau",
+    "subtitle": "Cliquez sur l’une des trois questions courantes ci-dessous. Chaque réponse indique le document exact et la page d’origine afin que vous puissiez vérifier par vous-même.",
+    "selectorLabel": "Choisissez un exemple de question de bureau :",
+    "questionLabel": "Question d’un collaborateur",
+    "answerLabel": "Réponse de l’assistant privé",
+    "sourceLabel": "Source vérifiée",
+    "samples": [
+      {
+        "id": "invoice",
+        "tabLabel": "Expliquer une facture PDF",
+        "question": "Peux-tu m’expliquer cette facture fournisseur et me dire pourquoi elle est plus élevée que le mois dernier ?",
+        "answer": "Cette facture s’élève à 4 280,00 € (échéance au 30 novembre). Elle dépasse de 640,00 € celle de septembre pour deux raisons :\n\n1. Livraison express sur palette (490,00 €) ajoutée le 14 octobre pour la commande #8821.\n2. Frais de dépassement de stockage (150,00 €) facturés car 3 palettes sont restées au-delà de la période gratuite de 14 jours.\n\nTous les prix unitaires de base correspondent à votre grille tarifaire signée pour 2026.",
+        "source": "Facture_Fournisseur_Oct2026.pdf — Page 2, Lignes 4 à 7"
+      },
+      {
+        "id": "sop",
+        "tabLabel": "Vérifier une procédure interne",
+        "question": "Quelle est notre procédure interne lorsqu’un client signale une livraison endommagée ?",
+        "answer": "Selon votre Manuel des opérations, suivez ces trois étapes sous 24 heures :\n\n1. Demandez au client deux photos (du carton extérieur et de l’article endommagé) avant de jeter l’emballage.\n2. Émettez immédiatement une commande de remplacement avec le code REPL-01 (aucune validation de la direction requise en dessous de 500 €).\n3. Notez le numéro de suivi du transporteur dans le tableau des réclamations du vendredi.",
+        "source": "Manuel_Operations_v4.docx — Section 6.2 (Retours & Réclamations)"
+      },
+      {
+        "id": "translate",
+        "tabLabel": "Traduire un courrier client",
+        "question": "Traduis notre lettre type de confirmation de garantie en allemand pour notre client de Munich.",
+        "answer": "Sehr geehrte Damen und Herren,\n\nhiermit bestätigen wir, dass für Ihre Lieferung vom 12. Oktober unsere standardmäßige 24-monatige Herstellergarantie gilt. Alle Wartungsarbeiten werden direkt über unser Service-Team abgewickelt.\n\nMit freundlichen Grüßen,\nIhr Kundenservice-Team",
+        "source": "Modele_Lettre_Garantie_FR.docx — Harmonisé avec Glossaire_Client_DE.pdf"
       }
-    }
+    ]
   },
-  "customers": {
-    "ariaLabel": "Marques partenaires",
-    "heading": "ILS NOUS FONT CONFIANCE",
-    "deploymentsLabel": "CAMPAGNES",
-    "logoAltSuffix": "logo",
-    "sectors": {
-      "FINTECH": "FINTECH",
-      "AI / SAAS": "IA / SAAS",
-      "DEVTOOLS": "D2C / RETAIL",
-      "ECOMMERCE": "E-COMMERCE",
-      "HEALTH": "BIEN-ÊTRE"
-    }
+  "privacy": {
+    "sectionLabel": "Section 03",
+    "title": "Pourquoi vos dossiers confidentiels restent totalement en sécurité",
+    "subtitle": "Les sites de discussion publics conservent tout ce que les employés y collent et s’en servent pour s’entraîner. Votre espace fonctionne comme un classeur fermé à clé qui n’appartient qu’à vous.",
+    "promises": [
+      {
+        "title": "Votre propre espace privé",
+        "description": "Vos documents résident dans un environnement numérique isolé, dédié uniquement à votre entreprise — jamais mélangé avec ceux d’une autre société."
+      },
+      {
+        "title": "Jamais partagé ni utilisé pour l’entraînement",
+        "description": "Vos contrats, factures et noms de clients ne quittent jamais votre espace privé et ne servent jamais à entraîner des outils externes."
+      },
+      {
+        "title": "Droits d’accès respectés",
+        "description": "Les fiches de paie RH restent visibles uniquement par la direction, tandis que les manuels généraux du bureau sont accessibles à toute l’équipe."
+      }
+    ]
   },
-  "footer": {
-    "eyebrow": "PASSER À L'ACTION",
-    "headline": "PRÊT À ACCÉLÉRER ?",
-    "cta": {
-      "label": "C'EST PARTI !",
-      "href": "/pages/start-setup"
+  "steps": {
+    "sectionLabel": "Section 04",
+    "title": "Installation simple, suivi mensuel fixe",
+    "subtitle": "Vous n’avez jamais à toucher un serveur, installer un logiciel ni recruter de spécialiste informatique. Nous préparons tout et veillons au bon fonctionnement.",
+    "items": [
+      {
+        "stepLabel": "Étape 1",
+        "title": "Installation unique pour votre bureau",
+        "description": "Nous connectons votre Google Drive, SharePoint ou vos dossiers PDF locaux existants, créons les accès de votre équipe et testons l’ensemble sur vos vrais documents."
+      },
+      {
+        "stepLabel": "Étape 2",
+        "title": "Forfait mensuel fixe tout compris",
+        "description": "Une facture mensuelle prévisible couvre votre hébergement privé, la synchronisation automatique dès que vous ajoutez de nouveaux fichiers, les mises à jour de sécurité et l’assistance téléphonique."
+      }
+    ]
+  },
+  "pricing": {
+    "eyebrow": "Tarification simple",
+    "title": "Des tarifs clairs pour votre bureau",
+    "subtitle": "Toute votre équipe peut l’utiliser sans vous soucier du nombre de comptes ni de suppléments imprévus.",
+    "note": "Aucun frais par utilisateur — des frais d’installation clairs et un forfait mensuel prévisible adapté à la taille de votre bureau."
+  },
+  "cta": {
+    "title": "Demander un rappel convivial de 15 minutes",
+    "subtitle": "Sans jargon technique et sans pression commerciale. Parlez-nous brièvement de votre bureau et nous vous montrerons comment cela fonctionne.",
+    "form": {
+      "nameLabel": "Votre nom",
+      "namePlaceholder": "ex. Claire Moreau",
+      "companyLabel": "Nom de l’entreprise ou du cabinet",
+      "companyPlaceholder": "ex. Cabinet Comptable Moreau & Associés",
+      "contactLabel": "Numéro de téléphone ou e-mail professionnel",
+      "contactPlaceholder": "ex. claire@moreau-associes.fr",
+      "noteLabel": "Quelle paperasse prend le plus de temps à votre équipe ? (Facultatif)",
+      "notePlaceholder": "ex. Vérifier les factures fournisseurs, répondre aux questions internes sur nos procédures...",
+      "submitButton": "Demander à être rappelé"
     },
-    "brandName": "GOADWAY.",
-    "tagline": "AGENCE DE PUBLICITÉ, BRANDING & WEB DESIGN",
-    "backToTop": "HAUT",
-    "backToTopAria": "Retourner en haut de la page"
+    "confirmation": {
+      "title": "Merci — nous avons bien noté votre demande.",
+      "message": "L’un de nos fondateurs vous recontactera sous un jour ouvré pour convenir d’une brève présentation en termes simples.",
+      "resetButton": "Envoyer un autre message"
+    }
+  },
+  "pricing": {
+      "sectionLabel": "Section 05",
+      "eyebrow": "Barème des tarifs",
+      "title": "Une facturation forfaitaire claire pour votre bureau",
+      "subtitle": "Aucun frais par utilisateur, aucun compteur de jetons et aucun dépassement imprévu. Uniquement deux lignes claires pour tout votre bureau.",
+      "invoiceHeader": {
+        "documentTitle": "GRILLE TARIFAIRE FORFAITAIRE",
+        "reference": "RÉF : AYF-2026-FLAT",
+        "columns": {
+          "item": "Poste",
+          "description": "Prestations incluses",
+          "billing": "Facturation",
+          "rate": "Forfait"
+        }
+      },
+      "items": [
+        {
+          "code": "01",
+          "title": "Installation unique & Mise en service",
+          "description": "Déploiement de votre espace dédié isolé dans l’UE, connexion à vos dossiers existants (Drive, SharePoint ou PDF locaux), paramétrage des droits d’accès et prise en main avec l’équipe.",
+          "billing": "Une fois au démarrage",
+          "rate": "1 490 €"
+        },
+        {
+          "code": "02",
+          "title": "Assistant de bureau privé — Suivi mensuel fixe",
+          "description": "Hébergement privé dans l’UE, accès illimité pour tous les collaborateurs du bureau, synchronisation automatique des nouveaux fichiers, maintenance RGPD et assistance directe par téléphone ou e-mail.",
+          "billing": "Par mois (tout compris)",
+          "rate": "390 € / mois"
+        }
+      ],
+      "note": "Tous les tarifs sont indiqués en euros hors taxes (HT). Résiliable à tout moment avec un préavis de 30 jours — vos documents restent à 100 % votre propriété.",
+      "cta": "Demander un devis écrit"
+    },
+  "footer": {
+    "note": "AskYourFiles — Recherche privée de documents, lecture de PDF et rédaction pour les bureaux au quotidien.",
+    "rights": "© 2026 AskYourFiles. Tous les espaces clients sont dédiés et strictement privés."
   }
 }
