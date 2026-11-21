@@ -36,7 +36,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         </div>
 
         <span className="px-2.5 py-0.5 bg-[#FFFFFF] border border-[#CFC8B8] font-serif text-[11px] uppercase tracking-[0.15em] text-[#5C574E]">
-          AskYourFiles
+          Oradocs
         </span>
       </motion.div>
 

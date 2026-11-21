@@ -1,18 +1,18 @@
 export type SupportedLocale = 'en' | 'de' | 'fr';
 
 export const SEO_GENERAL_DATA = {
-  brandName: 'AskYourFiles',
-  domain: 'https://askyourfiles.eu',
+  brandName: 'Oradocs',
+  domain: 'https://Oradocs.eu',
   home: {
-    url: 'https://askyourfiles.eu',
-    canonical: 'https://askyourfiles.eu',
-    cover: 'https://askyourfiles.eu/og-cover.png',
-    twitter_image_cover: 'https://askyourfiles.eu/og-cover.png',
+    url: 'https://Oradocs.eu',
+    canonical: 'https://Oradocs.eu',
+    cover: 'https://Oradocs.eu/og-cover.png',
+    twitter_image_cover: 'https://Oradocs.eu/og-cover.png',
   },
   locales: {
     en: {
       ogLocale: 'en_IE',
-      title: 'AskYourFiles | Private Office Document Search & PDF Assistant (EU)',
+      title: 'Oradocs | Private Office Document Search & PDF Assistant (EU)',
       description:
         'Search company folders, understand invoices and PDFs, draft letters, and translate documents privately. Hosted exclusively in the EU under strict GDPR compliance with one flat monthly rate.',
       keywords: [
@@ -26,7 +26,7 @@ export const SEO_GENERAL_DATA = {
     },
     de: {
       ogLocale: 'de_DE',
-      title: 'AskYourFiles | Privater Büro-Assistent für Dokumente & PDFs (DSGVO)',
+      title: 'Oradocs | Privater Büro-Assistent für Dokumente & PDFs (DSGVO)',
       description:
         'Durchsuchen Sie eigene Firmenordner, erklären Sie PDFs und Rechnungen, entwerfen Sie Briefe und übersetzen Sie Dokumente – 100 % DSGVO-konform in der EU gehostet zum festen Monatspreis.',
       keywords: [
@@ -40,7 +40,7 @@ export const SEO_GENERAL_DATA = {
     },
     fr: {
       ogLocale: 'fr_FR',
-      title: 'AskYourFiles | Assistant privé pour documents & PDF de bureau (RGPD)',
+      title: 'Oradocs | Assistant privé pour documents & PDF de bureau (RGPD)',
       description:
         'Recherchez dans vos dossiers d’entreprise, analysez vos factures PDF, rédigez vos courriers et traduisez vos documents. Hébergé exclusivement dans l’UE en conformité RGPD au forfait fixe.',
       keywords: [

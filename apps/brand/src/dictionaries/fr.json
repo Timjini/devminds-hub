@@ -2,7 +2,7 @@
   "navbar": {
     "cta": "Commencer",
     "ariaLabel": "Navigation principale",
-    "brand": "AskYourFiles",
+    "brand": "Oradocs",
     "tagline": "Assistant de bureau privé",
     "links": {
       "capabilities": "Ce qu’il fait",
@@ -201,7 +201,7 @@
       "cta": "Demander un devis écrit"
     },
   "footer": {
-    "note": "AskYourFiles — Recherche privée de documents, lecture de PDF et rédaction pour les bureaux au quotidien.",
-    "rights": "© 2026 AskYourFiles. Tous les espaces clients sont dédiés et strictement privés."
+    "note": "Oradocs — Recherche privée de documents, lecture de PDF et rédaction pour les bureaux au quotidien.",
+    "rights": "© 2026 Oradocs. Tous les espaces clients sont dédiés et strictement privés."
   }
 }

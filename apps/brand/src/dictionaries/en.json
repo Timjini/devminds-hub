@@ -2,7 +2,7 @@
   "navbar": {
     "cta": "Start now",
     "ariaLabel": "Primary Navigation",
-    "brand": "AskYourFiles",
+    "brand": "Oradocs",
     "tagline": "Private Office Desk",
     "links": {
       "capabilities": "What it does",
@@ -200,7 +200,7 @@
       "cta": "Request a written quote"
     },
   "footer": {
-    "note": "AskYourFiles — Private document search, PDF reading, and drafting for everyday offices.",
-    "rights": "© 2026 AskYourFiles. All client workspaces are single-tenant and private."
+    "note": "Oradocs — Private document search, PDF reading, and drafting for everyday offices.",
+    "rights": "© 2026 Oradocs. All client workspaces are single-tenant and private."
   }
 }

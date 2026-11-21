@@ -2,7 +2,7 @@
   "navbar": {
     "cta": "Jetzt starten",
     "ariaLabel": "Hauptnavigation",
-    "brand": "AskYourFiles",
+    "brand": "Oradocs",
     "tagline": "Privater Büro-Assistent",
     "links": {
       "capabilities": "Funktionen",
@@ -200,7 +200,7 @@
       "cta": "Unverbindliches Angebot anfordern"
     },
   "footer": {
-    "note": "AskYourFiles — Private Dokumentensuche, PDF-Auswertung und Texterstellung für den Büroalltag.",
-    "rights": "© 2026 AskYourFiles. Alle Kundenumgebungen sind strikt getrennt und privat."
+    "note": "Oradocs — Private Dokumentensuche, PDF-Auswertung und Texterstellung für den Büroalltag.",
+    "rights": "© 2026 Oradocs. Alle Kundenumgebungen sind strikt getrennt und privat."
   }
 }

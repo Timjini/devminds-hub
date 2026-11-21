@@ -51,52 +51,35 @@ light brown #decfc2
 */
 
 @theme {
-  /* Fonts */
-  --font-roboto: "Roboto", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-sans: var(--font-roboto);
-  --font-display: var(--font-montserrat);
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  /* Soft Warm Surfaces */
+  --color-paper: #FDFBF7;
+  --color-paper-subtle: #F7F3EB;
+  --color-paper-warm: #EFE9DD;
+  --color-surface: #FFFFFF;
 
-  /* Core Brand Palette — Electric Purple & Crimson Red */
-  --color-brand-primary: #3b0764;             /* Deep Royal Purple (structural anchor) */
-  --color-brand-white: #fffafa;               /* Crisp Warm Snow (clean canvas) */
-  --color-brand-dark: #240046;                /* Midnight Violet (borders, ink & inverse bands) */
-  --color-brand-text: #240046;                /* High-contrast Midnight Violet ink */
-  --color-brand-primary-background: #240046;
-  --color-brand-secondary: #c084fc;           /* Electric Lavender (secondary pop) */
-  --color-brand-accent: #ff2a5f;              /* Punchy Crimson Red (primary CTAs & hover states) */
+  /* Gentle Borders */
+  --color-border-subtle: #EAE3D5;
+  --color-border-strong: #DCD2C0;
 
-  /* Semantic Surface, Ink & Border Tokens (Zero Hardcoding in JSX) */
-  --color-surface: var(--color-brand-white);
-  --color-surface-inverse: var(--color-brand-dark);
-  --color-surface-muted: #f5f0ff;             /* Soft Lilac tint for subtle cards/sections */
-  --color-ink: var(--color-brand-text);
-  --color-ink-inverse: #ffffff;
-  --color-ink-muted: #5b3a7d;                 /* Muted Plum for subtitles & metadata */
-  --color-line: var(--color-brand-dark);      /* Bold Midnight Violet 2px architectural grid lines */
-  --color-line-inverse: #ffffff;
-  --color-highlight: var(--color-brand-accent);
-  --color-highlight-secondary: var(--color-brand-secondary);
+  /* Warm Charcoal Typography */
+  --color-ink-heading: #23201E;
+  --color-ink-primary: #332F2C;
+  --color-ink-body: #4A4440;
+  --color-ink-secondary: #635B56;
+  --color-ink-muted: #857B74;
 
-  /* Architectural Border Widths */
-  --border-width-brutal: 2px;
-  --border-width-hud: 4px;
+  /* Color 1: Primary Brand (Warm Terracotta) */
+  --color-brand: #D96B43;
+  --color-brand-hover: #BF5630;
+  --color-brand-soft: #FCECE6;
 
-  /* Typography Tracking Tokens */
-  --tracking-hud: 0.25em;
-  --tracking-label: 0.2em;
-  --tracking-cta: 0.14em;
+  /* Color 2: Secondary Accent (Soft Sage) */
+  --color-sage: #4A7C64;
+  --color-sage-soft: #E8F2ED;
 
-  /* Z-Index Layers */
-  --z-transition: 9990;
-  --z-cursor: 9999;
-
-  --radius-control: 0.875rem;   /* 14px — soft rounded buttons & inputs */
-    --radius-pill: 9999px;        /* Full pill option */
-    --radius-card: 1.25rem;       /* 20px — cards & containers */
-    --shadow-soft: 0 4px 14px -2px rgb(36 0 70 / 0.14);
-    --shadow-soft-hover: 0 8px 22px -4px rgb(255 42 95 / 0.32);
+  /* Color 3: Tertiary Accent (Warm Marigold) */
+  --color-marigold: #D49A2A;
+  --color-marigold-soft: #FDF5E2;
 }
 
 @layer base {

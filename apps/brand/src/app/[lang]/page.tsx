@@ -1,7 +1,6 @@
 import { DictionaryProvider, LanguageProvider } from "@/contexts";
-// import Content from "./content";
 import { getDictionary } from "@/lib/dictionary";
-import AskFiles from "./ask-files";
+import Content from "./content";
 
 export default async function Page({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
@@ -11,8 +10,7 @@ export default async function Page({ params }: PageProps<"/[lang]">) {
     <>
       <LanguageProvider value={lang}>
         <DictionaryProvider dictionary={dict}>
-          {/*<Content />*/}
-          <AskFiles />
+          <Content />
         </DictionaryProvider>
       </LanguageProvider>
     </>
